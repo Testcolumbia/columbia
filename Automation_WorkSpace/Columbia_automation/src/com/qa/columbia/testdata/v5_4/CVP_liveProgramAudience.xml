@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveprogramAudience>
+
+   
+ 	
+   ! Variables of display name for the Audience
+ 	<VAR_audienceName>Audience_001</VAR_audienceName>
+ 	
+   ! Variable for the Audience Rule IP
+  	<VAR_audienceIP>10.1.60.*</VAR_audienceIP>
+  	  
+   ! Variable for the Audience Rule Host
+    <VAR_audienceHost>10.1.202.221</VAR_audienceHost>
+      
+   ! Variable for the Audience Rule Port
+   <VAR_audiencePort>80</VAR_audiencePort>
+
+  
+ 	
+  	 ! Variables for the Live program name	
+ 	<Var_LiveProgramName>Live_RSSv5_audience</Var_LiveProgramName>
+ 	
+ 	
+ 	<Var_ArchiveOfLiveRSSv5>ArchiveOfLiveRSSv5_audience</Var_ArchiveOfLiveRSSv5>
+</CVP_liveprogramAudience>

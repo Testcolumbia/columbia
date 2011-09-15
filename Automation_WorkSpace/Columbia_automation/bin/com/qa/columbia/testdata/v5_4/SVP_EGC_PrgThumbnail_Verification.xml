@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_EGC_PrgThumnnail_Verification>
+
+<VAR_userFirstName>EGC</VAR_userFirstName>
+<VAR_userLastName>Admin</VAR_userLastName>
+<VAR_userEmailID>egcadmin@test.com</VAR_userEmailID>
+<VAR_userPassword>password</VAR_userPassword>
+<VAR_streamingMedia>SVP_EGC_Thumb</VAR_streamingMedia>
+<VAR_MasterVOD>SVP_EGC_WMVMasterVOD</VAR_MasterVOD>
+<VAR_ChannelName>SVP_EGC_Thumbnail_Channel</VAR_ChannelName>
+<VAR_EGCPogramName>SVP_EGC_ThumbnailVerification</VAR_EGCPogramName>
+!<VAR_streamingMediaEGC>wmv1.wmv</VAR_streamingMediaEGC>
+
+   ! Variables of display name for the streaming media function
+ 	<VAR_WMV_fileName>SVP_EGC_Thumbnail</VAR_WMV_fileName> 
+ 	
+   ! Variables for the file name under content
+   <VAR_streamingMediaType>wmv1.wmv</VAR_streamingMediaType> 
+ 
+   ! Variables for the EGC ProgramName
+   <VAR_EGCprogramName>EGC_Thumbnail_program_VP</VAR_EGCprogramName> 
+  
+   ! Variables for the EGCChannel Name
+   <VAR_EGCchannelName>caption1</VAR_EGCchannelName>  
+   
+   ! Variable for the Master program name (used as Template for EGC) 
+   <VAR_mastreProgramName>caption1</VAR_mastreProgramName> 
+    
+</SVP_EGC_PrgThumnnail_Verification>

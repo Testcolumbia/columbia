@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_wmvskin>
+  	
+  ! Variables for the file name under content
+ 	<VAR_fileType>wmv1.wmv</VAR_fileType>
+  !Variable for Program Type
+ 	<Program_Type>On-Demand</Program_Type>
+ 
+  ! Variable for Program Name
+ 	<VAR_programName>Program_skin</VAR_programName>
+ 	
+ 	!Variable for wmv file display name
+	<streamingMedia_DisplayName>wmv_auto</streamingMedia_DisplayName>
+	
+		!Variable for wmv file display name
+	<VAR_SkinName>skin</VAR_SkinName>
+	
+	
+	
+ 
+</CVP_wmvskin>

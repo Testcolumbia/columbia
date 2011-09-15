@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_wmvskin>
+  	
+  
+  !Variable for Program Type
+ 	<Program_Type>On-Demand</Program_Type>
+ 
+  ! Variable for Program Name
+ 	<VAR_programName>Auto_Program_skin</VAR_programName>
+ 	
+ 
+	
+		!Variable for wmv file display name
+	<VAR_SkinName>skin</VAR_SkinName>
+	
+	
+	
+ 
+</CVP_wmvskin>

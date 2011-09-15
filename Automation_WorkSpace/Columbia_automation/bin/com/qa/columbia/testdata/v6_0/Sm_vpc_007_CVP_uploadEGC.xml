@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_thumbnailExtraction>
+
+<VAR_userFirstName>egc</VAR_userFirstName>
+<VAR_userLastName>admin</VAR_userLastName>
+<VAR_userEmailID>egcadmin@test.com</VAR_userEmailID>
+<VAR_userPassword>password</VAR_userPassword>
+<VAR_streamingMedia>Auto_wmv</VAR_streamingMedia>
+<VAR_MasterVOD>Auto_EGCMasterProgram</VAR_MasterVOD>
+<VAR_ChannelName>egcChannel</VAR_ChannelName>
+<VAR_EGCPogramName>CVP_EGCUploadProgram</VAR_EGCPogramName>
+<VAR_streamingMediaEGC>wmv1.wmv</VAR_streamingMediaEGC>
+
+   ! Variables of display name for the streaming media function
+ 	<VAR_WMV_fileName>Auto_wmv</VAR_WMV_fileName> 
+ 	
+   ! Variables for the file name under content
+   <streamingMediaType>wmv1.wmv</streamingMediaType> 
+ 
+   ! Variables for the EGC ProgramName
+   <VAR_EGCprogramName>slide1</VAR_EGCprogramName> 
+  
+   ! Variables for the EGCChannel Name
+   <VAR_EGCchannelName>caption1</VAR_EGCchannelName>  
+   
+   ! Variable for the Master program name (used as Template for EGC) 
+   <VAR_mastreProgramName>caption1</VAR_mastreProgramName> 
+    
+</CVP_thumbnailExtraction>

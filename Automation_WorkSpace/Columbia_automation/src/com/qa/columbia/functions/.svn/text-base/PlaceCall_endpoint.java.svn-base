@@ -1,0 +1,193 @@
+/*
+ * This method is used to Place a call from the endpoint to RSS encoder.
+ * @param sel selenium object that runs the selenium commands 
+ * @throws Exception 
+*/
+
+package com.qa.columbia.functions;
+
+
+import java.text.MessageFormat;
+
+import com.thoughtworks.selenium.*;
+import com.qa.columbia.executor.*;
+import com.qa.columbia.repository.EnvObjectMap_Rep;
+
+public class PlaceCall_endpoint extends TesterAsserter{
+	public static void PlaceCall_RSS2k(Selenium sel, String str_EncoderAddress) throws Exception 
+	{	
+		//Utility_Functions utilityFunction = new Utility_Functions();	
+		sel.open("/u_index2.htm");
+		sel.click("main_0");
+		sel.waitForPageToLoad("30000");
+		sel.selectFrame("contentFrame");
+		sel.focus("dialnumber");
+		sel.type("dialnumber", str_EncoderAddress);
+		sel.click("dialimage");
+		sel.waitForPageToLoad("30000");
+		//assertTrue(" ","Verify that call is placed successfully.",sel.isElementPresent("hangupimage"));
+}
+	public static void PlaceCall_RSS4kv6(Selenium sel, String str_EncoderAddress, String str_VRRnumber, String str_endPoint) throws Exception {
+		
+		Utility_Functions utilityFunction = new Utility_Functions();	
+		//sel.open("http://"+str_endPoint+"/u_index2.htm");
+		sel.openWindow("http://"+str_endPoint+"/u_index2.htm", "a");
+		sel.selectWindow("a");		
+		for (int second = 0;; second++) {
+			if (second >= 200) fail("timeout");
+			try { if (sel.isElementPresent("main_0")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+		sel.click("main_0");
+		
+		for (int second = 0;; second++) {
+			if (second >= 200) fail("timeout");
+			try { if (sel.isElementPresent("dialimage")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+		utilityFunction.waitForChangesToReflect();
+		sel.selectFrame("contentFrame");
+		sel.focus("dialnumber");
+		sel.type("dialnumber", str_EncoderAddress+"##"+str_VRRnumber);
+		sel.click("dialimage");
+		sel.waitForPageToLoad("30000");
+		sel.close();
+		//assertTrue(" ","Verify that call is placed successfully.",sel.isElementPresent("hangupimage"));
+}
+	
+public static void PlaceCall_RSS2k(Selenium sel, String str_EncoderAddress, String str_endPoint) throws Exception {
+		
+		Utility_Functions utilityFunction = new Utility_Functions();	
+		//sel.open("http://"+str_endPoint+"/u_index2.htm");
+		sel.openWindow("http://"+str_endPoint+"/u_index2.htm", "a");
+		sel.selectWindow("a");
+		
+		
+		for (int second = 0;; second++) {
+			if (second >= 200) fail("timeout");
+			try { if (sel.isElementPresent("main_0")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+		sel.click("main_0");
+		
+		for (int second = 0;; second++) {
+			if (second >= 200) fail("timeout");
+			try { if (sel.isElementPresent("dialimage")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+		utilityFunction.waitForChangesToReflect();
+		sel.selectFrame("contentFrame");
+		sel.focus("dialnumber");
+		sel.type("dialnumber", str_EncoderAddress);
+		sel.click("dialimage");
+		sel.waitForPageToLoad("30000");
+		sel.close();
+		//assertTrue(" ","Verify that call is placed successfully.",sel.isElementPresent("hangupimage"));
+}
+	
+	public static void HangCall_RSS4kv6(Selenium sel, String str_endPoint) throws Exception {
+		Utility_Functions utilityFunction = new Utility_Functions();	
+		//sel.open("http://"+str_endPoint+"/u_index2.htm");
+		sel.openWindow("http://"+str_endPoint+"/u_index2.htm", "b");
+		sel.selectWindow("b");
+		
+		for (int second = 0;; second++) {
+			if (second >= 200) fail("timeout");
+			try { if (sel.isElementPresent("main_0")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+		sel.click("main_0");
+		//sel.waitForPageToLoad("30000");
+		utilityFunction.waitForChangesToReflect();
+		for (int second = 0;; second++) {
+			if (second >= 200) fail("timeout");
+			try { if (sel.isElementPresent("hangupimage")) break; } catch (Exception e) {}
+			Thread.sleep(1000);
+		}
+		sel.selectFrame("contentFrame");
+		sel.click("hangupimage");
+		sel.waitForPageToLoad("80000");
+		utilityFunction.waitForChangesToReflect();
+		if(!sel.isElementPresent("dialimage"))
+		{
+			sel.selectFrame("contentFrame");
+			sel.click("hangupimage");
+			sel.waitForPageToLoad("80000");	
+			utilityFunction.waitForChangesToReflect();
+		}
+		sel.close();
+		}
+	public static int getCount_ArchiveRSS(Selenium sel, String str_RSSDEviceIP) throws Exception {
+		
+		Utility_Functions utilityFunction = new Utility_Functions();	
+		sel.openWindow("http://"+str_RSSDEviceIP+"/login.php?lang=en&amp;lang_index=0", "c");
+		sel.selectWindow("c");
+		utilityFunction.waitForChangesToReflect();
+		//sel.open("http://"+str_RSSDEviceIP+"/login.php?lang=en&amp;lang_index=0");
+		sel.type("username", "administrator");
+		sel.type("password", "polycom");
+		sel.click("//form[@id='form_login']/table[4]/tbody/tr/td[2]/table/tbody/tr[7]/td[2]/table/tbody/tr/td[1]/a/img");
+		sel.waitForPageToLoad("30000");
+		utilityFunction.waitForChangesToReflect();
+		sel.click("//td[@id='id_menu_5']/div");
+		sel.click("link=Archives");
+		sel.waitForPopUp("index_right", "30000");
+		sel.selectFrame("index_right");
+		//String pageCount = sel.getText("//form[@id='archive_admin']/table[2]/tbody/tr/td[8]");
+		sel.click("//img[@alt='Last Page']");
+		utilityFunction.waitForChangesToReflect();
+		String pageCount = sel.getText("//form[@id='archive_admin']/table[2]/tbody/tr/td[8]");
+		System.out.println(pageCount);
+		//int count1 = pageCount.lastIndexOf("/", 1);
+		int count1 = pageCount.indexOf("/");
+		System.out.println(count1);	
+		String count = pageCount.substring(0, count1);
+		System.out.println(count);
+	    int aInt = Integer.parseInt(count);
+		int a=0;
+		int mediaCount = 0;
+		for (int i = 2; i<50;i=i+1 )
+		{
+			;
+	    	a = a+1;
+	    	if (!sel.isElementPresent(MessageFormat.format(EnvObjectMap_Rep.chk_archiveMediaRSSsourceDevice, i)))
+	    	{
+	    		mediaCount = (aInt-1)*10+a;
+	    		System.out.println(mediaCount);
+              break;
+	    	}   	
+	    	
+      }
+		sel.close();
+		return mediaCount;
+	//	return mediaCount;
+	}
+	
+	public static void StartRecording_RSS2k(Selenium sel, String str_RSSDEviceIP) throws Exception {
+		Utility_Functions utilityFunction = new Utility_Functions();	
+		sel.openWindow("http://"+str_RSSDEviceIP+"/login.php?lang=en&amp;lang_index=0", "d");
+		sel.selectWindow("d");
+		utilityFunction.waitForChangesToReflect();
+		//sel.open("http://"+str_RSSDEviceIP+"/login.php?lang=en&amp;lang_index=0");
+		sel.type("username", "administrator");
+		sel.type("password", "polycom");
+		sel.click("//form[@id='form_login']/table[4]/tbody/tr/td[2]/table/tbody/tr[7]/td[2]/table/tbody/tr/td[1]/a/img");
+		sel.waitForPageToLoad("30000");
+		utilityFunction.waitForChangesToReflect();
+		sel.selectFrame("index_bottom");
+		utilityFunction.waitForChangesToReflect();
+		if(!sel.isElementPresent("//img[@alt='Stop Recording']"))
+		{
+			sel.click("//img[@alt='Start Recording']");
+		}
+
+		for (int second = 0;; second++) {
+		if (second >= 60) fail("timeout");
+		try { if (sel.isElementPresent("//img[@alt='Stop Recording']")) break; } catch (Exception e) {}
+		Thread.sleep(1000);
+		}
+		sel.close();
+	}
+	
+}
+

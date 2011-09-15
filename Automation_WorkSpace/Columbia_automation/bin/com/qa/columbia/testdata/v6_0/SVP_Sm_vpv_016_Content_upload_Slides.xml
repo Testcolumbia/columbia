@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_Sm_vpv_016_Content_upload_Slides>
+ ! Variables of display name for the streaming media function
+ 	<VAR_Slide_fileName>SVP_SLidesUpload</VAR_Slide_fileName> 
+ 
+ ! Variables for the file name under content
+ <VAR_Slidefile>mixed.ppt</VAR_Slidefile>
+ 
+</SVP_Sm_vpv_016_Content_upload_Slides>

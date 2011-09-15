@@ -1,0 +1,144 @@
+/*
+* Classname                                                        CVP_vod_QT 
+*
+* Version info
+*
+* Copyright notice
+*
+* Test Case reference:												Classic VP: Ensure that an On Demand program (QT file) plays with HTTP delivery option.<br>
+* What the script does:											    >Login to the application<br> 
+* 																	>Navigate to Programming menu<br> 
+*																	>Navigate to Content<br> 
+*  															     	>Add a .qt file<br> 
+*																	>Create an On-demand program using the .qt file as streaming media<br> 
+* 																	>Play the on-demand program on the viewer portal<br> 
+* 																	>Capture the screenshot of the player window<br> 
+* 																	>Generate the asx file 
+* 																	>Verify the stream in the asx file
+* 																	>Verify that the image is uploaded in the content successfully<br> 	
+*  													     			>Launch the viewer portal and play the program<br> 
+*   																>Verify the stream in the .asx file<br> 																			 
+* What Verification it performs:	 								1.Verify that user is able to play the on-demand program using the qt file<br> 
+*																															
+* What script(s) should be run before this script:					N/A <br>
+* What script(s) should be run after this script:					N/A <br>
+*
+*   ******************************************************************* <br>
+* Before running the test, please ensure that your Selenium Remote Server
+* is up and running. Server can be started using the java -jar selenium-server.jar<br>
+* A domain having a valid storage should exist.
+*/
+package com.qa.columbia.scripts.Patch_Level_testcases;
+
+import java.util.Calendar;
+import java.util.Date;
+
+import com.qa.columbia.executor.*;
+import com.qa.columbia.functions.*;
+import com.qa.columbia.repository.EnvObjectMap_Rep;
+import com.thoughtworks.selenium.*;
+
+public class CVP_archiveRSSv5 extends TesterAsserter {
+	
+	static boolean flag = false;
+	static Date date=Calendar.getInstance().getTime();
+	public void setUp() throws Exception {
+		
+		Utility_Functions utilityFunction = new Utility_Functions(); 
+		String str_path ="Global_variables.xml";
+		String VAR_ProxURL = utilityFunction.GetValue(str_path ,"VAR_ProxURL");
+		String VAR_BROWSER_PATH = utilityFunction.GetValue(str_path ,"VAR_BROWSER_PATH");
+		String VAR_Columbia_APPURL = utilityFunction.GetValue(str_path, "VAR_Columbia_APPURL");
+			
+		if(!flag){				
+			selenium = new DefaultSelenium(VAR_ProxURL, 4444, VAR_BROWSER_PATH, VAR_Columbia_APPURL);
+			selenium.start();
+			flag = true;
+		}
+
+	}		
+	public void test_CVP_archiveRSSv5() throws Exception {
+		{
+			setUp();
+			Utility_Functions utilityFunction = new Utility_Functions();
+			//Global variables file name
+			String str_path ="Global_variables.xml";
+			String local_path = "CVP_archiveRSSv5.xml";
+			String VAR_MED_WAIT = utilityFunction.GetValue(str_path ,"VAR_MED_WAIT");
+			String VAR_DomClassic = utilityFunction.GetValue(str_path,"VAR_DomClassic");
+			//Variable for the user name
+			String VAR_USR = utilityFunction.GetValue(str_path ,"VAR_USR");
+			//Variable for the Password
+			String VAR_PWD = utilityFunction.GetValue(str_path ,"VAR_PWD");
+			String VAR_Encodername = utilityFunction.GetValue(local_path ,"VAR_Encodername");
+			String VAR_EncoderHostIP = utilityFunction.GetValue(local_path ,"VAR_EncoderHostIP");
+			String VAR_EncoderVersion = utilityFunction.GetValue(local_path ,"VAR_EncoderVersion");
+			String VAR_EncoderUserName = utilityFunction.GetValue(local_path ,"VAR_EncoderUserName");
+			String VAR_EncoderPassword = utilityFunction.GetValue(local_path ,"VAR_EncoderPassword");
+			String VAR_EncoderProfileName = utilityFunction.GetValue(local_path ,"VAR_EncoderProfileName");
+			String VAR_EncoderBitRate = utilityFunction.GetValue(local_path ,"VAR_EncoderBitRate");	
+			String Var_deliveryOption = utilityFunction.GetValue(local_path, "Var_deliveryOption");
+			String Var_LiveProgramName = utilityFunction.GetValue(local_path ,"Var_LiveProgramName");
+			String Var_ArchiveOfLiveRSSv5 = utilityFunction.GetValue(local_path ,"Var_ArchiveOfLiveRSSv5");
+			String Var_frameWork_Path = utilityFunction.GetValue(str_path ,"Var_frameWork_Path");
+			Login.test_login(selenium, VAR_USR, VAR_PWD, VAR_DomClassic);
+			Create_Encoder.create_RSSv5enc(selenium,"CVP_archiveRSSv5", VAR_Encodername, VAR_EncoderHostIP, VAR_EncoderVersion, VAR_EncoderUserName, VAR_EncoderPassword, VAR_EncoderProfileName, VAR_EncoderBitRate);
+			Live.test_Live(selenium,"CVP_archiveRSSv5", Var_LiveProgramName, VAR_Encodername, VAR_EncoderProfileName, Var_deliveryOption);
+			Launch_LBC.test_LaunchLBC(selenium,"CVP_archiveRSSv5", Var_LiveProgramName, Var_ArchiveOfLiveRSSv5);
+		    selenium.selectWindow("null");
+			selenium.click("link=" + VAR_DomClassic);
+			utilityFunction.waitForChangesToReflect();
+			//selenium.waitForPageToLoad(VAR_MED_WAIT);
+			selenium.selectWindow("Qumu Program Browser Home");
+			selenium.click(EnvObjectMap_Rep.lnk_ProgramNameCVP + Var_LiveProgramName);
+			selenium.waitForPageToLoad(VAR_MED_WAIT);
+			selenium.click(EnvObjectMap_Rep.lnk_ProgramNameCVP + VAR_EncoderProfileName);
+			utilityFunction.waitForChangesToReflect();
+			selenium.selectWindow("Qumu Program Player");	
+			utilityFunction.waitForChangesToReflect();
+			String screenShot_locPath = Var_frameWork_Path + "\\commonfiles\\" + Var_LiveProgramName + ".jpg";		
+			//Capture the screen shot of the live program
+	        selenium.captureScreenshot(screenShot_locPath); 
+			String htmlsource = selenium.getHtmlSource();
+        	int start_URL = htmlsource.indexOf("player.URL = ");
+       	    int end_URL = htmlsource.lastIndexOf("this.mediaEnded = false");    
+       	    //String to hold the stream URL
+        	String stream_URL1 = htmlsource.substring(start_URL, end_URL);
+        	int stream_URL_length = stream_URL1.length();
+        	String stream_URL = stream_URL1.substring(14, stream_URL_length-4);
+	   		selenium.open(stream_URL + "&debug=true");     
+	   		//Generate the asx file
+			String htmlsource2 = selenium.getHtmlSource();
+			System.out.println(htmlsource2);	
+			utilityFunction.assertTextContains(htmlsource2, VAR_EncoderProfileName);
+			assertTrue("CVP_archiveRSSv5","Verify that Live program is played successfully on the viewer portal.",date,utilityFunction.assertTextContains(htmlsource2, VAR_EncoderProfileName));
+			selenium.close();
+			selenium.selectWindow("null");
+			for (String windowName : selenium.getAllWindowNames()) {
+				if (windowName.indexOf(EnvObjectMap_Rep.Select_LBC) != -1){
+					selenium.selectWindow(windowName);
+	            }
+	        }
+			selenium.click("//div[@id='lbcTabControl']/span");
+			selenium.click("stopBroadcastButton");
+			utilityFunction.waitForChangesToReflect();
+			selenium.selectWindow("null");
+			utilityFunction.waitForChangesToReflect();
+			selenium.click(EnvObjectMap_Rep.LNK_Content);
+			selenium.waitForPageToLoad("50000");
+			utilityFunction.waitForChangesToReflect();
+			utilityFunction.waitForChangesToReflect();
+			selenium.click(EnvObjectMap_Rep.BTN_More_Search);
+			utilityFunction.waitForChangesToReflect();
+			//Provide the Slide name to search
+			selenium.type(EnvObjectMap_Rep.TXT_Search_Name,Var_ArchiveOfLiveRSSv5);
+			selenium.select(EnvObjectMap_Rep.drp_Active, EnvObjectMap_Rep.drp_Active_val);
+			//Click Search button
+			selenium.click(EnvObjectMap_Rep.Btn_Search);
+			utilityFunction.waitForChangesToReflect();
+			utilityFunction.waitForChangesToReflect();		
+			assertTrue("CVP_archiveRSSv5","Verify that ingest for the archive media created using Live program(RSS4000v5) is completed successfully.",date,selenium.isTextPresent(Var_ArchiveOfLiveRSSv5));
+			 selenium.stop();
+		}					 
+	}
+}

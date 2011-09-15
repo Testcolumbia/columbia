@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_vod_QT>
+ ! Variables of display name for the streaming media function
+ 	<VAR_QT_fileName>Autoqt1</VAR_QT_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>qt1.qt</VAR_fileType>
+ <Program_Type>On-Demand</Program_Type>
+ <Program_Name>Auto_vod_QT</Program_Name>
+ 
+</CVP_vod_QT>

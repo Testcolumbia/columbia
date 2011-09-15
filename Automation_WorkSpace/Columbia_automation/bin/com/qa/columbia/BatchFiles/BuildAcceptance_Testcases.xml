@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Cleanup_Script</name>
+	 <name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Login_page_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.LoginVerification_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.BuildVersionVerification_TCID</name>
+	<!-- <name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.FeatureLinksAccessibility_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Channel_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Category_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Media_Upload_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Create_VOD_Program_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Create_VEasWMS_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.MVV_VOD_report_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Launch_SVP_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Access_Carousal_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Access_JukeBox_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.SVP_Play_LiveProgram_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.CVP_Play_LiveProgram_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.SVP_VOD_Program_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.CVP_VOD_Program_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Deploy_warfiles_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.POQO_setup_script</name>
+	 <name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.POQO_Login_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.POQO_ConfServPortal_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.POQO_Standalone_Video_TCID</name>
+	<name>com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.POQO_extractVideosUsingChannel_TCID</name> -->
+</test>

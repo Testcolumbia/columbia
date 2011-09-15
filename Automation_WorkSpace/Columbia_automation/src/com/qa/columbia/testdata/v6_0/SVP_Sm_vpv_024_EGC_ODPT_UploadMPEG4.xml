@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_Sm_vpv_024_EGC_ODPT_UploadMPEG4>
+
+<VAR_userFirstName>EGC</VAR_userFirstName>
+<VAR_userLastName>Admin</VAR_userLastName>
+<VAR_userEmailID>egcadmin@test.com</VAR_userEmailID>
+<VAR_userPassword>password</VAR_userPassword>
+<VAR_streamingMedia>SVP_EGC_MPEG4fileupload</VAR_streamingMedia>
+<VAR_ProgramTemplateName>MPEG4programTemplate</VAR_ProgramTemplateName>
+<VAR_ChannelName>SVP_EGCMPEG4Channel</VAR_ChannelName>
+<VAR_EGCPogramName>SVP_EGC_MPEG4Upload</VAR_EGCPogramName>
+<VAR_streamingMediaEGC>mpeg4.mp4</VAR_streamingMediaEGC>
+<VAR_MediaFormat>MPEG4</VAR_MediaFormat>
+
+! Variable of display name for the streaming media 
+ 	<VAR_MPEG4_fileName>SVP_EGC_MPEG4file</VAR_MPEG4_fileName> 
+ 	
+! Variables for the file name under content
+   <VAR_streamingMediaType>mpeg4.mp4</VAR_streamingMediaType> 
+ 
+ ! Variables for the EGC ProgramName
+   <VAR_EGCprogramName>SVP_EGC_MPEGUploadprogram</VAR_EGCprogramName> 
+  
+   ! Variables for the EGCChannel Name
+   <VAR_EGCchannelName>caption1</VAR_EGCchannelName>  
+   
+   ! Variable for the Master program name (used as Template for EGC) 
+   <VAR_mastreProgramName>caption1</VAR_mastreProgramName> 
+   
+  <VAR_ASXfileName>mpeg4.mp4</VAR_ASXfileName>
+    
+</SVP_Sm_vpv_024_EGC_ODPT_UploadMPEG4>

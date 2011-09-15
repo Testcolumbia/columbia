@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/columbiaauto/!svn/ver/66/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases
+END
+SVP_EGCupload_FLV.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_EGCupload_FLV.java
+END
+CVP_archiveWME.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_archiveWME.java
+END
+SVP_VOD_RSSdisc2k_NonPinProtected.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/columbiaauto/!svn/ver/92/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_VOD_RSSdisc2k_NonPinProtected.java
+END
+SVP_EGC_Unapproved_Prg_Verification.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_EGC_Unapproved_Prg_Verification.java
+END
+CVP_vod_msProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_vod_msProducer.java
+END
+CVP_vod_QT.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/columbiaauto/!svn/ver/88/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_vod_QT.java
+END
+CVP_Automated_RSSdisc4k_PinProtected.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_Automated_RSSdisc4k_PinProtected.java
+END
+SVP_Content_upload_Slides.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_Content_upload_Slides.java
+END
+SVP_VOD_WMA_SL_disabled.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/columbiaauto/!svn/ver/66/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_VOD_WMA_SL_disabled.java
+END
+CVP_uploadEGC.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_uploadEGC.java
+END
+SVP_VOD_WMV_SL_Enabled.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_VOD_WMV_SL_Enabled.java
+END
+CVP_vod_SurveySummaryReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/columbiaauto/!svn/ver/87/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_vod_SurveySummaryReport.java
+END
+CVP_thumbnailExtraction.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/columbiaauto/!svn/ver/84/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_thumbnailExtraction.java
+END
+CVP_mediaEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/columbiaauto/!svn/ver/83/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_mediaEditor.java
+END
+SVP_VOD_FLV_SL_Enabled.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_VOD_FLV_SL_Enabled.java
+END
+SVP_Content_upload_WMV.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_Content_upload_WMV.java
+END
+CVP_unapproveProgramAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/columbiaauto/!svn/ver/85/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_unapproveProgramAccess.java
+END
+CVP_liveProgramRSSv5.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/columbiaauto/!svn/ver/82/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_liveProgramRSSv5.java
+END
+CVP_archiveRSSv6_medianet.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_archiveRSSv6_medianet.java
+END
+SVP_LiveProgramArchived_MediaNet_WME.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/columbiaauto/!svn/ver/66/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_LiveProgramArchived_MediaNet_WME.java
+END
+SVP_EGC_PrgThumbnail_Verification.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_EGC_PrgThumbnail_Verification.java
+END
+SVP_LiveProgramSurveySummary_Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/columbiaauto/!svn/ver/66/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_LiveProgramSurveySummary_Report.java
+END
+CVP_liveProgramWME.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_liveProgramWME.java
+END
+CVP_VOD_RSSdisc4k_PinProtected.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_VOD_RSSdisc4k_PinProtected.java
+END
+CVP_complexPresentation_upload.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/columbiaauto/!svn/ver/80/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_complexPresentation_upload.java
+END
+CVP_Automated_RSSdisc4k_NonPinProtected.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_Automated_RSSdisc4k_NonPinProtected.java
+END
+CVP_liveRSSv6_medianet.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_liveRSSv6_medianet.java
+END
+SVP_Content_Storage_Report.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/columbiaauto/!svn/ver/66/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_Content_Storage_Report.java
+END
+SVP_VOD_Mp3_SL_Disabled.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/columbiaauto/!svn/ver/91/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_VOD_Mp3_SL_Disabled.java
+END
+CVP_VOD_RSSdisc4k_NonPinProtected.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_VOD_RSSdisc4k_NonPinProtected.java
+END
+SVP_EGCupload_WMV.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/columbiaauto/!svn/ver/90/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_EGCupload_WMV.java
+END
+SVP_VOD_SWF_SL_disabled.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_VOD_SWF_SL_disabled.java
+END
+CVP_img_upload.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/columbiaauto/!svn/ver/81/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_img_upload.java
+END
+SVP_LiveProgramArchived_MediaNet_RSS2kv4.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/columbiaauto/!svn/ver/66/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_LiveProgramArchived_MediaNet_RSS2kv4.java
+END
+CVP_archiveRSSv5.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/columbiaauto/!svn/ver/86/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_archiveRSSv5.java
+END
+SVP_LiveProgram_MediaNet_WME.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/columbiaauto/!svn/ver/66/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_LiveProgram_MediaNet_WME.java
+END
+SVP_Automated_RSSdisc2k_NonPinProtected.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/columbiaauto/!svn/ver/93/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/SVP_Automated_RSSdisc2k_NonPinProtected.java
+END
+CVP_liveProgramAudience.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/columbiaauto/!svn/ver/89/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcases/CVP_liveProgramAudience.java
+END

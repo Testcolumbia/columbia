@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SVP_Sm_vpv_009_VOD_Mp3_SL_DisabledSVP_vod_Mp3>
+ ! Variables of display name for the streaming media function
+ <VAR_MP3_fileName>AutoMP3file</VAR_MP3_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>test_Mp3.mp3</VAR_fileType>
+ 
+ ! Variables for the program type under content
+ <Program_Type>On-Demand</Program_Type>
+ 
+ ! Variables for the program name under content
+ <Program_Name>AutoVODMp3</Program_Name>
+ 
+  ! Variables of display name for the streaming media function
+<VAR_StreamingMedia>AutoMP3file</VAR_StreamingMedia> 
+
+<VAR_ASXfileName>test_mp3.mp3</VAR_ASXfileName> 
+ 
+</SVP_Sm_vpv_009_VOD_Mp3_SL_DisabledSVP_vod_Mp3>

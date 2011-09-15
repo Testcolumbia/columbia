@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sm_vpc_014_imgUpload>
+	!Variable for wmv file display name
+	<Var_imageDisplayName>img_auto</Var_imageDisplayName>
+	
+	!Variable for wmv file name
+	<Var_imageFileName>img1.jpg</Var_imageFileName>
+	
+</Sm_vpc_014_imgUpload>

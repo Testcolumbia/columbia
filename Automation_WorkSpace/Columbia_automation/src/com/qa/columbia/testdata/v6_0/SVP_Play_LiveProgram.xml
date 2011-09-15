@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SVP_Play_liveProgram>
+	!Variable for Live program name
+	<LiveProgramName>Live_auto</LiveProgramName>
+	
+	!Variable for Windows Media Encoder name
+	<EncoderName>WME_auto</EncoderName>
+	
+	!Variable for Windowws Media Encoder Profile name
+	<EncoderProfileName>WMEProfile_auto</EncoderProfileName>
+	
+</SVP_Play_liveProgram>

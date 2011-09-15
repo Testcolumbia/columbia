@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_EGCupload_FLV>
+
+<VAR_userFirstName>EGC</VAR_userFirstName>
+<VAR_userLastName>Admin</VAR_userLastName>
+<VAR_userEmailID>egcadmin@test.com</VAR_userEmailID>
+<VAR_userPassword>password</VAR_userPassword>
+<VAR_streamingMedia>SVP_EGC_FLV</VAR_streamingMedia>
+<VAR_MasterVOD>SVP_EGC_FLVMasterVOD</VAR_MasterVOD>
+<VAR_ChannelName>SVP_EGC_Channel</VAR_ChannelName>
+<VAR_EGCPogramName>SVP_EGC_Program</VAR_EGCPogramName>
+!<VAR_streamingMediaEGC>Test_flv.flv</VAR_streamingMediaEGC>
+
+   ! Variables of display name for the streaming media function
+ 	<VAR_FLV_fileName>SVP_EGC_FLV</VAR_FLV_fileName> 
+ 	
+   ! Variables for the file name under content
+   <VAR_streamingMediaType>Test_flv.flv</VAR_streamingMediaType> 
+ 
+   ! Variables for the EGC ProgramName
+   <VAR_EGCprogramName>EGC_FLVprogram_VP</VAR_EGCprogramName> 
+  
+   ! Variables for the EGCChannel Name
+   <VAR_EGCchannelName>caption1</VAR_EGCchannelName>  
+   
+   ! Variable for the Master program name (used as Template for EGC) 
+   <VAR_mastreProgramName>caption1</VAR_mastreProgramName> 
+    
+</SVP_EGCupload_FLV>

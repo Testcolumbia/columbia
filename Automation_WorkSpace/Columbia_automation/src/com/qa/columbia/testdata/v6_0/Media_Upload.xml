@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Media_Upload>
+	!Variable for wmv file display name
+	<streamingMedia_DisplayName>wmv_auto</streamingMedia_DisplayName>
+	
+	!Variable for wmv file name
+	<streamingMediaFileName>wmv1.wmv</streamingMediaFileName>
+	
+	!Variable for slide display name
+	<slide_DisplayName>slide_auto</slide_DisplayName>
+	
+	!Variable for slide file name
+	<slideFileName>slide1.ppt</slideFileName>
+	
+	!Variable for poll display name
+	<poll_DisplayName>poll_auto</poll_DisplayName>
+	
+	!Variable for question display name
+	<questionDisplayName>Question_auto</questionDisplayName>
+	
+	!Variable for question Title
+	<questionTitle>QuestionTitle</questionTitle>
+</Media_Upload>

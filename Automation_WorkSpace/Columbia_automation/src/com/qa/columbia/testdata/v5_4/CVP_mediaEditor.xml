@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_thumbnailExtraction>
+   ! Variables of display name for the streaming media function
+ 	<VAR_WMV_fileName>wmv1</VAR_WMV_fileName> 
+ 	
+   ! Variables for the file name under content
+   <VAR_fileType>wmv1.wmv</VAR_fileType> 
+ 
+   ! Variables for the slide name
+   <VAR_SlideName>Slide1</VAR_SlideName> 
+  
+   ! Variables for the caption text
+   <VAR_CaptionName>caption1</VAR_CaptionName>  
+  
+     ! Variables for the caption time Stamp
+   <VAR_CaptionTime>1.5</VAR_CaptionTime>   
+  
+   ! Variables for the chapter title
+   <VAR_ChapterTitle>chapter</VAR_ChapterTitle> 
+  
+    ! Variables for the chapter Time Stamp
+   <VAR_ChapterTime>2.5</VAR_ChapterTime>   
+  
+   ! Variables for the chapter description
+   <VAR_ChapterDesc>chapter description</VAR_ChapterDesc>
+  
+   ! Variables for the slide Time Stamp
+   <VAR_SlideTime>5.5</VAR_SlideTime>  
+  
+   ! Variables for the slide display name
+   <VAR_SlideDispName>slide001</VAR_SlideDispName>
+   
+   ! Variable for the slide file name 
+   <VAR_Slidefile>mixed.ppt</VAR_Slidefile>
+ 
+</CVP_thumbnailExtraction>

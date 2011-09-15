@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveprogramWME>
+
+
+
+    ! Variables for the Live program name	
+    <Var_LiveProgramName>Live_WME_wms</Var_LiveProgramName> 	
+ 	
+    ! Variables for the archive media created by the WME
+    <VAR_archiveMediaName>ArchiveofWME</VAR_archiveMediaName>
+ 	
+ 
+ 	
+</CVP_liveprogramWME>

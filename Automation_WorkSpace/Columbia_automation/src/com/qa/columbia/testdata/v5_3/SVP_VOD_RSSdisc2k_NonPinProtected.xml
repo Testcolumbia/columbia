@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_VOD_RSSdisc2k_NonPinProtected>
+
+
+  	 ! Variable for the external Streaming media name	
+ 	<VAR_esmName>esm01</VAR_esmName>
+ 	
+ 	 ! Variable for the external Streaming media URL	
+ 	<VAR_esmURL>http://test.com</VAR_esmURL>
+
+  	 ! Variable for the RSS2kV4 device name	
+ 	<VAR_RSSDeviceName>RSS2kV4_01</VAR_RSSDeviceName>
+ 	
+   	 ! Variable for the RSS2kV4 device Host IP
+ 	<VAR_RSSDeviceHostIP>10.1.199.235</VAR_RSSDeviceHostIP>
+ 	
+ 	 ! Variable for the Endpoint IP
+ 	<VAR_EndPointIP>10.1.196.14</VAR_EndPointIP>
+ 	
+     ! Variable for the RSS2kV4 device username
+ 	<VAR_RSSUsername>administrator</VAR_RSSUsername>
+ 	
+     ! Variable for the RSS4kV6 device password
+ 	<VAR_RSSPassword>polycom</VAR_RSSPassword>
+ 	
+ 	 ! Variable for the Program prefix device password
+ 	<VAR_ProgPrefix>TestVOD_</VAR_ProgPrefix>
+ 	
+     ! Variable for the Automated master program name
+ 	<VAR_masterAuto>MasterAutomated</VAR_masterAuto>
+ 	
+     ! Variable for the On-demand master program name
+ 	<VAR_masterVOD>MasterVOD</VAR_masterVOD>
+ 	
+ 	 ! Variable for the wmv file name
+ 	<VAR_wmvFile>wmv_discovery</VAR_wmvFile>
+ 	
+     ! Variable for the wmv source file name
+ 	<VAR_wmvSourceFile>wmv1.wmv</VAR_wmvSourceFile>
+	
+     ! Variable for the delivery option
+ 	<VAR_WMSName>WMS_auto_new</VAR_WMSName> 	
+     
+</CVP_VOD_RSSdisc2k_NonPinProtected>

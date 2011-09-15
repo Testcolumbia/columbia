@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VODProgram>
+
+<VAR_programName>VOD_Program</VAR_programName>
+
+! Variables of display name for the streaming media function
+ 	<VAR_StreamingMedia>wmv_auto</VAR_StreamingMedia> 
+    
+</VODProgram>

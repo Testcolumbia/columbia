@@ -1,0 +1,11 @@
+<CVP_liveProgramSkin>
+	!Variable for Live program name
+	<LiveProgramName>Auto_Live_skin</LiveProgramName>
+	
+	
+	
+	!Variable for wmv file display name
+	<VAR_SkinName>skin</VAR_SkinName>
+	
+
+</CVP_liveProgramSkin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TranscodedfileIngestVerification>
+   ! Variable for the complex Presentation file name
+ 	<VAR_WMV_file>Transcode.wmv</VAR_WMV_file> 
+ 	!Variable for the display name of the complex Presentation
+   <VAR_WMVfileName>TranscodedWMVfile</VAR_WMVfileName>
+ 	<VAR_Program_Name>Transcode_Verification</VAR_Program_Name>
+</TranscodedfileIngestVerification>

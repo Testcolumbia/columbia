@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VODProgram>
+
+<VAR_programName>VOD_usingConfiguredURL</VAR_programName>
+
+ ! Variables for the file name under content
+ 	<VAR_fileType>Transcode.wmv</VAR_fileType>
+ 	
+ 	
+ 	<VAR_DeliveryName>Configuredauto</VAR_DeliveryName>
+ 	
+    <VAR_AccespointDownloadName>APdownload</VAR_AccespointDownloadName>
+    <VAR_AccespointVODName>APVOD</VAR_AccespointVODName>
+    
+    <VAR_ASXfileName></VAR_ASXfileName> 
+    
+     	!Variable for wmv file display name
+	<streamingMedia_DisplayName>configured_autofile</streamingMedia_DisplayName>
+    
+</VODProgram>

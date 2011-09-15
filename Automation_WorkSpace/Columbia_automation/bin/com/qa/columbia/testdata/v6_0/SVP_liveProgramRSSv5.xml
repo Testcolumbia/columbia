@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveProgramRSSv5>
+
+! Variables of Create_LiveProgram function 
+   <VAR_DeliveryType_Live>Live Broadcast</VAR_DeliveryType_Live>
+
+   ! Variables of display name for the RSS encoder
+ 	<VAR_EncoderName>RSSv5_social</VAR_EncoderName> 
+ 	
+   ! Variables for host IP
+   <VAR_EncoderHostIP>10.1.199.156</VAR_EncoderHostIP> 
+ 
+   ! Variables for RSS version
+   <VAR_EncoderVersion>Polycom RSS 4000 Version 5</VAR_EncoderVersion> 
+  
+   ! Variables for the Encoder Username
+   <VAR_EncoderUserName>administrator</VAR_EncoderUserName>  
+  
+   ! Variables for Encoder Password
+   <VAR_EncoderPassword>polycom</VAR_EncoderPassword>   
+  
+   ! Variables for encoder Profile name
+   <VAR_EncoderProfileName>RSSv5profile</VAR_EncoderProfileName> 
+  
+    ! Variables for the encoder bit rate
+   <VAR_EncoderBitRate>300</VAR_EncoderBitRate>  
+   
+     ! Variables of display name for the survey
+ 	<SurveyName>Survey Live</SurveyName>
+ 	
+ 	! Variable of display name for poll
+ 	<PollName>MyPoll Live</PollName>
+ 	
+ 	 ! Variables of display name for the question
+ 	<QuestionName>Question1</QuestionName>
+ 	
+ 	 ! Variables for the question explanation
+ 	<QuestionExp>QuestionExplanation</QuestionExp>
+ 	
+ 	 ! Variables for the survey Type
+ 	<QuestionType>Select Box</QuestionType>
+ 	
+ 	 ! Variables for the slide display name
+ 	<VAR_SlideDisplayName>Slide1</VAR_SlideDisplayName>
+ 	
+ 	 ! Variables for the slide file name
+ 	<VAR_SlideFileName>mixed.ppt</VAR_SlideFileName>
+ 	
+ 	! Variable for the wms name 	
+ 	<VAR_WMSName>WMS_auto</VAR_WMSName>
+ 	
+ 	! Variable for the wms Host IP
+ 	<VAR_WMSHost>10.1.202.189</VAR_WMSHost>
+
+ 	! Variable for the wms HTTP port
+ 	<VAR_WMSHTTPport>81</VAR_WMSHTTPport>
+ 	
+ 	! Variable for the wms username
+ 	<VAR_WMSUsername>administrator</VAR_WMSUsername>
+ 	
+ 	! Variable for the wms password
+ 	<VAR_WMSPassword>Mpi4ever</VAR_WMSPassword>
+ 	
+  	 ! Variables for the Live program name	
+ 	<Var_LiveProgramName>Live_RSSv5_SVP</Var_LiveProgramName>
+ 	
+ 	 ! Variables for the archive of Live program 	
+ 	<Var_ArchiveOfLiveProgram>ArchiveOfLive_RSSv5_wms</Var_ArchiveOfLiveProgram>
+
+</CVP_liveProgramRSSv5>

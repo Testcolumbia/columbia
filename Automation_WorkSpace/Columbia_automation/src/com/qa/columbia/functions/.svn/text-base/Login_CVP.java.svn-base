@@ -1,0 +1,35 @@
+/*
+ * This method is used to Login to the classic viewer portal.
+ */
+
+package com.qa.columbia.functions;
+
+import java.util.Calendar;
+import java.util.Date;
+
+import com.qa.columbia.repository.*;
+import com.qa.columbia.executor.*;
+import com.thoughtworks.selenium.*;
+
+public class Login_CVP extends TesterAsserter 
+{
+	public static void test_LoginCVP(Selenium sel, String str_Username, String str_Password) throws Exception 
+	{
+        Utility_Functions utilityFunction = new Utility_Functions();    	
+        //Fetching values for Global Variables from XMl file
+        String str_path ="Global_variables.xml";
+        Date date=Calendar.getInstance().getTime();
+	    String VAR_MED_WAIT = utilityFunction.GetValue(str_path ,"VAR_MED_WAIT") ;
+		sel.click(EnvObjectMap_Rep.lnk_LoginCVP);
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		sel.type(EnvObjectMap_Rep.txt_userNameCVP, str_Username);
+		sel.type(EnvObjectMap_Rep.txt_passwordCVP, str_Password);
+		sel.click(EnvObjectMap_Rep.btn_loginCVP);
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		assertTrue(" ","Verify that user is able to login to classic viewer portal.",date,sel.isElementPresent(EnvObjectMap_Rep.lnk_logOutCVP));
+	}
+}
+
+
+
+	  

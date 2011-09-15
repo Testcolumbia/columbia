@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveprogramWME>
+
+ 	 ! Variables for the archive of Live program 	
+ 	<Var_ArchiveOfLiveProgram>ArchiveOfLive_LiveRSS2kv4</Var_ArchiveOfLiveProgram>
+ 	
+ 	!Variable for Live program name
+	<Var_LiveProgramName>AutoLiveRSS2kv4</Var_LiveProgramName>
+	
+
+
+ 	
+</CVP_liveprogramWME>

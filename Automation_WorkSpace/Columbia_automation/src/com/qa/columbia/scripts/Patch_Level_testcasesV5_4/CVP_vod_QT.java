@@ -1,0 +1,127 @@
+/*
+* Classname                                                        CVP_vod_QT 
+*
+* Version info
+*
+* Copyright notice
+*
+* Test Case reference:												Classic VP: Ensure that an On Demand program (QT file) plays with HTTP delivery option.<br>
+* What the script does:											    >Login to the application<br> 
+* 																	>Navigate to Programming menu<br> 
+*																	>Navigate to Content<br> 
+*  															     	>Add a .qt file<br> 
+*																	>Create an On-demand program using the .qt file as streaming media<br> 
+* 																	>Play the on-demand program on the viewer portal<br> 
+* 																	>Capture the screenshot of the player window<br> 
+* 																	>Generate the asx file 
+* 																	>Verify the stream in the asx file
+* 																	>Verify that the image is uploaded in the content successfully<br> 	
+*  													     			>Launch the viewer portal and play the program<br> 
+*   																>Verify the stream in the .asx file<br> 																			 
+* What Verification it performs:	 								1.Verify that user is able to play the on-demand program using the qt file<br> 
+*																															
+* What script(s) should be run before this script:					N/A <br>
+* What script(s) should be run after this script:					N/A <br>
+*
+*   ******************************************************************* <br>
+* Before running the test, please ensure that your Selenium Remote Server
+* is up and running. Server can be started using the java -jar selenium-server.jar<br>
+* A domain having a valid storage should exist.
+*/
+package com.qa.columbia.scripts.Patch_Level_testcasesV5_4;
+
+import java.util.Calendar;
+import java.util.Date;
+
+import com.qa.columbia.executor.*;
+import com.qa.columbia.functions.v5_4.*;
+import com.thoughtworks.selenium.*;
+
+public class CVP_vod_QT extends TesterAsserter {
+	
+	static boolean flag = false;
+	static Date date=Calendar.getInstance().getTime();
+	public void setUp() throws Exception {
+		
+		Utility_Functions utilityFunction = new Utility_Functions(); 
+		String str_path ="Global_variables.xml";
+		String VAR_ProxURL = utilityFunction.GetValue(str_path ,"VAR_ProxURL");
+		String VAR_BROWSER_PATH = utilityFunction.GetValue(str_path ,"VAR_BROWSER_PATH");
+		String VAR_Columbia_APPURL = utilityFunction.GetValue(str_path, "VAR_Columbia_APPURL");
+			
+		if(!flag){				
+			selenium = new DefaultSelenium(VAR_ProxURL, 4444, VAR_BROWSER_PATH, VAR_Columbia_APPURL);
+			selenium.start();
+			flag = true;
+			selenium.setTimeout("0");
+			utilityFunction=null;
+		}
+
+	}		
+	public void test_CVP_vod_QT() throws Exception {
+		{
+			try {
+			setUp();
+			Utility_Functions utilityFunction = new Utility_Functions();
+			//Global variables file name
+			String str_path ="Global_variables.xml";
+			String local_path = "CVP_vod_QT.xml";
+			//Variable for the domain name
+			String VAR_DomClassic = utilityFunction.GetValue(str_path,"VAR_DomClassic");
+			//Variable for the user name
+			String VAR_USR = utilityFunction.GetValue(str_path ,"VAR_USR");
+			//Variable for the Password
+			String VAR_PWD = utilityFunction.GetValue(str_path ,"VAR_PWD");	
+			//Variable for filename name
+		    String VAR_streamingMedia = utilityFunction.GetValue(local_path ,"VAR_QT_fileName");
+			//Variable for filetype
+			String streamingMediaType = utilityFunction.GetValue(local_path ,"VAR_fileType");
+			//Variable for program name
+			String VAR_PogramName = utilityFunction.GetValue(local_path, "Program_Name");
+			//Variable for storage host
+			String VAR_AP_Host = utilityFunction.GetValue(str_path ,"VAR_AP_Host");
+			//Variable for storage mount point
+			String VAR_AP_MountPoint = utilityFunction.GetValue(str_path ,"VAR_AP_MountPoint");
+			//Reusable action for Login to VCC     		
+     	    Login.test_login(selenium, VAR_USR, VAR_PWD, VAR_DomClassic);	
+     		//Reusable action for streaming media upload
+     	    Upload_Media.Upload_streamingMedia(selenium, VAR_streamingMedia, streamingMediaType);	
+		    //Create a vod program using the above mentioned streaming media
+     	   	Create_Program.test_Create_vodProgram(selenium, VAR_PogramName ,VAR_streamingMedia);
+     	   	utilityFunction.waitForChangesToReflect();
+		    //Play the vod program on the viewer portal
+     	  	Play_Program.test_Play_vodCVP(selenium,VAR_DomClassic, VAR_PogramName, VAR_streamingMedia);
+        	//Select the window having the embedded player
+        	selenium.selectWindow("Qumu Program Player");
+        	//Maximize the window
+        	selenium.windowMaximize();
+        	//Get the html source
+        	String htmlsource = selenium.getHtmlSource();
+        	int start_URL = htmlsource.indexOf("http://");
+       	    int end_URL = htmlsource.lastIndexOf("/>'");    
+       	    //String to hold the stream URL
+        	String stream_URL1 = htmlsource.substring(start_URL, end_URL);
+        	int stream_URL_length = stream_URL1.length();
+        	//Trim the last character
+        	String stream_URL = stream_URL1.substring(0, stream_URL_length-1);
+        	//Open the stream URL in the browser
+	   		selenium.open(stream_URL + "&debug=true");
+	   		selenium.waitForPageToLoad("90000");
+	   		//generate the stream URL
+	   		String htmlsource1 = selenium.getHtmlSource();
+	      //  System.out.println(htmlsource1);
+	        //Verify that asx file is generated
+	   		assertTrue("CVP_vod_QT","Verify that asx file for on-demand program with QT file is generated successfully.",date,utilityFunction.assertTextContains(htmlsource1, "src="));
+	   		//Verify that the stream is displayed correct in the asx file
+	   		assertTrue("CVP_vod_QT","Verify that correct storage host and mount point is displayed in asx file.",date,utilityFunction.assertTextContains(htmlsource1, "http://" + VAR_AP_Host + ":80/" + VAR_AP_MountPoint));        	
+	   		utilityFunction=null;
+		}catch(Exception e){
+			e.printStackTrace();}
+			 finally{
+			selenium.close();
+			selenium.stop();
+		}
+		}
+					 
+	}
+}

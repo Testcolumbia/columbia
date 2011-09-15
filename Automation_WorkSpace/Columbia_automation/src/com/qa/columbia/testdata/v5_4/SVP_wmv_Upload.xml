@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_wmv_Upload>
+   ! Variable for the wmv file name
+      <VAR_streamingMediaName>wmv1</VAR_streamingMediaName>
+
+ 	!Variable for the display name of the wmv file
+ 	<VAR_streamingMediaFile>wmv1.wmv</VAR_streamingMediaFile> 
+ 	
+</SVP_wmv_Upload>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_flvskin>
+ 	
+  ! Variables for the file name under content
+ 	<VAR_fileType>Test_flv.flv</VAR_fileType>
+  !Variable for Program Type
+ 	<Program_Type>On-Demand</Program_Type>
+ 
+  ! Variable for Program Name
+ 	<VAR_programName>Auto_Program_skinflv</VAR_programName>
+ 	
+ 	!Variable for wmv file display name
+	<streamingMedia_DisplayName>TestFLVfile</streamingMedia_DisplayName>
+	
+		!Variable for wmv file display name
+	<VAR_SkinName>skin</VAR_SkinName>
+	
+	
+	
+ 
+</CVP_flvskin>

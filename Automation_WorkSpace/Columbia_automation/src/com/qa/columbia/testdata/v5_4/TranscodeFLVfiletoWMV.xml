@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TranscodeFLVfiletoWMV>
+    ! Variable for the complex Presentation file name
+ 	<VAR_FLV_file>barsandtone.flv</VAR_FLV_file> 
+ 	
+ 	!Variable for the display name of the complex Presentation
+    <VAR_FLVfileName>TranscodeFLVfiletoWMV</VAR_FLVfileName>
+ 	
+ 	<VAR_Program_Name>Transcode_FLVtoWMV_verification</VAR_Program_Name>
+
+</TranscodeFLVfiletoWMV>

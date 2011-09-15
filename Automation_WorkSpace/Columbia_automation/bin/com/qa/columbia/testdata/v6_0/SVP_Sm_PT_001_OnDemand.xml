@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SVP_ProgramTemplate>
+
+<ProgramTemplateType>On-Demand</ProgramTemplateType>
+	!Variable for Live program name
+	<ProgramName>Auto_ODTemplate</ProgramName>
+	
+	<DeliveryModedownload>Download</DeliveryModedownload>
+	
+	<DeliveryModeVOD>VOD</DeliveryModeVOD>
+	
+	<MediaFormat>Windows Media</MediaFormat>
+	
+	
+</SVP_ProgramTemplate>

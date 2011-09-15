@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LiveProgramAudience>
+
+<VAR_programName>AutoLiveConfiguredURL</VAR_programName>
+
+! Variables of display name for the streaming media function
+ 	<VAR_StreamingMedia>Transcode.wmv</VAR_StreamingMedia> 
+ 	
+ 	
+ 	<VAR_sourceContentFile>wmv1.wmv</VAR_sourceContentFile> 
+ 	
+ 	<VAR_DeliveryName>LiveConfigured</VAR_DeliveryName>
+ 	
+    <VAR_AccespointDownloadName>APdownload</VAR_AccespointDownloadName>
+    <VAR_AccespointVODName>APVOD</VAR_AccespointVODName>
+    
+    <VAR_ASXfileName>wmv1.wmv</VAR_ASXfileName> 
+    
+    ! Variables of display name for the Audience
+ 	<VAR_audienceName>AutoAudilive</VAR_audienceName>
+ 	
+ 	!Variable for Windows Media Encoder name
+	<EncoderName>WME_new</EncoderName>
+	
+	!Variable for Windowws Media Encoder Profile name
+	<EncoderProfileName>WME_profile</EncoderProfileName>
+    
+    
+</LiveProgramAudience>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveRSSv6_medianet>
+ 
+  
+ 	
+  	 ! Variables for the Live program name	
+ 	<Var_LiveProgramName>Live_RSSv6_medianet</Var_LiveProgramName>
+ 	
+ 	
+ 	<Var_ArchiveOfLiveProgram>ArchiveOfLive_RSSv6_medianet</Var_ArchiveOfLiveProgram>
+</CVP_liveRSSv6_medianet>

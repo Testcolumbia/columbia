@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Columbia-03" name="com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Login_page_TCID" tests="1" time="11.525" timestamp="2011-08-18T10:42:49">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="test.name" value="com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Cleanup_Script,com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Login_page_TCID,com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.LoginVerification_TCID,com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.BuildVersionVerification_TCID" />
+    <property name="property.SRC" value="/Automation_Workspace/Columbia_automation/src" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/D:/Selenium/eclipse/plugins/org.eclipse.pde.build_3.3.1.v20070828/templates/" />
+    <property name="property.to" value="narekumar@qasource.com" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="os.name" value="Windows XP" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_19\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_19\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_19\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_19\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_19\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_19\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_19\jre\classes" />
+    <property name="property.V" value="6_0" />
+    <property name="TODAY" value="18-August-2011" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="C:\Program Files\Java\apache-ant-1.8.1" />
+    <property name="java.runtime.version" value="1.6.0_19-b04" />
+    <property name="property.REPORT" value="qa/columbia/results" />
+    <property name="RELEASE_ROOT" value=".." />
+    <property name="user.name" value="narekumar" />
+    <property name="property.from" value="narekumar@qasource.com" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_19\jre\bin" />
+    <property name="ant.project.default-target" value="sendMail" />
+    <property name="ant.project.name" value="test" />
+    <property name="DSTAMP" value="20110818" />
+    <property name="java.version" value="1.6.0_19" />
+    <property name="user.timezone" value="GMT+05:30" />
+    <property name="property.redirectorSrc" value="/Automation_Workspace/Columbia_automation/src/com/qa/columbia/executor" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_19\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="property.message" value="You can see the complete Batch execution report in the HTML.zip attached in mail" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="property.htmldest" value="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/results" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_19\jre" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="ant.file" value="E:\Automation_WorkSpace\Columbia_automation\src\com\qa\columbia\Ant\build.xml" />
+    <property name="os.version" value="5.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="16.2-b04" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\Program Files\Java\apache-ant-1.8.1\lib" />
+    <property name="property.com.qa.columbia.functions.v6_0" value="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/functions/v6_0" />
+    <property name="property.ant-contrib.jar" value="C:/Program Files/Java/apache-ant-1.8.1/lib/ant-contrib-0.6.jar" />
+    <property name="property.deployment.build_status_message" value="You can see the complete Batch execution report in the HTML.zip attached in mail" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="eclipse.pdebuild.scripts" value="/D:/Selenium/eclipse/plugins/org.eclipse.pde.build_3.3.1.v20070828/scripts/" />
+    <property name="user.home" value="C:\Documents and Settings\narekumar" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="property.deployment.emailSubject" value="Build Deployment Status" />
+    <property name="java.library.path" value="D:\Selenium\eclipse;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Selenium\eclipse\jre\bin\client;D:\Selenium\eclipse\jre\bin;C:\Program Files\OpenSSH\bin;C:\Program Files\Java\jdk1.6.0_19\bin;C:\Program Files\Java\ant\bin;D:\Selenium\eclipse\configuration\org.eclipse.osgi\bundles\364\1\.cp" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="property.execution.emailSubject" value="Build Results" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="property.host" value="qasource.com" />
+    <property name="java.class.path" value="C:\Program Files\Java\apache-ant-1.8.1\lib\activation.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-antlr.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-apache-bcel.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-apache-bsf.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-apache-log4j.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-apache-oro.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-apache-regexp.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-apache-resolver.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-apache-xalan2.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-commons-logging.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-commons-net.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-contrib-0.6.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-jai.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-javamail.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-jdepend.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-jmf.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-jsch.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-junit.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-junit4.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-launcher.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-netrexx.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-swing.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant-testutil.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\ant.jar;C:\Program Files\Java\apache-ant-1.8.1\lib\mail.jar;D:\Selenium\eclipse\configuration\org.eclipse.osgi\bundles\36\1\.cp\lib\remoteAnt.jar;C:\Program Files\Java\jdk1.6.0_19\lib\tools.jar;D:\Selenium\eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.3.1.v3346i.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="TSTAMP" value="1612" />
+    <property name="property.com.qa.columbia.repository.v6_0" value="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/repository/v6_0" />
+    <property name="property.LIB" value="D:/Selenium/selenium-remote-control-1.0.1/selenium-server-1.0.1" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 2" />
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\NAREKU~1\LOCALS~1\Temp\" />
+    <property name="eclipse.pdebuild.home" value="/D:/Selenium/eclipse/plugins/org.eclipse.pde.build_3.3.1.v20070828/./" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="ant.file.test" value="E:\Automation_WorkSpace\Columbia_automation\src\com\qa\columbia\Ant\build.xml" />
+    <property name="ant.file.type.test" value="file" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="x86" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_19\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="E:\Automation_WorkSpace\Columbia_automation\src\com\qa\columbia\Ant" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="basedir" value="E:\Automation_WorkSpace\Columbia_automation\src\com" />
+    <property name="property.Buildno" value="501" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="C:\Program Files\Java\apache-ant-1.8.1\lib\ant.jar" />
+    <property name="property.htmlsource" value="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/results" />
+    <property name="property.jxl" value="E:/Automation_WorkSpace/Columbia_automation/jars" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="property.BIN" value="/Automation_WorkSpace/Columbia_automation/bin" />
+    <property name="var" value="com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Login_page_TCID" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="ant.project.invoked-targets" value="test" />
+  </properties>
+  <testcase classname="com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Login_page_TCID" name="test_Launch_SVP" time="11.525" />
+  <system-out><![CDATA[>>>> INFO  >>>> <title>Automation Result of Selenium Test Suite</title>
+>>>> INFO  >>>> <head><u><h1 align='center'>Selenium Automation Report</h1></u></head>
+>>>> INFO  >>>> <table border='0' width='100%' height='47'>
+>>>> INFO  >>>> <tr>
+>>>> INFO  >>>> </tr>
+>>>> INFO  >>>> <BR>
+>>>> INFO  >>>> <tr>
+>>>> INFO  >>>> <td width='25%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Test Script Name</font></b></td>
+>>>> INFO  >>>> <td width='35%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Test Case Description</font></b></td>
+>>>> INFO  >>>> <td width='10%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Result</font></b></td>
+>>>> INFO  >>>> <td width='15%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Start Time</font></b></td>
+>>>> INFO  >>>> <td width='15%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>End Time</font></b></td>
+>>>> INFO  >>>> </tr>
+>>>> INFO  >>>> </table>
+>>>> INFO  >>>> <table border='0' width='100%' height='47'>
+>>>> INFO  >>>> <tr>
+>>>> INFO  >>>> <td width='25%'> <font color='#000000' face='Garamond'>TC_XXX </font></td>
+>>>> INFO  >>>> <td width='35%'> <font color='#000000' face='Garamond'> Verify that 'Login' page is displayed successfully.</font></td>
+>>>> INFO  >>>> <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+>>>> INFO  >>>> <td width='15%' align='center'><font color='#000000' face='Garamond'> Thu Aug 18 16:12:49 GMT+05:30 2011</font></td>
+>>>> INFO  >>>> <td width='15%' align='center'><font color='#000000' face='Garamond'> Thu Aug 18 16:12:58 GMT+05:30 2011</font></td>
+>>>> INFO  >>>> </tr>
+>>>> INFO  >>>> </table>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+Testsuite: com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.Cleanup_Script
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 6.606 sec
+------------- Standard Output ---------------
+true
+C:\Documents and Settings\narekumar\Local Settings\Temp\customProfileDir320c7f30335c49a68919a36cc97d3f6e
+true
+------------- ---------------- ---------------
+
+Testcase: test_ApacheTomcatService_Startup took 6.606 sec

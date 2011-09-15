@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_archiveRSSv6_medianet>
+
+  	 ! Variable for the origin WMS name	
+ 	<VAR_WMSoriginName>WMS_auto</VAR_WMSoriginName>
+ 	
+   	 ! Variable for the origin WMS Host IP
+ 	<VAR_WMSoriginHost>10.1.202.189</VAR_WMSoriginHost>
+ 	
+     ! Variable for the origin WMS HTTP port
+ 	<VAR_WMSoriginHTTPport>81</VAR_WMSoriginHTTPport>
+ 	
+     ! Variable for the origin WMS username
+ 	<VAR_WMSoriginUsername>administrator</VAR_WMSoriginUsername>
+ 	
+     ! Variable for the origin WMS password
+ 	<VAR_WMSoriginPassword>Mpi4ever</VAR_WMSoriginPassword>
+ 	
+     ! Variable for the edge WMS Host 
+ 	<VAR_WMSedgeName>WMS_auto_1</VAR_WMSedgeName>
+ 	
+     ! Variable for the edge WMS Host IP
+ 	<VAR_WMSedgeHost>10.1.202.247</VAR_WMSedgeHost>
+ 	
+     ! Variable for the edge WMS HTTP port
+ 	<VAR_WMSedgeHTTPport>81</VAR_WMSedgeHTTPport>
+ 	
+     ! Variable for the edge WMS username
+ 	<VAR_WMSedgeUsername>administrator</VAR_WMSedgeUsername>
+ 	
+     ! Variable for the edge WMS password IP
+ 	<VAR_WMSedgePassword>Qumu4ever</VAR_WMSedgePassword>
+ 	
+ 	! Variable for the medianet name
+	<VAR_medianetName>Medianet_auto</VAR_medianetName> 
+ 
+  ! Variables of display name for the RSS encoder
+ 	<VAR_EncoderName>RSSv6</VAR_EncoderName> 
+ 	
+   ! Variables for host IP
+   <VAR_EncoderHostIP>10.1.200.27</VAR_EncoderHostIP> 
+ 
+   ! Variables for the Encoder Username
+   <VAR_EncoderUserName>admin</VAR_EncoderUserName>  
+  
+   ! Variables for Encoder Password
+   <VAR_EncoderPassword>admin</VAR_EncoderPassword>   
+  
+   ! Variables for encoder Profile name
+   <VAR_EncoderProfileName>RSSv6profile</VAR_EncoderProfileName> 
+  
+    ! Variables for the maximum streams in the encoder
+   <VAR_MaxStreams>12</VAR_MaxStreams>   
+    	
+  	 ! Variables for the Live program name	
+ 	<Var_LiveProgramName>LiveRSSv6_medianet_archive</Var_LiveProgramName>
+ 	
+   	 ! Variables for the archive media created by the Live program name	
+ 	<Var_ArchiveOfLiveRSSv6>ArchiveOfLiveRSSv6</Var_ArchiveOfLiveRSSv6>
+ 	
+</CVP_archiveRSSv6_medianet>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setup_Script>
+	<VAR_DomDefault>System Default Domain</VAR_DomDefault>
+	<VAR_DomSocial>auto_social</VAR_DomSocial>
+	<VAR_SiteURL>http://10.1.202.130</VAR_SiteURL>
+	<VAR_WMPlogLoc>10.1.202.130</VAR_WMPlogLoc>
+	<VAR_Sto_Quota>5</VAR_Sto_Quota>
+	<VAR_Sto_Threshold_Warn>50</VAR_Sto_Threshold_Warn>
+	<VAR_DomClassic>auto_classic</VAR_DomClassic>	
+	<LBL_LocalStorage>Local Storage</LBL_LocalStorage>
+    <LBL_HTTPAPStorage>HTTP Access Point</LBL_HTTPAPStorage>
+	<VAR_StorageName>Storage_auto</VAR_StorageName>
+	<VAR_AP_Host>10.1.202.130</VAR_AP_Host>
+	<VAR_AP_MountPoint>mp_auto</VAR_AP_MountPoint>
+	<VAR_HTTPName>auto_HTTP</VAR_HTTPName>
+	<VAR_DeliveryType_Download>Download</VAR_DeliveryType_Download>
+	<VAR_DeliveryType_HTTP>HTTP Server</VAR_DeliveryType_HTTP>
+	<VAR_AP_HTTP>AP</VAR_AP_HTTP>
+	<VAR_HTTP_Host>10.1.202.130</VAR_HTTP_Host>
+	<VAR_vodPP_Name>vodPP_auto</VAR_vodPP_Name>
+	<VAR_LivePP_Name>livePP_auto</VAR_LivePP_Name>
+	<VAR_WMSedgeHTTPport>81</VAR_WMSedgeHTTPport>
+	<VAR_WMSedgeUsername>administrator</VAR_WMSedgeUsername>
+	<VAR_WMSedgePassword>Qumu4ever</VAR_WMSedgePassword>
+	<VAR_WMEName>WME_auto</VAR_WMEName>
+	<VAR_Select_WME>Windows Media Encoder</VAR_Select_WME>
+	<VAR_WME_Host>10.1.60.103</VAR_WME_Host>
+	<VAR_WME_ComPort>5201</VAR_WME_ComPort>
+	<VAR_WME_DocRoot>c:\windows\temp</VAR_WME_DocRoot>
+	<WMEProName>WMEProfile_auto</WMEProName>
+	<VAR_WMEProf_Port>3000</VAR_WMEProf_Port>
+	<VAR_WMEProf_Path>d:\encoderprofile\test1.wme</VAR_WMEProf_Path>
+	 <!-- RSS 2000 V4 -->
+	<VAR_RSSv4Encodername>RSSv4_auto</VAR_RSSv4Encodername>
+	<VAR_RSSv4EncoderHostIP>10.1.199.235</VAR_RSSv4EncoderHostIP>
+	<VAR_RSSv4EncoderVersion>Polycom RSS 2000 Version 4</VAR_RSSv4EncoderVersion>
+	<VAR_RSSv4EncoderUserName>administrator</VAR_RSSv4EncoderUserName>
+	<VAR_RSSv4EncoderPassword>polycom</VAR_RSSv4EncoderPassword>
+	<VAR_RSSv4EncoderProfileName>RSSv4Profile_auto</VAR_RSSv4EncoderProfileName>
+	<VAR_RSSv4EncoderBitRate>400</VAR_RSSv4EncoderBitRate>
+	<!-- RSS 4000 V5 -->
+	<VAR_RSSv5Encodername>RSSv5_auto</VAR_RSSv5Encodername>
+	<VAR_RSSv5EncoderHostIP>10.1.199.156</VAR_RSSv5EncoderHostIP>
+	<VAR_RSSv5EncoderVersion>Polycom RSS 4000 Version 5</VAR_RSSv5EncoderVersion>
+	<VAR_RSSv5EncoderUserName>administrator</VAR_RSSv5EncoderUserName>
+	<VAR_RSSv5EncoderPassword>polycom</VAR_RSSv5EncoderPassword>
+	<VAR_RSSv5EncoderProfileName>RSSv5Profile_auto</VAR_RSSv5EncoderProfileName>
+	<VAR_RSSv5EncoderBitRate>400</VAR_RSSv5EncoderBitRate>
+		
+	<VAR_RSSv6Encodername>RSSv6_auto</VAR_RSSv6Encodername>
+	<VAR_RSSv6EncoderHostIP>10.1.200.27</VAR_RSSv6EncoderHostIP>
+	<VAR_RSSv6EncoderUserName>admin</VAR_RSSv6EncoderUserName>
+	<VAR_RSSv6EncoderPassword>admin</VAR_RSSv6EncoderPassword>
+	<VAR_RSSv6EncoderMaxStreams>12</VAR_RSSv6EncoderMaxStreams>  
+	<VAR_RSSv6EncoderProfileName>RSSv6Profile_auto</VAR_RSSv6EncoderProfileName>
+	
+	<VAR_MedianetName>Medianet_auto</VAR_MedianetName>
+	<VAR_SurveyName>Survey_auto</VAR_SurveyName>
+	<VAR_QuestionName>Question_auto</VAR_QuestionName>
+	<VAR_QuestionExp>Question_auto_Explanation</VAR_QuestionExp>
+	<VAR_QuestionType>Radio Button</VAR_QuestionType>
+	<VAR_SlideDisplayName>Slide_auto</VAR_SlideDisplayName>
+	<VAR_SlideFileName>mixed.ppt</VAR_SlideFileName>
+	<VAR_PollName>Poll_auto</VAR_PollName>
+	
+	! Variable for the RSS4kV6 device name	
+ 	<VAR_RSSDeviceName>RSS4kV6_01</VAR_RSSDeviceName>
+ 	
+   	 ! Variable for the RSS4kV6 device Host IP
+ 	<VAR_RSSDeviceHostIP>10.1.200.27</VAR_RSSDeviceHostIP>
+ 	
+ 	 ! Variable for the Endpoint IP
+ 	<VAR_EndPointIP>10.1.196.14</VAR_EndPointIP>
+ 	
+     ! Variable for the RSS4kV6 device username
+ 	<VAR_RSSUsername>admin</VAR_RSSUsername>
+ 	
+     ! Variable for the RSS4kV6 device password
+ 	<VAR_RSSPassword>admin</VAR_RSSPassword>
+	
+	<VAR_esmName>ExtStreamingMedia_auto</VAR_esmName>
+	<VAR_esmURL>http://test.com</VAR_esmURL>
+	<VAR_MasterVOD_ProgramName>MasterVOD_auto</VAR_MasterVOD_ProgramName>
+	<VAR_MasterAutomated_ProgName>MasterAutomated_auto_Explanation</VAR_MasterAutomated_ProgName>
+	<VAR_streamingMediaRSSDisc>wmvTemplate_auto</VAR_streamingMediaRSSDisc>
+	<VAR_streamingMediaFile>wmv1.wmv</VAR_streamingMediaFile>
+	
+</Setup_Script>

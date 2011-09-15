@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_Automated_RSSdisc4k_NonPinProtected>
+
+
+  	 ! Variable for the external Streaming media name	
+ 	<VAR_esmName>esm01</VAR_esmName>
+ 	
+ 	 ! Variable for the external Streaming media URL	
+ 	<VAR_esmURL>http://test.com</VAR_esmURL>
+
+  	 ! Variable for the RSS4kV6 device name	
+ 	<VAR_RSSDeviceName>RSS4kV6_01</VAR_RSSDeviceName>
+ 	
+   	 ! Variable for the RSS4kV6 device Host IP
+ 	<VAR_RSSDeviceHostIP>10.1.200.27</VAR_RSSDeviceHostIP>
+ 	
+ 	 ! Variable for the Endpoint IP
+ 	<VAR_EndPointIP>10.1.196.14</VAR_EndPointIP>
+ 	
+     ! Variable for the RSS4kV6 device username
+ 	<VAR_RSSUsername>admin</VAR_RSSUsername>
+ 	
+     ! Variable for the RSS4kV6 device password
+ 	<VAR_RSSPassword>admin</VAR_RSSPassword>
+ 	
+ 	 ! Variable for the Program prefix device password
+ 	<VAR_ProgPrefix>TestVOD_</VAR_ProgPrefix>! Variable for the Pin protected VRR number on RSS4kv6 device<VAR_RSSv6_VRR_Number>11634</VAR_RSSv6_VRR_Number>
+ 	
+     ! Variable for the Automated master program name
+ 	<VAR_masterAuto>MasterAutomated</VAR_masterAuto>
+ 	
+     ! Variable for the On-demand master program name
+ 	<VAR_masterVOD>MasterVOD</VAR_masterVOD>
+ 	
+ 	 ! Variable for the wmv file name
+ 	<VAR_wmvFile>wmv_discovery</VAR_wmvFile>
+ 	
+     ! Variable for the wmv source file name
+ 	<VAR_wmvSourceFile>wmv1.wmv</VAR_wmvSourceFile>
+	
+     ! Variable for the delivery option
+ 	<VAR_WMSName>WMS_auto</VAR_WMSName>
+
+ 	
+     
+</CVP_Automated_RSSdisc4k_NonPinProtected>

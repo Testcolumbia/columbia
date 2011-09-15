@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveprogramWME>
+    ! Variables of display name for the WME encoder
+ 	<VAR_Encodername>WME</VAR_Encodername> 
+ 	
+ 	! Variables of the display name for the encoder service port
+ 	<VAR_EncoderServicePort>5201</VAR_EncoderServicePort>
+ 	
+    ! Variables for host IP
+    <VAR_EncoderHostIP>10.1.60.73</VAR_EncoderHostIP> 
+ 
+    ! Variables for WME Port
+    <VAR_EncoderPort>3000</VAR_EncoderPort> 
+  
+    ! Variables for the Encoder Profile Name
+    <VAR_EncoderProfileName>WMEProfile</VAR_EncoderProfileName>  
+  
+    ! Variables for Encoder Document root address
+    <VAR_EncoderDocRoot>c:\windows\temp</VAR_EncoderDocRoot>
+       
+   ! Variable for the delivery option used
+   <Var_deliveryOption>WMS_auto</Var_deliveryOption>   
+
+    ! Variables for the Live program name	
+    <Var_LiveProgramName>LiveWME_wms_archive</Var_LiveProgramName> 	
+ 	
+    ! Variables for the archive media created by the WME
+    <VAR_archiveMediaName>ArchiveofWME</VAR_archiveMediaName>
+ 	
+ 	!Variable for the saved encoder profile file name
+ 	<VAR_EncoderProfileFileName>D:\EncoderProfile\test1.wme</VAR_EncoderProfileFileName>
+</CVP_liveprogramWME>

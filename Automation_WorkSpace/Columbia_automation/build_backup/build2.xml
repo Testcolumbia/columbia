@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="test" default="test" basedir="../../../">
+
+	<property name="RELEASE_ROOT" value=".." />
+	<property name="SRC" value="/Automation_Workspace/Columbia_automation/src/com/qa/columbia/scripts/Patch_Level_testcasesV5_3" /> <!-- Change it to your source folder -->
+	<property name="LIB" value="D:/Selenium/selenium-remote-control-1.0.1/selenium-server-1.0.1" /> <!-- Change it to your lib folder --> 
+	<property name="BIN" value="test" /> <!-- Change it to your binary folder where you need to gerate the compiled binary file -->
+	<property name="REPORT" value="report" /> <!-- Change it to your output report folder -->
+	<property name="redirectorSrc" location="/Automation_Workspace/Columbia_automation/src/com/qa/columbia/executor" />
+	 <property name="com.qa.columbia.functions.v5_3" value="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/functions/v5_3"/>
+	 <property name="com.qa.columbia.repository.v5_3" value="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/repository/v5_3" />
+	 <property name="jxl" value="E:/Automation_WorkSpace/Columbia_automation/jars" />
+	<path id="test.classpath"> <!-- Creating a classpath for use while compiling -->
+		<pathelement location="${BIN}" />
+		<pathelement location="D:/Selenium/selenium-remote-control-1.0.1/selenium-server-1.0.1/selenium-server.jar" />
+		<pathelement location="D:/Selenium/selenium-remote-control-1.0.1/selenium-java-client-driver-1.0.1" />
+		<pathelement location="D:/Selenium" />
+		<pathelement location="D:/Selenium/Other jars/jdbc/lib" />
+		<pathelement location="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/repository/v5_3" />
+		<pathelement location="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/functions/v5_3" />
+		<pathelement location="E:/Automation_WorkSpace/Columbia_automation" />
+		<pathelement location="c:/Program Files/Java/apache-ant-1.8.1/lib/junit-4.8.2.jar" />
+		<fileset dir="D:/Selenium/selenium-remote-control-1.0.1/selenium-server-1.0.1" includes="*.jar"/>
+		<fileset dir="D:/Selenium/selenium-remote-control-1.0.1/selenium-java-client-driver-1.0.1" includes="*.jar"/>
+		<fileset dir="D:/Selenium" includes="*.jar"/>
+		<fileset dir="D:/Selenium/Other jars/jdbc/lib" includes="*.jar" />
+		<fileset dir="E:/Automation_WorkSpace/Columbia_automation/jars" includes="*.jar" />
+		<fileset dir="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/repository/v5_3" includes="*.java"/>
+		<fileset dir="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/functions/v5_3" includes="*.java"/>
+		<fileset dir="E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/executor" includes="*.java"/>
+		<fileset dir="E:/Automation_WorkSpace/Columbia_automation" includes="*.xml"/>
+		<fileset dir="E:/Automation_WorkSpace/Columbia_automation/jars" includes="*.jar" />
+	</path>
+	<target name="init"> <!-- Initialization target which deletes and recreates the binary folder.-->
+		<delete dir="${BIN}" />
+		<mkdir dir="${BIN}" />
+	</target>
+	<target name="compile" depends="init"> <!-- Target for compiling the source folder  -->
+		<javac srcdir="${SRC}" fork="true" destdir="${BIN}" >
+		  <src path="${com.qa.columbia.functions.v5_3}"/>		
+		  <src path="${com.qa.columbia.repository.v5_3}"/>	
+		  <src path="${jxl}"/>	
+		 <src path="${redirectorSrc}"/>
+
+		
+			<classpath refid="test.classpath"/>
+
+		</javac>
+
+	</target>
+	<target name="test" depends="compile"> <!-- Target for running a single test -->
+		<delete dir="${REPORT}" />
+		<mkdir dir="${REPORT}" />
+			<mkdir dir="${REPORT}/xml" /> <!-- Creating a xml folder under the report folder for saving the report output. -->
+	<junit printsummary="yes" haltonfailure="no">
+		<formatter type="plain"/>	
+ 		<sysproperty key="basedir" value="${BIN}"/>
+
+					<classpath refid="test.classpath" />
+
+
+			<test name="com.qa.columbia.scripts.Patch_Level_testcasesV5_3.CVP_Sm_vpc_014_imgUpload"  haltonfailure="no" todir="${REPORT}/xml" outfile="TEST-result"> <!-- Change the class in name="" to your Java test class. -->
+				<formatter type="xml" />
+			</test>
+		</junit>
+	 
+
+
+	</target>
+
+
+</project>

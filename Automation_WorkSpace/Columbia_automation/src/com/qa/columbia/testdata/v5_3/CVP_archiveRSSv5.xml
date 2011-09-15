@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_archiveRSSv5>
+   ! Variables of display name for the RSS encoder
+ 	<VAR_Encodername>RSSv5</VAR_Encodername> 
+ 	
+   ! Variables for host IP
+   <VAR_EncoderHostIP>10.1.199.156</VAR_EncoderHostIP> 
+ 
+   ! Variables for RSS version
+   <VAR_EncoderVersion>Polycom RSS 4000 Version 5</VAR_EncoderVersion> 
+  
+   ! Variables for the Encoder Username
+   <VAR_EncoderUserName>administrator</VAR_EncoderUserName>  
+  
+   ! Variables for Encoder Password
+   <VAR_EncoderPassword>polycom</VAR_EncoderPassword>   
+  
+   ! Variables for encoder Profile name
+   <VAR_EncoderProfileName>RSSv5profile</VAR_EncoderProfileName> 
+  
+    ! Variables for the encoder bit rate
+   <VAR_EncoderBitRate>300</VAR_EncoderBitRate>   
+   
+   ! Variable for the delivery option used
+   <Var_deliveryOption>WMS_auto</Var_deliveryOption>
+    	
+  	 ! Variables for the Live program name	
+ 	<Var_LiveProgramName>LiveRSSv5_wms_Archive</Var_LiveProgramName>
+ 	
+   	 ! Variables for the archive media created by the Live program name	
+ 	<Var_ArchiveOfLiveRSSv5>ArchiveOfLiveRSSv5</Var_ArchiveOfLiveRSSv5>
+ 	
+</CVP_archiveRSSv5>

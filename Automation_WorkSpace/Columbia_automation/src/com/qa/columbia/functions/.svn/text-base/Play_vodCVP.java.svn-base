@@ -1,0 +1,42 @@
+package com.qa.columbia.functions;
+import com.qa.columbia.repository.EnvObjectMap_Rep;
+import com.thoughtworks.selenium.*;
+import com.qa.columbia.executor.*;
+
+public class Play_vodCVP extends TesterAsserter{
+	
+	public static void test_Play_vodCVP (Selenium sel, String str_DomainID, String str_ProgName, String str_videoName) throws Exception {
+		Utility_Functions utilityFunction = new Utility_Functions();
+		String str_path ="Global_variables.xml";
+		String Var_Columbia_vpURL = utilityFunction.GetValue(str_path ,"Var_Columbia_vpURL");
+		String CVP_url = Var_Columbia_vpURL + str_DomainID + "/home.do";
+		String VAR_MED_WAIT = utilityFunction.GetValue(str_path ,"VAR_MED_WAIT");
+		String Var_frameWork_Path = utilityFunction.GetValue(str_path ,"Var_frameWork_Path");
+		sel.open(CVP_url);
+		if (sel.isElementPresent(EnvObjectMap_Rep.drp_selectTimeZoneCVP))
+		{
+			sel.select(EnvObjectMap_Rep.drp_selectTimeZoneCVP, EnvObjectMap_Rep.drp_selectTimeZone_valueCVP);
+			sel.waitForPageToLoad(VAR_MED_WAIT);
+			sel.click(EnvObjectMap_Rep.btn_selectTimeZoneCVP);
+			sel.waitForPageToLoad(VAR_MED_WAIT);			
+		}
+		sel.type(EnvObjectMap_Rep.txt_SearchCVP, str_ProgName);
+		sel.click(EnvObjectMap_Rep.btn_SearchCVP);
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		sel.click(EnvObjectMap_Rep.lnk_ProgramNameCVP + str_ProgName);
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		//Click on the 
+		sel.click(EnvObjectMap_Rep.lnk_videoProgramCVP + str_videoName);
+		//wait
+		utilityFunction.waitForChangesToReflect();
+		utilityFunction.waitForChangesToReflect();	
+		utilityFunction.waitForChangesToReflect();
+		utilityFunction.waitForChangesToReflect();		
+	    //Capture the screenshot at the specified path
+		String screenShot_locPath = Var_frameWork_Path + "\\commonfiles\\" + str_ProgName + ".jpg";		
+		//Capture the screen shot of the program
+        sel.captureScreenshot(screenShot_locPath);      
+	}
+
+}
+

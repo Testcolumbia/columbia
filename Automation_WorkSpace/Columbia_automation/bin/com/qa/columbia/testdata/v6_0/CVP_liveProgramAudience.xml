@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveprogramAudience>
+
+   ! Variables of display name for the wms Delivery Option
+ 	<VAR_wmsName>WMS_auto</VAR_wmsName> 
+ 	
+   ! Variables of display name for the host IP of wms Delivery Option
+    <VAR_WMSHost>10.1.202.247</VAR_WMSHost>
+ 	   
+   ! Variable for HTTP port of the WMS delivery Option
+    <VAR_WMSHTTPport>81</VAR_WMSHTTPport>
+ 	      
+   ! Variable for username of the WMS Delivery Option
+    <VAR_WMSUsername>administrator</VAR_WMSUsername>
+ 	         
+   ! Variable for password of the WMS Delivery Option
+    <VAR_WMSPassword>Qumu4ever</VAR_WMSPassword>
+ 	
+   ! Variables of display name for the http Delivery Option
+ 	<VAR_httpName>0HTTP_old</VAR_httpName> 
+ 	
+   ! Variables of display name for the Audience
+ 	<VAR_audienceName>Audience_001</VAR_audienceName>
+ 	
+   ! Variable for the Audience Rule IP
+  	<VAR_audienceIP>10.1.60.*</VAR_audienceIP>
+  	  
+   ! Variable for the Audience Rule Host
+    <VAR_audienceHost>10.1.202.130</VAR_audienceHost>
+      
+   ! Variable for the Audience Rule Port
+   <VAR_audiencePort>80</VAR_audiencePort>
+
+   ! Variables of display name for the RSS encoder
+ 	<VAR_Encodername>RSSv5</VAR_Encodername> 
+ 	
+   ! Variables for host IP
+   <VAR_EncoderHostIP>10.1.199.156</VAR_EncoderHostIP> 
+ 
+   ! Variables for RSS version
+   <VAR_EncoderVersion>Polycom RSS 4000 Version 5</VAR_EncoderVersion> 
+  
+   ! Variables for the Encoder Username
+   <VAR_EncoderUserName>administrator</VAR_EncoderUserName>  
+  
+   ! Variables for Encoder Password
+   <VAR_EncoderPassword>polycom</VAR_EncoderPassword>   
+  
+   ! Variables for encoder Profile name
+   <VAR_EncoderProfileName>RSSv5profile</VAR_EncoderProfileName> 
+  
+    ! Variables for the encoder bit rate
+   <VAR_EncoderBitRate>300</VAR_EncoderBitRate>   
+   
+     ! Variables of display name for the survey
+ 	<VAR_SurveyName>Survey1</VAR_SurveyName>
+ 	
+ 	! Variable of display name for poll
+ 	<VAR_PollName>Poll1</VAR_PollName>
+ 	
+ 	 ! Variables of display name for the question
+ 	<VAR_QuestionName>Question1</VAR_QuestionName>
+ 	
+ 	 ! Variables for the question explanation
+ 	<VAR_QuestionExp>QuestionExplanation</VAR_QuestionExp>
+ 	
+ 	 ! Variables for the survey Type
+ 	<VAR_QuestionType>Checkbox</VAR_QuestionType>
+ 	
+ 	 ! Variables for the slide display name
+ 	<VAR_SlideDisplayName>Slide1</VAR_SlideDisplayName>
+ 	
+ 	 ! Variables for the slide file name
+ 	<VAR_SlideFileName>mixed.ppt</VAR_SlideFileName>
+ 	
+  	 ! Variables for the Live program name	
+ 	<Var_LiveProgramName>Live_RSSv5_audience</Var_LiveProgramName>
+ 	
+ 	
+ 	<Var_ArchiveOfLiveRSSv5>ArchiveOfLiveRSSv5_audience</Var_ArchiveOfLiveRSSv5>
+</CVP_liveprogramAudience>

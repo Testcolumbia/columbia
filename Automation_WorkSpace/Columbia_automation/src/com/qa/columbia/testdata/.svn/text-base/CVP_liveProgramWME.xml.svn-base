@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveprogramWME>
+
+! Variable for the wms name 	
+ 	<VAR_WMSName>0wms_189_01</VAR_WMSName>
+ 	
+ 	! Variable for the wms Host IP
+ 	<VAR_WMSHost>10.1.202.189</VAR_WMSHost>
+
+ 	! Variable for the wms HTTP port
+ 	<VAR_WMSHTTPport>81</VAR_WMSHTTPport>
+ 	
+ 	! Variable for the wms username
+ 	<VAR_WMSUsername>administrator</VAR_WMSUsername>
+ 	
+ 	! Variable for the wms password
+ 	<VAR_WMSPassword>Mpi4ever</VAR_WMSPassword>
+ 	
+ 	! Variables of display name for the survey
+ 	<SurveyName>Survey1</SurveyName>
+ 	
+ 	! Variable of display name for poll
+ 	<PollName>Poll1</PollName>
+ 	
+ 	 ! Variables of display name for the question
+ 	<QuestionName>Question1</QuestionName>
+ 	
+ 	 ! Variables for the question explanation
+ 	<QuestionExp>QuestionExplanation</QuestionExp>
+ 	
+ 	 ! Variables for the survey Type
+ 	<QuestionType>Checkbox</QuestionType>
+ 	
+ 	 ! Variables for the slide display name
+ 	<VAR_SlideDisplayName>Slide1</VAR_SlideDisplayName>
+ 	
+ 	 ! Variables for the slide file name
+ 	<VAR_SlideFileName>mixed.ppt</VAR_SlideFileName>
+ 	
+    ! Variables of display name for the WME encoder
+ 	<VAR_Encodername>0WME_01</VAR_Encodername> 
+ 	
+ 	! Variables of the display name for the encoder service port
+ 	<VAR_EncoderServicePort>5201</VAR_EncoderServicePort>
+ 	
+    ! Variables for host IP
+    <VAR_EncoderHostIP>10.1.199.241</VAR_EncoderHostIP> 
+ 
+    ! Variables for WME Port
+    <VAR_EncoderPort>3183</VAR_EncoderPort> 
+  
+    ! Variables for the Encoder Profile Name
+    <VAR_EncoderProfileName>WMEProfile</VAR_EncoderProfileName>  
+  
+    ! Variables for Encoder Document root address
+    <VAR_EncoderDocRoot>c:\windows\temp</VAR_EncoderDocRoot>   
+
+    ! Variables for the Live program name	
+    <Var_LiveProgramName>Live_WME_wms</Var_LiveProgramName> 	
+ 	
+    ! Variables for the archive media created by the WME
+    <VAR_archiveMediaName>ArchiveofWME</VAR_archiveMediaName>
+ 	
+ 	!Variable for the saved encoder profile file name
+ 	<VAR_EncoderProfileFileName>C:\encoderProfiles\live_profile.wme</VAR_EncoderProfileFileName>
+ 	
+</CVP_liveprogramWME>

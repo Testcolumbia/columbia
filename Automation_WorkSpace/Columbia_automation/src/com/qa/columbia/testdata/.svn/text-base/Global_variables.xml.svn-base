@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+ 
+   <Global_Variables>
+
+        ! This file is used to set values for the environment/global variables
+        
+        ! Machine IP address for proxy
+        <VAR_ProxURL>192.16.17.78</VAR_ProxURL>
+        
+        ! TC 3.0 application URL
+        ! Variable "VAR_Columbia_APPURL" is used to set the URL for TC 3.0 URL
+        
+        <VAR_Columbia_APPURL>http://192.16.17.186/adminportal/login.do</VAR_Columbia_APPURL>
+        <Var_Columbia_vpURL>http://192.16.17.186/viewerportal/</Var_Columbia_vpURL>
+        
+        !Variable VAR_USR is used to set the User name for the Login
+        !Variable VAR_USR is used to set the User name for the Login
+       
+        <VAR_USR>admin@qumu.com</VAR_USR>
+        <VAR_PWD>password</VAR_PWD>
+        
+        !VAR_MIN_WAIT, VAR_MED_WAIT and VAR_MAX_WAIT variables are used to set the Wait Parameters for Browser Synchronization
+        <VAR_MIN_WAIT>10000</VAR_MIN_WAIT>
+        <VAR_MED_WAIT>60000</VAR_MED_WAIT>
+        <VAR_MAX_WAIT>80000</VAR_MAX_WAIT>
+        
+        !Variable VAR_BROWSER_PATH is used to set the Browser exe path in the script
+       
+        <VAR_BROWSER_PATH>iexplore</VAR_BROWSER_PATH>
+           
+        !Variable Var_frameWork_Path is defined for the framework path
+        <Var_frameWork_Path>E:\Automation_WorkSpace\Columbia_automation\src\com\qa\columbia</Var_frameWork_Path>
+        
+        !Variable VAR_dom is used to provide the domain name in the Browser.
+        <VAR_DomID>domain</VAR_DomID>
+        
+        !Variable VAR_dom is used to provide the domain name in the Browser
+        <VAR_Dom>domain</VAR_Dom>
+        
+        !Variable VAR_Cat is used to provide the category name in the Browser. 
+        <VAR_Cat>Cat</VAR_Cat>
+        
+        !Variable VAR_SiteURL is used to provide the site URL in the Browser.
+        <VAR_SiteURL>http://10.1.202.130</VAR_SiteURL>
+        
+        !Variable VAR_WMP_log_loc is used to provide the location for the logs of WMP to be received in the Browser. 
+        <VAR_WMP_log_loc>/viewerportal/wmiislog.logger</VAR_WMP_log_loc>
+        
+        !Variable VAR_WMS is used to provide the Host name in the Browser. 
+        <VAR_Host>10.1.199.237</VAR_Host>
+        
+        !Variable VAR_WMS is used to provide the name in the Browser.
+        <VAR_HTTPPort>81</VAR_HTTPPort>
+        
+        !Variable VAR_WMS is used to provide the WMS name in the Browser.
+        <VAR_WebServiceUserName>administrator</VAR_WebServiceUserName>
+        
+        !Variable VAR_WMS is used to provide the WMS name in the Browser.
+        <VAR_WebServicePassword>Qumu4ever</VAR_WebServicePassword>
+        
+        !Variable VAR_Chnl is used to provide the channel name in the Browser.
+        <VAR_Chnl>Channel</VAR_Chnl>
+        
+        !Variable VAR_Storage is used to provide the storage name (Shared Folder should be created on server) in the Browser. 
+        <VAR_Storage>Storage001</VAR_Storage>
+        
+        !Variable VAR_AP_Host is used to provide the HTTP Host Name in the Browser.
+        <VAR_AP_Host>10.1.202.130</VAR_AP_Host>
+        
+        !Variable VAR_AP_MountPoint is used to provide the mount point (Virtual Directory need to be created on IIS) name in the Browser. 
+        <VAR_AP_MountPoint>mpqatest1</VAR_AP_MountPoint>
+        
+        !Variable VAR_Upload_Content is used to upload the content.
+        <VAR_Upload_Content>mixed.ppt</VAR_Upload_Content>
+        
+           !Variable VAR_Delivery Option is used to provide the WMS name.
+               !<VAR_EncDelivery_Type>RSS 4000 Encoder</VAR_EncDelivery_Type>
+        
+           !Variable VAR_Delivery Option is used to provide the Encoder Name. 
+               !<VAR_Encoder_Name>RSS4000V6</VAR_Encoder_Name>
+        
+           !Variable VAR_Delivery Option is used to provide the Encoder Host address.
+               !<VAR_RSS_Encoder_Host>192.16.17.232</VAR_RSS_Encoder_Host>
+           
+           !Variable VAR_Delivery Option is used to provide the Encoder User Id.
+               !<VAR_RSS_User_Id>admin</VAR_RSS_User_Id>
+           
+           !Variable VAR_Delivery Option is used to provide the Encoder Password . 
+               !<VAR_RSS_Password>admin</VAR_RSS_Password>
+           
+           !Variable VAR_Delivery Option is used to provide the Max number of calls. 
+               !<VAR_RSS_Max_Calls>4</VAR_RSS_Max_Calls>
+        
+           !Variable VAR_Delivery Option is used to provide RSS Profile Name. 
+               !<VAR_RSSProfile_Name>Test1</VAR_RSSProfile_Name>
+           
+        !Variable VAR_WMS is used to provide the HTTP Host in the Browser.   
+        <VAR_HTTP_Host>10.1.199.237</VAR_HTTP_Host>
+        
+        !Variable VAR_WMS is used to select the HTTP Access Point in the Browser. 
+        <VAR_DeliveryType_Download>Download</VAR_DeliveryType_Download>
+        
+        !Variable VAR_MP_HTTP is used to provide the HTTP Mount Point in the Browser.
+        <VAR_MP_HTTP>22Nov</VAR_MP_HTTP>
+        
+        !Variable VAR_Select_Storage is used to select Storage in the Browser. 
+        <VAR_Select_Storage>Storage001</VAR_Select_Storage>
+        
+        !//******************Social Viewer Portal*************//
+        
+        !Object map declaration for Selecting Encoder profile type
+        <VAR_SVP>http://10.1.202.130/viewerportal/22nov_new/home.vp?debug=true</VAR_SVP>
+        
+        !Object map declaration for Selecting Encoder profile type
+        <VAR_Call_AutoIt_File>E:\Automation_WorkSpace\Columbia_automation\src\com\qa\columbia\commonfiles\clickLiveNow_ie.exe</VAR_Call_AutoIt_File>
+        
+        !Object map declaration for Selecting Encoder profile type
+        <VAR_Save_Screenshot_Loc>C:\auto_ScreenShots\Live_Program.jpg</VAR_Save_Screenshot_Loc>
+        
+        !//*********************************WME***********************//
+        
+        !Variable VAR_Program is used to select Encoder
+        <VAR_Enc_Type>WME-N</VAR_Enc_Type>
+        
+        !Variable VAR_Program is used to select Encoder
+        <VAR_Enc_profile>WME-Profile</VAR_Enc_profile>
+        
+        !Variable Var_WME_Host is used to provide the host for WME
+        <Var_WME_Host>10.1.199.241</Var_WME_Host>
+        
+        !Variable Var_WME_ComPort is used to provide the Communication Port
+        <Var_WME_ComPort>5201</Var_WME_ComPort>
+        
+        !Variable Var_WME_DocRoot is used to provide the Document Root for encoder files
+        <Var_WME_DocRoot>c:\windows\temp</Var_WME_DocRoot>
+        
+        !Variable Var_WMEProf_Videosize is used to provide the video size 
+        <Var_WMEProf_VideoSize>400x226 (16x9)</Var_WMEProf_VideoSize>
+        
+        !Variable Var_WMEProf_BitRate is used to provide the Bitrate
+        <Var_WMEProf_BitRate>400</Var_WMEProf_BitRate>
+        
+        !Variable Var_WMEProf_ExtURL is used to provide the external URL
+        <Var_WMEProf_ExtURL>http://10.1.199.241:3183</Var_WMEProf_ExtURL>
+        
+        !Variable Var_WMEProf_Port is used to Port for WME output
+        <Var_WMEProf_Port>3183</Var_WMEProf_Port>
+        
+        !Variable Var_WMEProf_Path is used to provide the path for the .wme file
+        <Var_WMEProf_Path>C:\encoderProfiles\live_profile.wme</Var_WMEProf_Path>
+        
+        !//*************************Live Porgrawm on Viewer POrtal**********//
+        <Var_asxLink>//div[@id='mpi_util_DebugConsole_0']/div[3]</Var_asxLink>
+        
+        !//********************************Testing**********************//
+        <Var_USR>admin@qumu.com</Var_USR>
+        <Var_PWD>password</Var_PWD>
+        
+        !//********************************Classic viewer portal**********************//
+       
+        <VAR_DomClassic>domain_old</VAR_DomClassic> 
+        
+        !//********************************Social viewer portal**********************//    
+        
+        <VAR_DomSocial>domain_new</VAR_DomSocial>
+        
+        !//********************************Image file name in CVP**********************//
+       
+       <VAR_imgName>img1</VAR_imgName>
+       
+       !//********************************Complex Presentation file name in CVP**********************//
+       
+       <VAR_complexpresenationName>complexPresentation1</VAR_complexpresenationName>
+       <VAR_complexPresentation_duration>5</VAR_complexPresentation_duration>      
+        
+
+   </Global_Variables>

@@ -1,0 +1,258 @@
+/*
+* Classname                                                        SVP_liveProgram_MediaNet_RSS2kv4 
+*
+* Version info
+*
+* Copyright notice
+*
+* Test Case reference:												Social VP: Ensure that ingest completes for archived content of Live program played with Medianet delivery option using WME.<br>
+* What the script does:											    >Login to the application<br> 
+* 																	>Navigate to Delivery Options and creates 2 WMS such as Origin and Edge WMS<br> 
+* 																	>Create an Encoder with Encoder Profile for WME.
+*																	>Create a MediaNet using the above WMS and MediaNet<br> 
+*  															     	>Create a Live Program with the MediaNet delivery option<br> 
+*																	>Launch the LBC and starts the broadcast<br> 
+* 																	>Navigate to Social Viewer Portal and play the Live Video<br> 
+* 																	>Capture the screenshot of the player window<br> 
+* 																	>Generate the asx file 
+* 																	>Verify the stream in the asx file
+* 																	>Navigate to LBC and Stop the broadcast<br> 	
+*  													     			>Wait till the message "Archive files fetched.|Completed" is displayed in Console for LBC<br> 
+*   																>Navigate to Admin portal<br>
+*   																>Navigate to Content and search for the archive created  with status "Active" 																			 
+* What Verification it performs:	 								1.Verify that ingest completes for archived content of Live program played with Medianet delivery option using WME<br> 
+*																															
+* What script(s) should be run before this script:					N/A <br>
+* What script(s) should be run after this script:					N/A <br>
+* Created by/on date: 											    QASource on 13/04/2011
+* Updated by/on date: 												QASource on 13/04/2011
+*   ******************************************************************* <br>
+* Before running the test, please ensure that your Selenium Remote Server
+* is up and running. Server can be started using the java -jar selenium-server.jar<br>
+* A domain having a valid storage should exist.
+*/
+package com.qa.columbia.scripts.Patch_Level_testcases;
+
+import java.text.MessageFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+import org.apache.commons.lang.StringUtils;
+
+import com.qa.columbia.executor.*;
+import com.qa.columbia.functions.*;
+import com.qa.columbia.repository.EnvObjectMap_Rep;
+import com.thoughtworks.selenium.*;
+
+public class SVP_LiveProgramArchived_MediaNet_WME extends TesterAsserter {
+	
+	static boolean flag = false;
+	static Date date=Calendar.getInstance().getTime();
+	public void setUp() throws Exception {
+		
+		Utility_Functions utilityFunction = new Utility_Functions(); 
+		String str_path ="Global_variables.xml";
+		String VAR_ProxURL = utilityFunction.GetValue(str_path ,"VAR_ProxURL");
+		String VAR_BROWSER_PATH = utilityFunction.GetValue(str_path ,"VAR_BROWSER_PATH");
+		String VAR_Columbia_APPURL = utilityFunction.GetValue(str_path, "VAR_Columbia_APPURL");
+			
+		if(!flag){				
+			selenium = new DefaultSelenium(VAR_ProxURL, 4444, VAR_BROWSER_PATH, VAR_Columbia_APPURL);
+			selenium.start();
+			flag = true;
+		}
+
+	}		
+	public void test_SVP_LiveProgramArchived_MediaNet_WME() throws Exception {
+		{
+			setUp();
+			Utility_Functions utilityFunction = new Utility_Functions();
+			//Global variables file name
+			String str_path ="Global_variables.xml";
+			String local_path = "SVP_LiveProgramArchived_MediaNet_WME.xml";
+			String VAR_MED_WAIT = utilityFunction.GetValue(str_path ,"VAR_MED_WAIT");
+			String VAR_DomSocial = utilityFunction.GetValue(str_path,"VAR_DomSocial");
+			//Variable for the user name
+			String VAR_USR = utilityFunction.GetValue(str_path ,"VAR_USR");
+			//Variable for the Password
+			String VAR_PWD = utilityFunction.GetValue(str_path ,"VAR_PWD");
+			//Variable for Origin WMS
+			String VAR_OriginWMS_Name = utilityFunction.GetValue(local_path, "VAR_OriginWMS_Name");
+			//Variable for Edge WMS
+			String VAR_EdgeWMS_Name = utilityFunction.GetValue(local_path, "VAR_EdgeWMS_Name");
+			//Variable for WMS host
+			String VAR_WMSHostIP = utilityFunction.GetValue(local_path, "VAR_WMSHostIP");
+			//Variable for WMS HTTP port
+			String VAR_WMS_HTTPPort = utilityFunction.GetValue(local_path, "VAR_HTTPPort");
+			//Variable for WMS WebServiceUserName
+			String VAR_WebServiceUserName = utilityFunction.GetValue(str_path, "VAR_WebServiceUserName");
+			//Variable for WMS WebServiceUserName
+			String VAR_WebServicePWD = utilityFunction.GetValue(str_path, "VAR_WebServicePassword");
+			//variable for Encoder name
+			String VAR_Encodername = utilityFunction.GetValue(local_path ,"VAR_Encodername");
+			//variable for Encoder Host
+			String VAR_WMEHost = utilityFunction.GetValue(local_path ,"VAR_WMEHost");
+			//variable for WME common port 
+			String VAR_WMEComPort = utilityFunction.GetValue(local_path ,"VAR_WMEComPort");
+			//variable for WME common port 
+			String VAR_WMEDocRoot = utilityFunction.GetValue(local_path ,"VAR_WMEDocRoot");
+			//variable for WME common port 
+			String VAR_WMEPort = utilityFunction.GetValue(local_path ,"VAR_WMEPort");
+			//variable for the WME file path
+			String VAR_WMESavedFilepath = utilityFunction.GetValue(local_path ,"VAR_WMESavedFilepath");
+			//variable for Encoder Version
+			//String VAR_EncoderVersion = utilityFunction.GetValue(local_path ,"VAR_EncoderVersion");
+			//variable for media net name
+			String VAR_MedianetName = utilityFunction.GetValue(local_path ,"VAR_medianetName");
+			//Variable for Encoder User name			
+		//	String VAR_EncoderUserName = utilityFunction.GetValue(local_path ,"VAR_EncoderUserName");
+			//Variable for Encoder password		
+			//String VAR_EncoderPassword = utilityFunction.GetValue(local_path ,"VAR_EncoderPassword");
+			//Variable for Encoder profile name	
+			String VAR_WMEProfileName = utilityFunction.GetValue(local_path ,"VAR_WMEProfileName");
+			//Variable for Encoder bit rate		
+			//String VAR_EncoderBitRate = utilityFunction.GetValue(local_path ,"VAR_EncoderBitRate");	
+			//Variable for Live program name		
+			String Var_LiveProgramName = utilityFunction.GetValue(local_path ,"Var_LiveProgramName");
+			//Variable for the archive of Live program
+			String Var_ArchiveOfLiveRSSv5 = utilityFunction.GetValue(local_path ,"Var_ArchiveOfLiveRSSv5");
+		    //Variable for the Framework path
+			String Var_frameWork_Path = utilityFunction.GetValue(str_path ,"Var_frameWork_Path");
+		    //Variable for Columbia Aplication URL
+			String VAR_Columbia_APPURL = utilityFunction.GetValue(str_path, "VAR_Columbia_APPURL");
+			 //Variable for host
+			//String VAR_Host = utilityFunction.GetValue(str_path, "VAR_Host");
+			//Variable for asx file 
+			String Var_asxLink = utilityFunction.GetValue(str_path ,"Var_asxLink");
+			//Variable for viewer portal
+			String Var_Columbia_vpURL = utilityFunction.GetValue(str_path ,"Var_Columbia_vpURL");
+			//Variable for site URL
+			//String VAR_SiteURL=  utilityFunction.GetValue(str_path, "VAR_SiteURL");
+			
+			//Reusable to login to admin viewer portal
+		    Login.test_login(selenium, VAR_USR, VAR_PWD, VAR_DomSocial);
+	        //Create a Origin WMS
+		    Create_WMS.create_WMS(selenium, VAR_OriginWMS_Name, VAR_WMSHostIP, VAR_WMS_HTTPPort, VAR_WebServiceUserName, VAR_WebServicePWD);
+		    utilityFunction.waitForChangesToReflect();
+		    //Create a Edge WMS
+		    Create_WMS.create_WMS(selenium, VAR_EdgeWMS_Name, VAR_WMSHostIP, VAR_WMS_HTTPPort, VAR_WebServiceUserName, VAR_WebServicePWD);
+		    //Reusable to create WME 
+		    Create_WME.create_WME(selenium,VAR_Encodername, VAR_WMEHost, VAR_WMEComPort, VAR_WMEDocRoot, VAR_WMEProfileName, VAR_WMEPort, VAR_WMESavedFilepath);
+		  
+		    //Reusable to create a RSS Encoder 4000 
+		    //Create_RSSv5enc.create_RSSv5enc(selenium, "SVP_liveProgram_MediaNet_RSS2kv4", VAR_Encodername, VAR_EncoderHostIP, VAR_EncoderVersion, VAR_EncoderUserName, VAR_EncoderPassword, VAR_EncoderProfileName, VAR_EncoderBitRate);
+			
+		    //Create a Medianet 
+		    Create_medianet.create_medianetDNS(selenium, VAR_MedianetName, VAR_OriginWMS_Name, VAR_EdgeWMS_Name, VAR_WMSHostIP);
+			
+		     //Reusable to create a live program
+		    Live.test_Live(selenium, "SVP_LiveProgramArchived_MediaNet_WME", Var_LiveProgramName, VAR_Encodername, VAR_WMEProfileName, VAR_MedianetName);
+		    //Launch the LBC
+		    LaunchLBC.test_LaunchLBC(selenium, "SVP_LiveProgramArchived_MediaNet_WME", Var_LiveProgramName, Var_ArchiveOfLiveRSSv5);
+		   	//select the admin portal window	   
+	        selenium.selectWindow("null");
+		    //select the domain link to open up the viewer portal
+		    selenium.click("link=" + VAR_DomSocial);
+		    utilityFunction.waitForChangesToReflect();
+	    	//Select the time zone if prompted for
+		 	if (selenium.isElementPresent(EnvObjectMap_Rep.drp_selectTimeZoneCVP))
+		     {
+		     			selenium.select(EnvObjectMap_Rep.drp_selectTimeZoneCVP, EnvObjectMap_Rep.drp_selectTimeZone_valueCVP);
+		     			selenium.click(EnvObjectMap_Rep.btn_selectTimeZoneCVP);
+		     			selenium.waitForPageToLoad(VAR_MED_WAIT);
+		    } 
+		 	
+		 	 //select the viewer portal window
+		    selenium.selectWindow("Qumu Program Browser Home");
+		    //maximize the window
+		 	selenium.windowMaximize();
+		 	//wait
+		    utilityFunction.waitForChangesToReflect();	
+			//Navigate to Social Viewer portal
+		    String SVP_url = Var_Columbia_vpURL + VAR_DomSocial + "/home.vp"; 
+		    //open the URL
+		    selenium.open(SVP_url +"?debug=true");
+		    //wait
+		   	
+			utilityFunction.waitForChangesToReflect();
+			utilityFunction.waitForChangesToReflect();
+			//click the Live Now link
+			selenium.click(EnvObjectMap_Rep.LNK_SVP_HOME_LIVENOW);
+			//wait
+			utilityFunction.waitForChangesToReflect();
+			utilityFunction.waitForChangesToReflect();
+			//select the Live program						
+			 for (int i = 1; i<50; i++){
+			        String str_var=selenium.getText(MessageFormat.format(EnvObjectMap_Rep.LNK_SVP_ClickLiveProgramInList,i));
+			    	System.out.println(str_var);	   
+			    	if(str_var.equals(Var_LiveProgramName)){
+			    		selenium.click(MessageFormat.format(EnvObjectMap_Rep.LNK_SVP_ClickLiveProgramInList, i));
+		               break;
+		          }                  
+		       }
+		    //wait
+			utilityFunction.waitForChangesToReflect();
+			 //variable for path where to save the screenshot    
+			String screenShot_locPath = Var_frameWork_Path + "\\commonfiles\\" + Var_LiveProgramName + ".jpg";		
+			//Capture the screen shot of the live program
+	        selenium.captureScreenshot(screenShot_locPath); 
+		    //Wait
+	        utilityFunction.waitForChangesToReflect();
+	        //select the asx link
+	        String contentlink = selenium.getText(Var_asxLink);
+	        //wait
+	        utilityFunction.waitForChangesToReflect();  
+	         //split the string
+	     	String contentlink_final= StringUtils.substringAfter(contentlink, "Loading content from"); 
+			contentlink_final=contentlink_final.trim();		
+			System.out.println("exact:"+contentlink_final+"&playerType=silverlightembed");		
+			selenium.click("link=exact:"+contentlink_final);
+			utilityFunction.waitForChangesToReflect();
+			//Generate the asx file
+			String htmlsource = selenium.getHtmlSource();
+			System.out.println(htmlsource);	
+		    //verify whether the correct encoder profile is displayed in asx file
+			assertTrue("SVP_LiveProgramArchived_MediaNet_WME","Verify that asx file is generated successfully.",date,utilityFunction.assertTextContains(htmlsource, VAR_WMEProfileName));
+		    assertTrue("SVP_LiveProgramArchived_MediaNet_WME","Verify that mms protocol is displayed in asx file.",date,utilityFunction.assertTextContains(htmlsource, "mms"));
+			utilityFunction.waitForChangesToReflect();
+			selenium.selectWindow("null");
+		    for (String windowName : selenium.getAllWindowNames()) {
+				if (windowName.indexOf(EnvObjectMap_Rep.Select_LBC) != -1){
+					selenium.selectWindow(windowName);
+	            }
+	        } 
+		    //Stop the broadcast
+		    selenium.click(EnvObjectMap_Rep.btn_stopBroadcast);
+		    Thread.sleep(2000);
+		    //assertTrue("SVP_liveProgram_MediaNet_RSS2kv4","Verify that ingest completed is displayed",date,selenium.isTextPresent("(none)|Archive files fetched.|Completed "));
+			//verifyTrue(selenium.isTextPresent("(none)|Archive files fetched.|Completed "));
+            //wait till the ingest is shown completed in LBC
+		    for (int second = 0;; second++) {
+				if (second >= 600) fail("timeout");
+				try { if (selenium.isTextPresent("Archive files fetched.|Completed")) break; 
+				} catch (Exception e) {}
+				Thread.sleep(1000);
+			 }
+		   // verifyTrue(selenium.isTextPresent("(none)|Archive files fetched.|Completed "));
+		    assertTrue("SVP_LiveProgramArchived_MediaNet_WME","Verify that ingest completed is displayed",date,selenium.isTextPresent("(none)|Archive files fetched.|Completed "));
+           //Navigate to Admin Portal
+			selenium.selectWindow("null");
+			//Select Programming link
+			selenium.click(EnvObjectMap_Rep.LNK_Programming);
+			//Select Content link
+			selenium.click(EnvObjectMap_Rep.LNK_Content);
+			//wait
+			selenium.waitForPageToLoad("50000");
+			//click Search
+			selenium.click(EnvObjectMap_Rep.BTN_More_Search);
+			//provide the search term
+			selenium.type(EnvObjectMap_Rep.TXT_Search_Name,Var_ArchiveOfLiveRSSv5);
+			//select the status as Active
+			selenium.select(EnvObjectMap_Rep.drp_Active, EnvObjectMap_Rep.drp_Active_val);
+			//Click Search button
+			selenium.click(EnvObjectMap_Rep.Btn_Search);
+			assertTrue("SVP_LiveProgramArchived_MediaNet_WME","Social VP: Ensure that ingest completes for archived content of Live program played with Medianet delivery option using WME.",date,selenium.isTextPresent(Var_ArchiveOfLiveRSSv5));
+			 selenium.stop();
+	    }
+				 
+	}}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_vod_WMA>
+ ! Variables of display name for the streaming media function
+ 	<VAR_WMA_fileName>TestWMAfile</VAR_WMA_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>WMA.wma</VAR_fileType>
+ 
+ ! Variables for the program type under content
+ <Program_Type>On-Demand</Program_Type>
+ 
+ ! Variables for the program name under content
+ <Program_Name>Test_VOD_WMA</Program_Name>
+ 
+</SVP_vod_WMA>

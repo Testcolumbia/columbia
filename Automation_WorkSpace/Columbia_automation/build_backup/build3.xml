@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Run Test" default="" basedir=".">
+
+	<target name="adminportal" description="unzip adminportal build">
+<get src="${buildURL}" 
+    dest="." 
+    verbose="true"
+    usetimestamp="true"/>
+<waitfor maxwait="15" maxwaitunit="minute" checkevery="500">
+        <available file="adminportal.war"/>
+</waitfor>
+
+		<delete dir="../Program Files/Qumu/deploy1/adminportal.war"/>
+		<mkdir dir="../Program Files/Qumu/deploy1/adminportal.war"/>
+
+		<unzip src="adminportal.war" dest="../../ProgramFiles/Qumu/Deploy1/adminportal.war"/>
+
+    </target>
+
+<target name="viewerportal" description="unzip viewerportal build">
+<get src="${buildURL}" 
+    dest="." 
+    verbose="true"
+    usetimestamp="true"/>
+<waitfor maxwait="15" maxwaitunit="minute" checkevery="500">
+        <available file="viewerportal.war"/>
+</waitfor>
+
+<delete dir="../Program Files/Qumu/deploy1/viewerportal.war"/>
+		<mkdir dir="../Program Files/Qumu/deploy1/viewerportal.war"/>
+
+		<unzip src="viewerportal.war" dest="../../ProgramFiles/Qumu/Deploy1/viewerportal.war"/>
+    </target>
+
+<target name="serviceportal" description="unzip serviceportal build">
+<get src="${buildURL}" 
+    dest="." 
+    verbose="true"
+    usetimestamp="true"/>
+<waitfor maxwait="15" maxwaitunit="minute" checkevery="500">
+        <available file="serviceportal.war"/>
+</waitfor>
+
+<delete dir="../Program Files/Qumu/deploy1/serviceportal.war"/>
+		<mkdir dir="../Program Files/Qumu/deploy1/serviceportal.war"/>
+
+		<unzip src="serviceportal.war" dest="../../ProgramFiles/Qumu/Deploy1/serviceportal.war"/>
+    </target>
+
+  
+
+</project>

@@ -1,0 +1,42 @@
+Testsuite: com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.BuildVersionVerification_TCID
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 15.934 sec
+------------- Standard Output ---------------
+>>>> INFO  >>>> <title>Automation Result of Selenium Test Suite</title>
+>>>> INFO  >>>> <head><u><h1 align='center'>Selenium Automation Report</h1></u></head>
+>>>> INFO  >>>> <table border='0' width='100%' height='47'>
+>>>> INFO  >>>> <tr>
+>>>> INFO  >>>> </tr>
+>>>> INFO  >>>> <BR>
+>>>> INFO  >>>> <tr>
+>>>> INFO  >>>> <td width='25%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Test Script Name</font></b></td>
+>>>> INFO  >>>> <td width='35%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Test Case Description</font></b></td>
+>>>> INFO  >>>> <td width='10%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Result</font></b></td>
+>>>> INFO  >>>> <td width='15%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Start Time</font></b></td>
+>>>> INFO  >>>> <td width='15%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>End Time</font></b></td>
+>>>> INFO  >>>> </tr>
+>>>> INFO  >>>> </table>
+>>>> INFO  >>>> <table border='0' width='100%' height='47'>
+>>>> INFO  >>>> <tr>
+>>>> INFO  >>>> <td width='25%'> <font color='#000000' face='Garamond'>TC_XXX </font></td>
+>>>> INFO  >>>> <td width='35%'> <font color='#000000' face='Garamond'> TC_XXX:Verify that Build Version is displayed</font></td>
+>>>> INFO  >>>> <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+>>>> INFO  >>>> <td width='15%' align='center'><font color='#000000' face='Garamond'> Thu Aug 18 16:13:20 GMT+05:30 2011</font></td>
+>>>> INFO  >>>> <td width='15%' align='center'><font color='#000000' face='Garamond'> Thu Aug 18 16:13:35 GMT+05:30 2011</font></td>
+>>>> INFO  >>>> </tr>
+>>>> INFO  >>>> </table>
+------------- ---------------- ---------------
+
+Testcase: test_BuildVersionVerification_TCID took 15.934 sec
+	FAILED
+TC_XXX:Verify that correct Build number is displayed
+junit.framework.AssertionFailedError: TC_XXX:Verify that correct Build number is displayed
+	at com.qa.columbia.executor.TesterAsserter.assertTrue(Unknown Source)
+	at com.qa.columbia.scripts.BuildAcceptance_testcasesV6_0.BuildVersionVerification_TCID.test_BuildVersionVerification_TCID(BuildVersionVerification_TCID.java:92)
+	at com.thoughtworks.selenium.SeleneseTestCase.runBare(SeleneseTestCase.java:212)
+	at org.eclipse.ant.internal.ui.antsupport.EclipseSingleCheckExecutor.executeTargets(EclipseSingleCheckExecutor.java:30)
+	at net.sf.antcontrib.logic.ForEach.executeSequential(Unknown Source)
+	at net.sf.antcontrib.logic.ForEach.execute(Unknown Source)
+	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)
+

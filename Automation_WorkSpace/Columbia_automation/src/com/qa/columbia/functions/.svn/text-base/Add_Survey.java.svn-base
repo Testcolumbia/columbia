@@ -1,0 +1,48 @@
+/*
+ * This method is used to add a survey in the content.
+*/
+
+package com.qa.columbia.functions;
+
+import com.qa.columbia.repository.*;
+import com.thoughtworks.selenium.*;
+import com.qa.columbia.executor.*;
+
+public class Add_Survey extends TesterAsserter{
+	
+	public static void test_Add_Survey(Selenium sel, String str_surveyName, String str_questionName, String str_questionExplanation, String str_questionType) throws Exception {
+		
+		Utility_Functions utilityFunction = new Utility_Functions(); 
+		sel.click(EnvObjectMap_Rep.LNK_Content);
+		sel.waitForPageToLoad("50000");
+		utilityFunction.waitForChangesToReflect();
+		sel.click(EnvObjectMap_Rep.Btn_AddItem);
+		utilityFunction.waitForChangesToReflect();
+		sel.click(EnvObjectMap_Rep.radio_contentTypePoll);
+		//Click next button
+		sel.click(EnvObjectMap_Rep.Btn_Next);
+		//Wait for loading the page
+		utilityFunction.waitForChangesToReflect();
+		sel.type(EnvObjectMap_Rep.txt_pollDispName, str_surveyName);
+		sel.click(EnvObjectMap_Rep.btn_addQuestion);
+		utilityFunction.waitForChangesToReflect();
+		sel.type(EnvObjectMap_Rep.txt_questionDispName, str_questionName);
+		sel.type(EnvObjectMap_Rep.txt_questionExplanation, str_questionExplanation);
+		sel.select(EnvObjectMap_Rep.drp_questionType, "label=" + str_questionType);
+		sel.type(EnvObjectMap_Rep.txt_questionAnswer1, "1");
+		sel.type(EnvObjectMap_Rep.txt_questionAnswer2, "2");
+		sel.type(EnvObjectMap_Rep.txt_questionAnswer3, "3");		
+		sel.click(EnvObjectMap_Rep.btn_questionSave);
+		utilityFunction.waitForChangesToReflect();
+		sel.click(EnvObjectMap_Rep.btn_questionSave);
+		utilityFunction.waitForChangesToReflect();
+
+		
+		
+    }
+	
+}	
+
+
+
+

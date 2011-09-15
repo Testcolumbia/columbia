@@ -1,0 +1,51 @@
+/*
+ * This method is used to Create RSS4000V5 Encoder in the Application.
+*/
+
+package com.qa.columbia.functions;
+
+import java.util.Calendar;
+import java.util.Date;
+
+import com.qa.columbia.repository.*;
+import com.thoughtworks.selenium.*;
+import com.qa.columbia.executor.*;
+
+public class Create_RSSv6enc extends TesterAsserter {
+	
+    public static void create_RSSv6enc(Selenium sel,String str_scriptName, String str_encName, String str_hostIP, String str_userName, String str_password, String str_maxStreams, String encProfileName) throws Exception {
+		
+    	Utility_Functions utilityFunction = new Utility_Functions();
+		
+    	//Fetching values for Global Variables from XMl file
+		String str_path ="Global_variables.xml";
+		Date date=Calendar.getInstance().getTime();
+		String VAR_MED_WAIT = utilityFunction.GetValue(str_path ,"VAR_MED_WAIT");
+		//Click on Resource menu
+		sel.click(EnvObjectMap_Rep.LNK_Resources);		
+		//Click on Encoder menu		
+		sel.click(EnvObjectMap_Rep.LNK_Encoders);		
+		//Wait for loading the page
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		//Click on Add button
+		sel.click(EnvObjectMap_Rep.Btn_Add_Encoder);
+		sel.addSelection(EnvObjectMap_Rep.select_EncoderType, "label=RSS 4000 Encoder");
+		sel.click(EnvObjectMap_Rep.rss_v6Encoder);
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		sel.type(EnvObjectMap_Rep.txt_nameRSSv6, str_encName);
+		sel.type(EnvObjectMap_Rep.txt_hostRSSv6, str_hostIP);
+		sel.type(EnvObjectMap_Rep.txt_userRSSv6, str_userName);
+		sel.click(EnvObjectMap_Rep.chk_useSSLv6);
+		sel.type(EnvObjectMap_Rep.txt_maxStreamRSSv6, str_maxStreams);
+		sel.click(EnvObjectMap_Rep.btn_profileRSSv6);
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		sel.type(EnvObjectMap_Rep.txt_profileNameRSSv6, encProfileName);
+		sel.click(EnvObjectMap_Rep.btn_saveProfileRSSv6);
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		sel.type(EnvObjectMap_Rep.txt_passwordRSSv6, str_password);
+		sel.type(EnvObjectMap_Rep.txt_confirmPasswordRSSv6, str_password);
+		sel.click(EnvObjectMap_Rep.btn_saveRSSv6);
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		assertTrue(str_scriptName,"Verify that RSS4000V6 encoder is created successfully.",date,sel.isTextPresent(str_encName));
+	}
+}

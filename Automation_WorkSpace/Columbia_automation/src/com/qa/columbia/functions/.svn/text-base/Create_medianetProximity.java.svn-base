@@ -1,0 +1,105 @@
+/*
+ * This method is used to Create medianet delivery option in the Application.
+ * @param sel selenium object that runs the selenium commands
+ * @param str_WMS_name used to provide the Host name in the Browser. .
+ * @param str_WMShost is used to provide the HTTP Host Name in the Browser.
+ * @param str_HTTPport is used to provide HTTP port. 
+ * @param str_webServiceUsername is used to provide web Service User name. 
+ * @param str_webServicePWD is used to provide web Service Password.
+*/
+
+package com.qa.columbia.functions;
+
+import java.text.MessageFormat;
+
+import com.qa.columbia.repository.*;
+import com.thoughtworks.selenium.*;
+import com.qa.columbia.executor.*;
+
+public class Create_medianetProximity extends TesterAsserter {
+	
+    public static void create_medianet(Selenium sel,String str_medianetName, String str_originWMS, String str_edgeWMS, String IPrange1, String IPrange1Metric, String IPrange2, String IPrange2Metric) throws Exception	{
+       
+	    Utility_Functions utilityFunction = new Utility_Functions();
+	    sel.click(EnvObjectMap_Rep.LNK_DeliveryOption);
+		sel.waitForPageToLoad("30000");
+	sel.click(EnvObjectMap_Rep.Btn_Adddelivery);
+	//("//table[@id='bindContainer']/tbody/tr[1]/td[1]/div/button[2]");
+	sel.addSelection(EnvObjectMap_Rep.SelectType_DO_WMS, "label=MediaNet");
+	//sel.addSelection("selectselectTypeDialogdoptTypes", "label=MediaNet");
+	
+	//sel.click("dlvryimpl_medianet");
+	sel.click(EnvObjectMap_Rep.selectMediaNet);
+	sel.waitForPageToLoad("30000");
+	sel.type(EnvObjectMap_Rep.txt_nameMedianet, str_medianetName);
+	System.out.println(sel.getText("//div[6]/div[1]/div[2]/div/div[1]/div/div[1]"));
+	if(str_originWMS==sel.getText("//div[6]/div[1]/div[2]/div/div[1]/div/div[1]"))
+			{
+		sel.click("//div[6]/div[1]/div[2]/div/div[1]/div/div[1]");
+			}
+	else
+	{
+		if(str_originWMS==sel.getText("//div[@id='mpiwidget_form_SloshBucket_0']/div[1]/div/div[2]"))
+		{
+	sel.click("//div[@id='mpiwidget_form_SloshBucket_0']/div[1]/div/div[2]");
+		}
+		else
+		{
+		  for (int i = 1; i<50;i=i+1 ){
+			  
+		    	String str_var=sel.getText(MessageFormat.format(EnvObjectMap_Rep.lst_selectOrigin, i));
+		    	System.out.println(str_var);
+		    	
+		    	if (str_var.equals(str_originWMS)){
+		    		sel.click(MessageFormat.format(EnvObjectMap_Rep.lst_selectOrigin, i));
+	              break;
+	          }   
+		    	
+	      }
+		}
+	}
+
+	
+	sel.click(EnvObjectMap_Rep.lnk_originMoveToSelected);
+	
+	  for (int i = 1; i<50; i=i+1){
+	    	String str_var=sel.getText(MessageFormat.format(EnvObjectMap_Rep.lst_selectEdge, i));
+	    	if (str_var.equals(str_edgeWMS)){
+	    		sel.click(MessageFormat.format(EnvObjectMap_Rep.lst_selectEdge, i));
+            break;
+        }                  
+    }
+
+	 
+	sel.click(EnvObjectMap_Rep.lnk_edgeMoveToSelected);
+	sel.click("proximityEnabled_2");
+	sel.click("editProx_link");
+	//sel.click("_eventId_editProximity");
+	sel.waitForPageToLoad("30000");
+	sel.click("//div[@id='mpiwidget_form_MNProximity_0']/button");
+	sel.focus("//div[@id='mpiwidget_form_MNProximity_0']/table/tbody/tr/td[1]/input");
+	sel.type("//div[@id='mpiwidget_form_MNProximity_0']/table/tbody/tr/td[1]/input", IPrange1);
+	sel.focus("//div[@id='mpiwidget_form_MNProximity_0']/table/tbody/tr/td[2]/input");
+	sel.type("//div[@id='mpiwidget_form_MNProximity_0']/table/tbody/tr/td[2]/input", IPrange1Metric);
+	sel.click("//div[@id='mpiwidget_form_MNProximity_0']/button");
+	sel.focus("//div[@id='mpiwidget_form_MNProximity_0']/table/tbody/tr[2]/td[1]/input");
+	sel.type("//div[@id='mpiwidget_form_MNProximity_0']/table/tbody/tr[2]/td[1]/input", IPrange2);
+	sel.focus("//div[@id='mpiwidget_form_MNProximity_0']/table/tbody/tr[2]/td[2]/input");
+	sel.type("//div[@id='mpiwidget_form_MNProximity_0']/table/tbody/tr[2]/td[2]/input", IPrange2Metric);
+	sel.click("//input[@name='edgeSelection' and @value='dlvryimpl_wms:1204']");
+	sel.click("//div[@id='mpiwidget_form_MNProximity_1']/button");
+	sel.focus("//div[@id='mpiwidget_form_MNProximity_1']/table/tbody/tr/td[1]/input");
+	sel.type("//div[@id='mpiwidget_form_MNProximity_1']/table/tbody/tr/td[1]/input", IPrange2);
+	sel.focus("//div[@id='mpiwidget_form_MNProximity_1']/table/tbody/tr/td[2]/input");
+	sel.type("//div[@id='mpiwidget_form_MNProximity_1']/table/tbody/tr/td[2]/input", IPrange1Metric);
+	sel.click("//div[@id='mpiwidget_form_MNProximity_1']/button");
+	sel.focus("//div[@id='mpiwidget_form_MNProximity_1']/table/tbody/tr[2]/td[1]/input");
+	sel.type("//div[@id='mpiwidget_form_MNProximity_1']/table/tbody/tr[2]/td[1]/input", IPrange1);
+	sel.focus("//div[@id='mpiwidget_form_MNProximity_1']/table/tbody/tr[2]/td[2]/input");
+	sel.type("//div[@id='mpiwidget_form_MNProximity_1']/table/tbody/tr[2]/td[2]/input", IPrange2Metric);
+	sel.focus("_eventId_submit");
+	sel.highlight("_eventId_submit");
+	sel.click("_eventId_submit");
+	sel.waitForPageToLoad("30000");
+	}
+}

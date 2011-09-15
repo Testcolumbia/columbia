@@ -1,0 +1,23 @@
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <title>Automation Result of Selenium Test Suite</title>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <head><u><h1 align='center'>Selenium Automation Report</h1></u></head>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <tr>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - </tr>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <BR>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <tr>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='25%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Test Script Name</font></b></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='35%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Test Case Description</font></b></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='10%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Result</font></b></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='15%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Start Time</font></b></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='15%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>End Time</font></b></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - </tr>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - </table>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <tr>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>TC_XXX </font></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> TC_XXX:Verify that Build Version is displayed</font></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Thu Aug 18 16:13:20 GMT+05:30 2011</font></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Thu Aug 18 16:13:35 GMT+05:30 2011</font></td>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - </tr>
+2011-08-18 16:13:35,613 [INFO ] logger.success  - </table>

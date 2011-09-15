@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_Sm_vpv_007_VOD_WMV_SL_enabled>
+ ! Variables of display name for the streaming media function
+ 	<VAR_WMV_fileName>AutoWMVfile</VAR_WMV_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>wmv1.wmv</VAR_fileType>
+ 
+ ! Variables for the program type under content
+ <Program_Type>On-Demand</Program_Type>
+ 
+ ! Variables for the program name under content
+ <Program_Name>AutoVODWMV</Program_Name>
+ 
+ ! Variables of display name for the streaming media function
+  <VAR_StreamingMedia>AutoWMVfile</VAR_StreamingMedia> 
+
+  <VAR_ASXfileName>wmv1.wmv</VAR_ASXfileName> 
+ 
+</SVP_Sm_vpv_007_VOD_WMV_SL_enabled>

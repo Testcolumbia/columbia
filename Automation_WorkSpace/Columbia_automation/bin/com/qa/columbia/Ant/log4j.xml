@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+<!-- ================================ Do not touch this part =========================== -->
+   <appender name="failFile" class="org.apache.log4j.FileAppender">
+	<param name="File" value="E:\\Automation_WorkSpace\\Columbia_automation\\src\\com\\qa\\columbia\\results\\resultsLog_columbiaAutomationResult.html"/>
+
+		<param name="Append" value="false"/> 
+
+		<layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+              value="%m"/>
+        </layout>
+    </appender>
+
+
+    <appender name="successFile" class="org.apache.log4j.FileAppender">
+		<param name="File" value="E:\\Automation_WorkSpace\\Columbia_automation\\src\\com\\qa\\columbia\\results\\resultsLog_columbiaAutomationResult.html"/>
+		<param name="ImmediateFlush" value="true"/>
+		<param name="Append" value="false"/> 
+		
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+             value="%m"/>
+            
+        </layout> 
+
+	
+	</appender>
+	
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+
+        <layout class="org.apache.log4j.PatternLayout">
+
+			<param name="ConversionPattern"
+              value=">>>> %-5p >>>> %m%n"/> 
+
+        </layout> 
+    </appender>
+
+
+
+<!-- ================================ Make your changes here =========================== -->
+
+	<!-- This is for logging "Debug" messages -->
+	<!--   -->
+	<category name="logger.debug">
+        <priority value="debug" />
+        <appender-ref ref="console"/>
+    </category>
+	
+
+
+	<!-- This is for logging "Fail" messages -->
+	<category name="logger.fail">
+        <priority value="error" />
+        <appender-ref ref="console"/>
+        <appender-ref ref="failFile"/>
+    </category>
+
+
+
+	<!-- This is for logging "Success" messages -->
+	<!--  	-->
+    <category name="logger.success">
+        <priority value="info" />
+        <appender-ref ref="console"/> 
+        <appender-ref ref="successFile"/>
+    </category>
+    
+    <!-- This is for logging "Header" messages -->
+    
+    	<!--  	-->
+    <category name="logger.header">
+        <priority value="info" />
+        <appender-ref ref="console"/> 
+        <appender-ref ref="successFile"/>
+    </category>
+	 
+
+	 
+<!--
+    <root>
+        <priority value="fatal" />
+        <appender-ref ref="console"/>
+    </root>
+-->
+
+
+</log4j:configuration>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_slide_Upload>
+   ! Variable for the wmv file name
+      <VAR_slideName>slide1</VAR_slideName>
+
+ 	!Variable for the display name of the wmv file
+ 	<VAR_slideFile>mixed.ppt</VAR_slideFile> 
+ 	
+</SVP_slide_Upload>

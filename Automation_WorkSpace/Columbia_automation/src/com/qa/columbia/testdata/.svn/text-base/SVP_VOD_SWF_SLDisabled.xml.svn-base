@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_vod_SWF>
+ ! Variables of display name for the streaming media function
+ 	<VAR_SWF_fileName>TestSWFfile</VAR_SWF_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>Test_SWF.swf</VAR_fileType>
+ 
+ ! Variables for the program type under content
+ <Program_Type>On-Demand</Program_Type>
+ 
+ ! Variables for the program name under content
+ <Program_Name>Test_VOD_SWF</Program_Name>
+ 
+</SVP_vod_SWF>

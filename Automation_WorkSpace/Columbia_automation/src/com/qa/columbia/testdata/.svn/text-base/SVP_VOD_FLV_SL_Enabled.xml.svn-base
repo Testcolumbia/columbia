@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_VOD_FLV_SL_Enabled>
+ ! Variables of display name for the streaming media function
+ 	<VAR_FLV_fileName>TestFLVfile</VAR_FLV_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>Test_flv.flv</VAR_fileType>
+ 
+ ! Variables for the program type under content
+ <Program_Type>On-Demand</Program_Type>
+ 
+ ! Variables for the program name under content
+ <Program_Name>Test_VOD_FLV</Program_Name>
+ 
+</SVP_VOD_FLV_SL_Enabled>

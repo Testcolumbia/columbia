@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sm_vpc_015_complexPresentationUpload>
+	!Variable for complex presentation display name
+	<Var_complexPresentationDisplayName>complexPresentation_auto</Var_complexPresentationDisplayName>
+	
+	!Variable for complex presentation file name
+	<Var_complexPresentationFileName>complexPresentation1.zip</Var_complexPresentationFileName>
+	
+	!Variable for complex presentation duration
+	<Var_complexPresentationDuration>05:00:00</Var_complexPresentationDuration>
+	
+</Sm_vpc_015_complexPresentationUpload>

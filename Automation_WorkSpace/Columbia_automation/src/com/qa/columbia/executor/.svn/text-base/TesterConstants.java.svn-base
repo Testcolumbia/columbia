@@ -1,0 +1,7 @@
+package com.qa.columbia.executor;
+
+interface TesterConstants {
+	final static String LOG4J_CONFIG_FILE_NAME = "log4j.xml";
+	final static String TEST_SUITE_PACKAGE_NAME = "com.qa.columbia.scripts.Patch_Level_testcases.";	
+		
+}

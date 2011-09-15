@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Selenium/selenium-remote-control-1.0.1/selenium-server-1.0.1/selenium-server.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/selenium-remote-control-1.0.1/selenium-java-client-driver-1.0.1/selenium-java-client-driver.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/Other jars/jdbc/lib/classes12.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/Other jars/jdbc/lib/classes111.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/activation.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/flashselenium-java-client-extension.r25.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/jdom.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/jxl-2.6.3.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/jxl.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/mail.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/Silverlight-Selenium.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/spring-2.0.2.jar"/>
+	<classpathentry kind="lib" path="E:/Automation_WorkSpace/Columbia_automation/jars/xom-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Selenium/junit-4.8.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

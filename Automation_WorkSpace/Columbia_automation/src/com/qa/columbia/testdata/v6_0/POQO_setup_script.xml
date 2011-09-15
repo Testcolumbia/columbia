@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MasterProgram>
+
+<VAR_programName>Auto_Master_Program</VAR_programName>
+
+
+
+! Variables of display name for the streaming media function
+ 	<VAR_streamingMedia_Name>wmv_auto</VAR_streamingMedia_Name> 
+
+    <VAR_sourceContentFile>wmv1.wmv</VAR_sourceContentFile> 
+    
+   
+    
+</MasterProgram>

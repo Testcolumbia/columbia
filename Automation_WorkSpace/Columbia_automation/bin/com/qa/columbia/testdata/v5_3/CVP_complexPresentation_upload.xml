@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_complexPresentation_upload>
+   ! Variable for the complex Presentation file name
+ 	<VAR_complexpresenationFile>complexPresentation1.zip</VAR_complexpresenationFile> 
+ 	!Variable for the display name of the complex Presentation
+   <VAR_complexpresenationName>ComplexPresentation1</VAR_complexpresenationName>
+   !Media duration
+   <MediaDuration>5</MediaDuration>
+ 	
+</CVP_complexPresentation_upload>

@@ -1,0 +1,67 @@
+/*
+ * This method is used to Create RSS4000V5 Encoder in the Application.
+*/
+
+package com.qa.columbia.functions;
+
+import com.qa.columbia.repository.*;
+import com.thoughtworks.selenium.*;
+import com.qa.columbia.executor.*;
+
+public class Create_RSSv5enc extends TesterAsserter {
+	
+    public static void create_RSSv5enc(Selenium sel,String str_scriptName, String str_encName, String str_hostIP, String str_version, String str_userName, String str_password, String encProfileName, String str_bitRate) throws Exception {
+		
+    	Utility_Functions utilityFunction = new Utility_Functions();
+		
+    	//Fetching values for Global Variables from XMl file
+		String str_path ="Global_variables.xml";
+		String VAR_MED_WAIT = utilityFunction.GetValue(str_path ,"VAR_MED_WAIT");
+		//Click on Resource menu
+		sel.click(EnvObjectMap_Rep.LNK_Resources);		
+		//Click on Encoder menu		
+		sel.click(EnvObjectMap_Rep.LNK_Encoders);		
+		//Wait for loading the page
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		//Click on Add button
+		sel.click(EnvObjectMap_Rep.Btn_Add_Encoder);
+		//Select RSS2000 from the listbox
+		sel.addSelection(EnvObjectMap_Rep.lst_rss2k, "label=RSS 2000 Encoder");
+		//Select RSS 2000 encoder
+		sel.click(EnvObjectMap_Rep.lnk_rss2k);
+		//Wait for loading the page
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		//Provide the encoder name
+		sel.type(EnvObjectMap_Rep.txt_rss2kEncName, str_encName);
+		//Provide the host ip
+		sel.type(EnvObjectMap_Rep.txt_rss2kHostIP, str_hostIP);
+		//Provide the username
+		sel.type(EnvObjectMap_Rep.txt_rss2kEncUserName, str_userName);
+		//Select the RSS version
+		sel.select(EnvObjectMap_Rep.drp_rss2kVerSelect, "label="+ str_version);
+		//Click on Add button to add encoder profile
+		sel.click(EnvObjectMap_Rep.btn_rss2kEncProfile);
+		//Wait for loading the page
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		//Provide the Encoder Profile Name
+		sel.type(EnvObjectMap_Rep.txt_rss2kProfName, encProfileName);
+		//Select the VideoSize
+		sel.select(EnvObjectMap_Rep.drp_rss2kProfVideoSize, EnvObjectMap_Rep.drp_rss2kProfVideoSizeValue);
+		//Provide the bit rate
+		sel.type(EnvObjectMap_Rep.txt_rss2kProfBitRate, str_bitRate);
+		//Check the H239 content
+		sel.click(EnvObjectMap_Rep.chk_rss2kProfH239);
+		//Save the Encoder Profile
+		sel.click(EnvObjectMap_Rep.btn_rss2kProfSave);
+		//Wait for loading the page
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+		//Provide the password
+		sel.type(EnvObjectMap_Rep.txt_rss2kPassword, str_password);
+		//Confirm the password
+		sel.type(EnvObjectMap_Rep.txt_rss2kConfirmPassword, str_password);
+		//Save the encoder
+		sel.click(EnvObjectMap_Rep.btn_rss2kSave);
+		//Wait for loading the page
+		sel.waitForPageToLoad(VAR_MED_WAIT);
+	}
+}

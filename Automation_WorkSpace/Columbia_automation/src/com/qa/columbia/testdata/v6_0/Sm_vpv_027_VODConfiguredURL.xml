@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VODProgram>
+
+<VAR_programName>VOD_usingConfiguredURL</VAR_programName>
+
+! Variables of display name for the streaming media function
+ 	<VAR_StreamingMedia>wmv_auto</VAR_StreamingMedia> 
+ 	
+ 	
+ 	<VAR_sourceContentFile>wmv1.wmv</VAR_sourceContentFile> 
+ 	
+ 	<VAR_DeliveryName>Configured URL</VAR_DeliveryName>
+ 	
+    <VAR_AccespointDownloadName>APdownload</VAR_AccespointDownloadName>
+    <VAR_AccespointVODName>APVOD</VAR_AccespointVODName>
+    
+    <VAR_ASXfileName>wmv1.wmv</VAR_ASXfileName> 
+    
+    
+</VODProgram>

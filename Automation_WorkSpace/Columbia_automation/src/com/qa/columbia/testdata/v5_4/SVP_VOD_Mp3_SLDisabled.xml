@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_vod_Mp3>
+ ! Variables of display name for the streaming media function
+ <VAR_MP3_fileName>TestMP3file</VAR_MP3_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>Test_Mp3.mp3</VAR_fileType>
+ 
+ ! Variables for the program type under content
+ <Program_Type>On-Demand</Program_Type>
+ 
+ ! Variables for the program name under content
+ <Program_Name>Test_VOD_Mp3</Program_Name>
+ 
+</SVP_vod_Mp3>

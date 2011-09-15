@@ -1,0 +1,144 @@
+/*
+* Classname                                                        CVP_thumbnailExtraction 
+*
+* Version info
+*
+* Copyright notice
+*
+* Test Case reference:												Classic VP: Ensure that thumbnails are extracted for WMV file from Content page.<br>
+* What the script does:											    >Login to the application<br> 
+* 																	>Navigate to Programming menu<br> 
+*																	>Navigate to Content<br> 
+*  															     	>Click on Add Item button<br> 
+*																	>Select the Simple Streaming Media (Hosted) radio button<br> 
+* 																	>Browse the wmv file<br> 
+* 																	>Provide the Display name<br> 
+* 																	>click on the wmv file name<br> 	
+*  																    >Click on Pick thumbnail button<br> 
+*   																>Verify the thumbnails displayed<br>
+*  																	>Select a thumbnail<br> 	
+*  																    >Click Save button<br> 
+*   																>Click on Save button<br> 
+*       															>Search the thumbnail and verify it if present<br> 	 	 
+*   																			 
+* What Verification it performs:	 								1.Verify that user is able to extract a thumbnail from the wmv file successfully under Content.<br> 
+*																															
+* What script(s) should be run before this script:					N/A <br>
+* What script(s) should be run after this script:					N/A <br>
+*
+*   ******************************************************************* <br>
+* Before running the test, please ensure that your Selenium Remote Server
+* is up and running. Server can be started using the java -jar selenium-server.jar<br>
+* A domain having a valid storage should exist.
+* 
+*/
+package com.qa.columbia.scripts.Patch_Level_testcasesV5_4;
+
+import java.util.Calendar;
+import java.util.Date;
+
+import com.qa.columbia.executor.*;
+import com.qa.columbia.functions.v5_4.*;
+import com.qa.columbia.repository.v5_4.*;
+import com.thoughtworks.selenium.*;
+
+public class CVP_thumbnailExtraction extends TesterAsserter {
+	
+	static boolean flag = false;
+	static Date date=Calendar.getInstance().getTime();
+	public void setUp() throws Exception {
+		
+		Utility_Functions utilityFunction = new Utility_Functions(); 
+		String str_path ="Global_variables.xml";
+		String VAR_ProxURL = utilityFunction.GetValue(str_path ,"VAR_ProxURL");
+		String VAR_BROWSER_PATH = utilityFunction.GetValue(str_path ,"VAR_BROWSER_PATH");
+		String VAR_Columbia_APPURL = utilityFunction.GetValue(str_path, "VAR_Columbia_APPURL");
+			
+		if(!flag){				
+			selenium = new DefaultSelenium(VAR_ProxURL, 4444, VAR_BROWSER_PATH, VAR_Columbia_APPURL);
+			selenium.start();
+			flag = true;
+			selenium.setTimeout("0");
+			utilityFunction=null;
+		}
+
+	}		
+	public void test_CVP_thumbnailExtraction() throws Exception {
+		{
+			try {
+			setUp();
+			Utility_Functions utilityFunction = new Utility_Functions();
+			//Global variables file name
+			String str_path ="Global_variables.xml";
+			//Script specific variables file name
+			String local_path = "CVP_thumbnailExtraction.xml";
+			//Variable for the domain name
+			String VAR_DomClassic = utilityFunction.GetValue(str_path,"VAR_DomClassic");
+			//Variable for the user name
+			String VAR_USR = utilityFunction.GetValue(str_path ,"VAR_USR");
+			//Variable for the Password
+			String VAR_PWD = utilityFunction.GetValue(str_path ,"VAR_PWD");	
+			//String VAR_Columbia_APPURL = utilityFunction.GetValue(str_path, "VAR_Columbia_APPURL");
+			//Variable for filename name
+		    String VAR_streamingMedia = utilityFunction.GetValue(local_path ,"VAR_WMV_fileName");
+		    //Variable for File Type
+			String streamingMediaType = utilityFunction.GetValue(local_path ,"VAR_fileType");
+			//Reusable action for Login to VCC
+     		Login.test_login(selenium, VAR_USR, VAR_PWD, VAR_DomClassic);	
+       		//Reusable action for streaming media (wmv) upload
+     		Upload_Media.Upload_streamingMedia(selenium, VAR_streamingMedia, streamingMediaType);	
+		    //Click on streaming media (wmv) link
+		    selenium.click("link="+VAR_streamingMedia);		    
+			for (int second = 0;second<=300; second++) {
+				try { if (selenium.isVisible(EnvObjectMap_Rep.btn_thumbnailExtraction)) break; } catch (Exception e) {}
+				Thread.sleep(1000);
+			}
+			//utilityFunction.waitForChangesToReflect();	
+		    //click on Pick thumbnail button
+		    selenium.click(EnvObjectMap_Rep.btn_thumbnailExtraction);
+		    //wait
+			for (int second = 0;second<=300; second++) {
+				try { if (selenium.isVisible(EnvObjectMap_Rep.radio_selectthumbnail)) break; } catch (Exception e) {}
+				Thread.sleep(1000);
+			}
+		    //select a thumbnail
+		    selenium.click(EnvObjectMap_Rep.radio_selectthumbnail);
+		    //Verify that the thumbnails are extracted from the wmv file
+		    assertTrue("CVP_thumbnailExtraction","Classic VP: Ensure that thumbnails are extracted for WMV file from Content page.",date,selenium.isElementPresent(EnvObjectMap_Rep.radio_selectthumbnail));
+		    //wait
+		    //utilityFunction.waitForChangesToReflect();
+		    //save the selcted thumbnail
+		    selenium.click(EnvObjectMap_Rep.btn_saveExtractedThumbnail);
+		    //wait
+			utilityFunction.waitForChangesToReflect();
+			//Save the edit content page
+		    selenium.click(EnvObjectMap_Rep.btn_saveEditContent);
+		    //wait
+			utilityFunction.waitForChangesToReflect();
+			utilityFunction.waitForChangesToReflect();
+			//click on Advanced search button 
+		    selenium.click(EnvObjectMap_Rep.BTN_More_Search);
+		    //wait
+			utilityFunction.waitForChangesToReflect();
+			//Provide the extracted thumbnail name to search
+			selenium.type(EnvObjectMap_Rep.TXT_Search_Name,VAR_streamingMedia+"_thumbnail");
+			//Select the staus as active
+			selenium.select(EnvObjectMap_Rep.drp_Active, EnvObjectMap_Rep.drp_Active_val);
+			//Click Search button
+			selenium.click(EnvObjectMap_Rep.Btn_Search);
+			//Wait
+			utilityFunction.waitForChangesToReflect();	
+			//utilityFunction.waitForChangesToReflect();
+			//Verify that the extracted thumbnail is searched successfully
+			assertTrue("CVP_thumbnailExtraction","Classic VP: Ensure that extracted thumbnail is displayed successfully on Content page.",date,selenium.isTextPresent(VAR_streamingMedia+"_thumbnail"));
+			utilityFunction=null;
+		}catch(Exception e){
+			e.printStackTrace();}
+			 finally{
+			selenium.close();
+			selenium.stop();
+		}
+		}
+					 
+	}
+}

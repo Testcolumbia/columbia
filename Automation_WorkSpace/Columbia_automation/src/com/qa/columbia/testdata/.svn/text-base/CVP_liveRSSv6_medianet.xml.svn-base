@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveRSSv6_medianet>
+ 
+  ! Variables of display name for the RSS encoder
+ 	<VAR_EncoderName>RSSv6</VAR_EncoderName> 
+ 	
+   ! Variables for host IP
+   <VAR_EncoderHostIP>192.16.17.232</VAR_EncoderHostIP> 
+ 
+   ! Variables for the Encoder Username
+   <VAR_EncoderUserName>admin</VAR_EncoderUserName>  
+  
+   ! Variables for Encoder Password
+   <VAR_EncoderPassword>admin</VAR_EncoderPassword>   
+  
+   ! Variables for encoder Profile name
+   <VAR_EncoderProfileName>RSSv6profile</VAR_EncoderProfileName> 
+  
+    ! Variables for the maximum streams in the encoder
+   <VAR_MaxStreams>12</VAR_MaxStreams>  
+   
+     ! Variables of display name for the survey
+ 	<SurveyName>Survey1</SurveyName>
+ 	
+ 	! Variable of display name for poll
+ 	<PollName>Poll1</PollName>
+ 	
+ 	 ! Variables of display name for the question
+ 	<QuestionName>Question1</QuestionName>
+ 	
+ 	 ! Variables for the question explanation
+ 	<QuestionExp>QuestionExplanation</QuestionExp>
+ 	
+ 	 ! Variables for the survey Type
+ 	<QuestionType>Checkbox</QuestionType>
+ 	
+ 	 ! Variables for the slide display name
+ 	<VAR_SlideDisplayName>Slide1</VAR_SlideDisplayName>
+ 	
+ 	 ! Variables for the slide file name
+ 	<VAR_SlideFileName>mixed.ppt</VAR_SlideFileName>
+ 	
+  	 ! Variable for the origin WMS name	
+ 	<VAR_WMSoriginName>WMS_186_1</VAR_WMSoriginName>
+ 	
+   	 ! Variable for the origin WMS Host IP
+ 	<VAR_WMSoriginHost>192.16.17.186</VAR_WMSoriginHost>
+ 	
+     ! Variable for the origin WMS HTTP port
+ 	<VAR_WMSoriginHTTPport>81</VAR_WMSoriginHTTPport>
+ 	
+     ! Variable for the origin WMS username
+ 	<VAR_WMSoriginUsername>administrator</VAR_WMSoriginUsername>
+ 	
+     ! Variable for the origin WMS password
+ 	<VAR_WMSoriginPassword>Bebo123</VAR_WMSoriginPassword>
+ 	
+     ! Variable for the edge WMS Host 
+ 	<VAR_WMSedgeName>wms_111_1</VAR_WMSedgeName>
+ 	
+     ! Variable for the edge WMS Host IP
+ 	<VAR_WMSedgeHost>192.16.17.111</VAR_WMSedgeHost>
+ 	
+     ! Variable for the edge WMS HTTP port
+ 	<VAR_WMSedgeHTTPport>81</VAR_WMSedgeHTTPport>
+ 	
+     ! Variable for the edge WMS username
+ 	<VAR_WMSedgeUsername>administrator</VAR_WMSedgeUsername>
+ 	
+     ! Variable for the edge WMS password IP
+ 	<VAR_WMSedgePassword>Bebo123</VAR_WMSedgePassword>
+ 	
+     ! Variable for the medianet Name
+	<VAR_medianetName>Medianet001</VAR_medianetName>
+	
+	 ! Variable for the 1st CIDR range
+	<VAR_CIDR1>10.1.202.0/24</VAR_CIDR1>
+	
+	 ! Variable for the metric value for 1st range
+	<VAR_Metric1>1</VAR_Metric1>
+	
+	 ! Variable for the 2nd CIDR range
+	<VAR_CIDR2>10.1.60.0/24</VAR_CIDR2>
+	
+	 ! Variable for the metric value for the 2nd range
+	<VAR_Metric2>2</VAR_Metric2>
+
+ 	
+  	 ! Variables for the Live program name	
+ 	<Var_LiveProgramName>Live_RSSv6_medianet</Var_LiveProgramName>
+ 	
+ 	
+ 	<Var_ArchiveOfLiveProgram>ArchiveOfLive_RSSv6_medianet</Var_ArchiveOfLiveProgram>
+</CVP_liveRSSv6_medianet>

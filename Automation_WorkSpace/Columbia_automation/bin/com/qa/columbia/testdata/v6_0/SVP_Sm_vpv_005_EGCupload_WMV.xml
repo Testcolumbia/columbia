@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_Sm_vpv_005_EGCupload_WMV>
+
+<VAR_userFirstName>EGC</VAR_userFirstName>
+<VAR_userLastName>Admin</VAR_userLastName>
+<VAR_userEmailID>egcadmin@test.com</VAR_userEmailID>
+<VAR_userPassword>password</VAR_userPassword>
+<VAR_streamingMedia>SVP_EGC_WMV</VAR_streamingMedia>
+<VAR_MasterVOD>SVP_EGC_WMVMasterVOD</VAR_MasterVOD>
+<VAR_ChannelName>SVP_EGC_WMVChannel</VAR_ChannelName>
+<VAR_EGCProgName>SVP_EGC_WMVProgram</VAR_EGCProgName>
+!<VAR_streamingMediaEGC>wmv1.wmv</VAR_streamingMediaEGC>
+
+   ! Variables of display name for the streaming media function
+ 	<VAR_WMV_fileName>SVP_EGC_WMV</VAR_WMV_fileName> 
+ 	
+   ! Variables for the file name under content
+   <VAR_streamingMediaType>wmv1.wmv</VAR_streamingMediaType> 
+ 
+   ! Variables for the EGC ProgramName
+   <VAR_EGCprogramName>EGC_WMVUpload_SVP</VAR_EGCprogramName> 
+  
+   ! Variables for the EGCChannel Name
+   <VAR_EGCchannelName>caption1</VAR_EGCchannelName>  
+   
+   ! Variable for the Master program name (used as Template for EGC) 
+   <VAR_mastreProgramName>caption1</VAR_mastreProgramName> 
+    
+    <VAR_ASXfileName>wmv1.wmv</VAR_ASXfileName> 
+
+</SVP_Sm_vpv_005_EGCupload_WMV>

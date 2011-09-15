@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SVP_LiveProgram_MediaNet_WME>
+
+    ! Variable for Live program wit  media net
+    <Var_LiveProgramName>VerifyLiveBcast_MediaNet_WME</Var_LiveProgramName>
+
+    ! Variable for Live program wit  media net
+    <Var_LiveProgramArchive>Archived_VerifyLiveBcast_MediaNet_WME</Var_LiveProgramArchive>
+
+    ! Variables of display name for the survey
+ 	<SurveyName>Survey1</SurveyName>
+ 	
+ 	! Variable of display name for poll
+ 	<PollName>Poll1</PollName>
+ 	
+ 	 ! Variables of display name for the question
+ 	<QuestionName>Question1</QuestionName>
+ 	
+ 	 ! Variables for the question explanation
+ 	<QuestionExp>QuestionExplanation</QuestionExp>
+ 	
+ 	 ! Variables for the survey Type
+ 	<QuestionType>Checkbox</QuestionType>
+ 	
+ 	 ! Variables for the slide display name
+ 	<VAR_SlideDisplayName>Slide1</VAR_SlideDisplayName>
+ 	
+ 	 ! Variables for the slide file name
+ 	<VAR_SlideFileName>mixed.ppt</VAR_SlideFileName>
+ 	
+
+</SVP_LiveProgram_MediaNet_WME>

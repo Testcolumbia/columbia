@@ -1,0 +1,109 @@
+package com.qa.columbia.functions;
+
+
+import java.io.File;
+import java.util.Calendar;
+import java.util.Date;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
+import com.qa.columbia.repository.*;
+import com.qa.columbia.executor.*;
+//import com.qa.columbia.functions.*;
+import com.thoughtworks.selenium.*;
+//import com.qa.columbia.testdata.*;
+//import java.io.IOException;
+
+//import org.apache.commons.lang.StringUtils;
+
+
+
+
+
+//import com.qa.columbia.functions.*;
+
+//import com.qa.columbia.testdata.*;
+
+
+public class login_test extends TesterAsserter {
+	
+static boolean flag = false;
+	
+	public void setUp() throws Exception
+	{
+		String VAR_ProxURL = find_XML("VAR_ProxURL");
+		String VAR_BROWSER_PATH = find_XML("VAR_BROWSER_PATH");
+		String VAR_Columbia_APPURL = find_XML("VAR_Columbia_APPURL");
+		
+		if(!flag){				
+			selenium = new DefaultSelenium(VAR_ProxURL, 4444, VAR_BROWSER_PATH, VAR_Columbia_APPURL);
+			selenium.start();
+			flag = true;
+			
+		}
+		/*Utility_Functions utilityFunction = new Utility_Functions(); 
+	    try {
+			String usr_Name = utilityFunction.find_XML("usr_Name");
+			String usr_Pwd = utilityFunction.find_XML("usr_Pwd");
+		} catch (Exception e) {
+			// 
+			e.printStackTrace();
+		}
+		if(!flag){
+			
+			selenium = new DefaultSelenium(VariablesEnv_Rep.VAR_ProxURL, 4444, VariablesEnv_Rep.VAR_BROWSER_PATH, VariablesEnv_Rep.VAR_Columbia_APPURL);
+			selenium.start();
+			flag = true;
+		}*/
+
+	}	
+	public String find_XML(String str_Path)throws Exception
+	   {
+	       DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+	       DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
+	       Document doc = docBuilder.parse(new File("E:\\Automation_WorkSpace\\Columbia_automation\\src\\com\\qa\\columbia\\testdata\\login.xml"));
+	       doc.getDocumentElement ().normalize ();
+	       //NodeList variableName = doc.getChildNodes();
+	       //String First = variableName.item(0).getNodeName();  
+	       // System.out.println(First);
+	       NodeList var = doc.getElementsByTagName(str_Path);
+	       String First2 = var.item(0).getTextContent();
+	       //System.out.println(First2) ;
+	       return First2;
+	       
+	             }
+
+	public void test_login() throws Exception 
+	{
+		{setUp();
+
+		 
+	    String usr_Name = find_XML("usr_Name");
+	    String usr_Pwd = find_XML("usr_Pwd"); 
+	    String VAR_Columbia_APPURL = find_XML("VAR_Columbia_APPURL");
+		String VAR_MED_WAIT = find_XML("VAR_MED_WAIT");	
+		Date date=Calendar.getInstance().getTime();
+		
+			// Open the browser and enter the URL
+			selenium.open(VAR_Columbia_APPURL);		
+			//Maximize browser window
+			selenium.windowMaximize();		
+			// Enter the User Name
+			selenium.type(EnvObjectMap_Rep.LNK_UserName, usr_Name);		
+			// Enter the Password
+			selenium.type(EnvObjectMap_Rep.LNK_Password, usr_Pwd);		
+			//Select the Domain
+			//sel.select(EnvObjectMap_Rep.dropdown_Domain,VariablesEnv_Rep.VAR_Dom);			
+			// Click the Submit button
+			selenium.click(EnvObjectMap_Rep.BTN_LOGIN);		
+			//Wait function is used
+			selenium.waitForPageToLoad(VAR_MED_WAIT);		
+			//Check point to verify that user is able to login into the application
+			assertTrue("Columbia_LiveProgramVerification","Verify that user is able to login.",date,selenium.isElementPresent(EnvObjectMap_Rep.LNK_LOGOUT));
+		}
+	}
+}

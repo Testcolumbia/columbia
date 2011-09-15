@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_vod_msProducer>
+ ! Variables of display name for the streaming media function
+ 	<VAR_msProducer_fileName>msProducer1</VAR_msProducer_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>msProducer1.zip</VAR_fileType>
+ <Program_Type>On-Demand</Program_Type>
+ <Program_Name>vod_msProducer</Program_Name>
+ 
+</CVP_vod_msProducer>

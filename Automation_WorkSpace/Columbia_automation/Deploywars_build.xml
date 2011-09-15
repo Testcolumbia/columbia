@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Columbia_automation" default="sendMail_builddeployed" basedir=".">
+	<property file = "E:/Automation_WorkSpace/Columbia_automation/src/com/qa/columbia/ANT/build.properties"/>
+	
+       <property name="property.builddownloaddirectory" value="./downloadedbuilds"/>
+		<property name="property.host" value="qasource.com"/>
+		<property name="property.to" value="pkaur@qasource.com"/>
+		<property name="property.from" value="pkaur@qasource.com"/>
+		<property name="property.cc" value="pkaur@qasource.com"/>
+		<property name="property.bcc" value="pkaur@qasource.com"/>
+		<property name="property.Buildno" value="180"/>
+		<property name="property.V" value="6_0"/>
+		<property name="property.deployment.build_status_message" value="You can see the complete Batch execution report in the HTML.zip attached in mail"/>
+		<property name="property.deployment.emailSubject" value="Build Deployment Status"/>
+		<property name="Remote.Host" value="10.1.202.88"/>
+		<property name="Remote.Host.Username" value="devuser"/>
+		<property name="Remote.Host.Password" value="devuser123"/>
+		<property name="Remote.Host.dir" value="C:/Program\ \Files/Qumu/deploy1"/>
+	
+<target name="hudson" >	<exec executable="cmd">
+<arg VALUE="/C start http://10.1.199.64:8080/hudson/job/vcc-all-continuous-600/178/com.mpi$serviceportal/adminportal.war"/>
+</exec> 
+</target>
+	
+	<!-- String apBuildURL = VAR_Hudson_URL+"/"+URL+"adminportal"+"/"+buildURL+"adminportal.war";
+
+<target name="StartQumuService" depends="DeployAdminportalWar,DeployViewerportalWar,DeployServicePortalWar" description="Start the Qumu JBoss Service.">  -->
+	<!--Start the Qumu JBoss Service on remote host. -->
+	<target name="StartQumuService"  description="Start the Qumu JBoss Service on remote host.">
+		<echo>Start the Qumu JBoss Service on remote host ${Remote.Host}.</echo>
+		<sshexec host="${Remote.Host}"
+		username="${Remote.Host.Username}"
+		password="${Remote.Host.Password}"
+		command="cmd.exe /c sc start QumuJBossService"/>
+   </target>
+	
+	<!--Stop the Qumu JBoss Service on remote host. -->
+  <target name="StopQumuService" description="Stop the Qumu JBoss Service.">
+	<echo>Stop the Qumu JBoss Service on remote host ${Remote.Host}.</echo>
+	<sshexec host="${Remote.Host}"
+		username="${Remote.Host.Username}"
+		password="${Remote.Host.Password}"
+		command="cmd.exe /c sc stop QumuJBossService"/>
+  </target>
+	
+	<!--Download the adminportal.war file from build server -->
+	 <target name="adminportal" description="download and unzip adminportal build">
+	 	<echo>Download the adminportal.war file from build server</echo>
+		<delete file="adminportal.war" /> 
+	 	<delete dir="./downloadedbuilds/adminportal.war"/>
+	 	<mkdir dir="./downloadedbuilds/adminportal.war"/>
+		<get src="${buildURL}" dest="adminportal.war"  verbose="true"    usetimestamp="true"/>
+	    <waitfor maxwait="15" maxwaitunit="minute" checkevery="500">
+	    <available file="adminportal.war"/>
+	     </waitfor>
+	 	<!--<unwarsrc="${app_war_dir}/${appname}.war" dest="${serverdeploy}/${appname}.war"/> -->
+	 		    <unzip src="viewerportal.war" dest="./downloadedbuilds/adminportal.war"/>	 
+	 </target>
+
+	<!-- Download and unzip the viewerportal.war build file from build server   -->	
+	<target name="viewerportal" description="unzip viewerportal build"  depends="adminportal" >
+		<echo>Download the serviceportal.war build file from build server  </echo>
+		<delete file="viewerportal.war" /> 
+	    <delete dir="./downloadedbuilds/viewerportal.war"/>
+		<mkdir dir="./downloadedbuilds/viewerportal.war"/>
+	    <get src="${buildURL}" dest="viewerportal.war" verbose="true" usetimestamp="true"/>
+	    <waitfor maxwait="15" maxwaitunit="minute" checkevery="500">
+	    <available file="viewerportal.war"/>
+	    </waitfor>
+	<!--
+	<unwarsrc="${app_war_dir}/${appname}.war" dest="${serverdeploy}/${appname}.war"/> 
+	    <unzip src="viewerportal.war" dest="./downloadedbuilds/viewerportal.war"/>-->
+	</target>
+
+	<!-- Download and unzip the serviceportal.war build file from build server   -->	
+	<target name="serviceportal" description="unzip serviceportal build" >
+		<echo>Download the serviceportal.war build file from build server  </echo>
+		<delete file="serviceportal.war" />
+	    <delete dir="./downloadedbuilds/serviceportal.war"/>
+		<mkdir dir="./downloadedbuilds/serviceportal.war"/>
+		
+		<get src="${buildURL}"  dest="serviceportal.war"  verbose="true"  usetimestamp="true"/>  
+		<!-- <get src="${buildURL}"  dest="./serviceportal.war"  verbose="true"    usetimestamp="true"/>   -->
+	    <waitfor maxwait="45" maxwaitunit="minute" checkevery="500">
+	     <available file="serviceportal.war"/>
+	    </waitfor>
+        <unwar src="serviceportal.war" dest="./downloadedbuilds/serviceportal.war"/>
+	 </target>   
+	
+<!-- Delete the adminportal.war/viewerportal.war and serviceportal.war build directories on remote machine -->	
+     <target name="Clean" description="Removes previous build from remote machine" >
+    <echo>Delete the adminportal.war/viewerportal.war and serviceportal.war build directories on remote machine </echo>
+    <sshexec host="${Remote.Host}" username="${Remote.Host.Username}" password="${Remote.Host.Password}" trust="true" command="cmd.exe /c rd /s /q C:/Program\ \Files/Qumu/deploy1/**portal.war" />
+	<!--  <echo>START @ deleting tmp,work,log</echo>
+     	<sshexec host="${Remote.Host}" username="${Remote.Host.Username}" password="${Remote.Host.Password}" trust="true" command="cmd.exe /c rd /s /q C:/Program\ \Files/Qumu/jboss/server/default/tmp" />
+      	<sshexec host="${Remote.Host}" username="${Remote.Host.Username}" password="${Remote.Host.Password}" trust="true" command="cmd.exe /c rd /s /q C:/Program\ \Files/Qumu/jboss/server/default/work" />
+       	<sshexec host="${Remote.Host}" username="${Remote.Host.Username}" password="${Remote.Host.Password}" trust="true" command="cmd.exe /c rd /s /q C:/Program\ \Files/Qumu/jboss/server/default/log" />
+     <echo> END @ deleting tmp,work,log</echo>  -->
+     	 
+    </target> 
+	
+	<!-- Deploy the adminportal.war build file 
+    <target name="DeployAdminportalWar" description="deploy the war files." depends="serviceportal,Clean"> -->	
+    	
+	<target name="DeployAdminPortalWar" description="deploy the admin portal war files." > 
+    <echo>Deploy the adminportal.war build file </echo>
+    <!-- <path id="jsch.path"> 
+    <pathelement location="${ANT_HOME}/lib/ant-jsch.jar"/> 
+    <pathelement location="${ANT_HOME}/lib/jsch*.jar"/> </path> -->
+	<sshexec host="${Remote.Host}" username="${Remote.Host.Username}" password="${Remote.Host.Password}" trust="true" command="cmd.exe /c MD C:/Program\ \Files/Qumu/deploy1/adminportal.war"/> 
+	<scp todir="${Remote.Host.Username}@${Remote.Host}:C:/Program\ \Files/Qumu/deploy1/adminportal.war" password="${Remote.Host.Password}" trust="true" verbose="true">
+	<fileset dir = "./downloadedbuilds/adminportal.war" includes="**/**" >         
+	</fileset> 
+			</scp> 
+	</target>
+
+	<!-- Deploy the viewerportal.war build file -->	
+	<target name="DeployViewerPortalWar" depends="DeployAdminPortalWar" description="deploy the war files.">
+	<echo>Deploy the viewerportal.war build file </echo>
+		 <sshexec host="${Remote.Host}"	username="${Remote.Host.Username}" password="${Remote.Host.Password}" trust="true" command="cmd.exe /c MD C:/Program\ \Files/Qumu/deploy1/viewerportal.war"/> 
+		 <scp todir="${Remote.Host.Username}@${Remote.Host}:C:/Program\ \Files/Qumu/deploy1/viewerportal.war" password="${Remote.Host.Password}" trust="true" verbose="true">
+			 <fileset dir = "${property.builddownloaddirectory}/viewerportal.war" includes="**/**"> </fileset> 
+		   </scp>
+		  </target>
+
+	<!-- Deploy the serviceportal.war build file -->		
+ <target name="DeployServicePortalWar" depends ="Clean" description="deploy the war files.">
+		<echo>Deploy the serviceportal.war build file </echo>
+ 	 <sshexec host="${Remote.Host}"	username="${Remote.Host.Username}" password="${Remote.Host.Password}" trust="true" command="cmd.exe /c MD C:/Program\ \Files/Qumu/deploy1/serviceportal.war"/> 	
+ 	<scp todir="${Remote.Host.Username}@${Remote.Host}:C:/Program\ \Files/Qumu/deploy1/serviceportal.war" password="${Remote.Host.Password}" trust="true" verbose="true">
+	 <fileset dir ="${property.builddownloaddirectory}/serviceportal.war" includes="**">   </fileset> 
+	      </scp>
+ </target>   
+	
+<!-- run the ant timestamp task -->
+		 <tstamp>
+		 <format property="TIME_NOW" pattern="hh:mm:ss aa" unit="hour"/> 
+		 <format property="TODAY"  pattern="MM/dd/yyyy"/>
+	    </tstamp>
+	
+<target name="sendMail_builddeployed" description="send email after successful deployment" depends="StartQumuService">
+		<mail
+			mailhost="${property.host}" encoding="mime" mailport="25" charset="ISO-8859-1" messagemimetype="text/html" tolist="${property.to}" cclist="${property.cc}" bcclist="${property.bcc}" subject="${property.deployment.emailSubject}-${TODAY} ${TIME_NOW}">
+				<message>
+					Hi All,
+
+					Latest build V${property.V}#Patch${property.Buildno} has been deployed successfully.
+						
+					Please Note: This email is auto-generated by ANT after the build has been deployed successfully.
+											
+						Thanks,
+						Columbia team
+						columbia@qasource.com
+						-We recommend this email id to be used for any correspondence with the India team. 
+				</message>
+				<from address="${property.from}"/>
+					
+				</mail> 
+			</target>
+	
+</project>
+
+
+

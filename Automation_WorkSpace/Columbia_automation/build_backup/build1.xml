@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Run Test" default="unzip" basedir=".">
+
+	<target name="unzip" description="unzip build">
+<get src="${buildURL}" 
+    dest="." 
+    verbose="true"
+    usetimestamp="true"/>
+<waitfor maxwait="15" maxwaitunit="minute" checkevery="500">
+        <available file="adminportal.war"/>
+</waitfor>
+
+		<unzip src="adminportal.war" dest="."/>
+  <copy todir="../../ProgramFiles/Qumu/Deploy">
+    <fileset dir="adminportal.war"/>
+</copy>
+    </target>
+
+  
+
+</project>

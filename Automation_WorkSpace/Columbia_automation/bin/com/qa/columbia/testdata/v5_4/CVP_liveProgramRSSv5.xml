@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_liveProgramRSSv5>
+  
+  	 ! Variables for the Live program name	
+ 	<Var_LiveProgramName>Live_RSSv5_wms</Var_LiveProgramName>
+ 	
+ 	 ! Variables for the archive of Live program 	
+ 	<Var_ArchiveOfLiveProgram>ArchiveOfLive_RSSv5_wms</Var_ArchiveOfLiveProgram>
+
+</CVP_liveProgramRSSv5>

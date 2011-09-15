@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_thumbnailExtraction>
+ ! Variables of display name for the streaming media function
+ 	<VAR_WMV_fileName>wmv1</VAR_WMV_fileName> 
+ 	
+ ! Variables for the file name under content
+ <VAR_fileType>wmv1.wmv</VAR_fileType> 
+ 
+</CVP_thumbnailExtraction>

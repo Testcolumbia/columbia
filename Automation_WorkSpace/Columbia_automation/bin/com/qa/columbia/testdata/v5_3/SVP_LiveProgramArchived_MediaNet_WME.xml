@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SVP_LiveProgramArchived_MediaNet_WME>
+
+! Variable for Edge WMS 
+<VAR_OriginWMS_Name>WMS_auto</VAR_OriginWMS_Name>
+
+! Variable for Edge WMS 
+<VAR_EdgeWMS_Name>WMS_auto_1</VAR_EdgeWMS_Name>
+
+! Variable for Live program wit  media net
+<Var_LiveProgramName>VerifyLiveBcastArchived_MediaNetwithWME</Var_LiveProgramName>
+
+! Variable for Encoder Name 
+<VAR_Encodername>WME_Encoder</VAR_Encodername>
+
+!Variable for encoder profile name
+<VAR_WMEProfileName>WMEProfile</VAR_WMEProfileName>
+	
+
+
+! Variable for WMS Host 
+<VAR_WMSHostIP>10.1.202.189</VAR_WMSHostIP>
+
+! Variable for Origin WMS Host 
+<VAR_OriginWMSHostIP>10.1.202.189</VAR_OriginWMSHostIP>
+
+
+! Variable for Edge WMS Host 
+<VAR_EdgeMSHostIP>10.1.202.247</VAR_EdgeMSHostIP>
+
+!Variable VAR_WMS is used to provide the name in the Browser.
+<VAR_HTTPPort>81</VAR_HTTPPort>
+
+! Variable for Encoder User Name
+<VAR_EncoderUserName>administrator</VAR_EncoderUserName>
+
+
+! Variable for WME Encoder Host IP
+<VAR_WMEHost>10.1.60.73</VAR_WMEHost>
+
+! Variable for encoder port
+<VAR_WMEPort>3000</VAR_WMEPort>
+
+! Variable for default communication port
+<VAR_WMEComPort>5201</VAR_WMEComPort>
+
+! Variable for default communication port
+<VAR_WMEDocRoot>C:\WINDOWS\Temp</VAR_WMEDocRoot>
+
+! Variable for default communication port
+<VAR_WMESavedFilepath>D:\EncoderProfile\test1.wme</VAR_WMESavedFilepath>
+
+<Var_ArchiveOfLiveRSSv5>Archived_LiveBdcast_WME_MediaNet</Var_ArchiveOfLiveRSSv5>
+
+<VAR_EncoderPassword>polycom</VAR_EncoderPassword>
+
+<VAR_EncoderBitRate>512</VAR_EncoderBitRate>
+
+! Variable for MediaNet
+<VAR_medianetName>medianet_auto_new</VAR_medianetName>
+
+</SVP_LiveProgramArchived_MediaNet_WME>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_vod_SurveySummayReport>
+ ! Variables of display name for the survey
+ 	<SurveyName>MySurvey</SurveyName>
+ 	 ! Variables of display name for the question
+ 	<QuestionName>Question1</QuestionName>
+ 	 ! Variables for the question explanation
+ 	<QuestionExp>QuestionExplanation</QuestionExp>
+ 	 ! Variables for the survey Type
+ 	<QuestionType>Select Box</QuestionType>
+ 	 
+ 	 ! Variables of display name for the program
+ 	<VODName>Auto_vodSurvey</VODName>
+
+ 
+</CVP_vod_SurveySummayReport>

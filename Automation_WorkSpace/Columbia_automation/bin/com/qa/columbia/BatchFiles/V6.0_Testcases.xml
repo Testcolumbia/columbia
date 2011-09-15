@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+	
+	<!-- Cleanup Script and Setup script needs to run before Batch execution-->
+	<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.Cleanup_Script</name>
+	<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.Setup_Script</name>
+	
+	<!-- Transcoding scripts -->
+	<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.Sm_tcd_001_Transcoding_fileIngestVerification</name>
+	<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.Sm_tcd_002_Transcoding_WMVtoFLV</name>
+	<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.Sm_tcd_003_Transcoding_FLVtoWMV</name>
+	
+<!-- CVP -->
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_001_liveRSSv5</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_002_liveProgramWME</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_007_uploadEGC</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_008_vod_msProducer</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_009_vod_QT</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_010_Automated_RSSdisc4k_NonPinProtected</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_011_VOD_RSSdisc4k_NonPinProtected</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_012_Automated_RSSdisc4k_PinProtected</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_013_VOD_RSSdisc4k_PinProtected</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_014_imgUpload</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_015_complexPresentationUpload</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_016_mediaEditor</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_017_unapproveProgramAccess</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_018_vod_SurveySummaryReport</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_019_thumbnailExtraction</name>	
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_020_LiveProgram_Audience_RSS4kV5</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_021_AutomatedPT_RSSdisc4kv6_PinProtected</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_022_AutomatedPT_RSSdisc4kV5_NonPinProtected</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_023_LiveProgram_Audience_ConfiguredURL</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_024_flvstreamingMediaSkin</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_025_wmvstreamingMediaSkin</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.CVP_Sm_vpc_026_liveProgramSkin</name>
+
+				
+<!-- Need to check according to setup script -->
+	 
+
+<!-- SVP -->
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_001_liveProgramWME</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_002_liveProgramRSS2k4</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_005_EGCupload_WMV</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_006_EGCupload_FLV</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_007_VOD_WMV_SL_Enabled</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_008_VOD_FLV_SL_Enabled</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_009_VOD_Mp3_SL_Disabled</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_010_VOD_SWF_SL_disabled</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_011_Automated_RSSdisc2k_NonPinProtected</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_012_VOD_RSSdisc2k_NonPinProtected</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_016_Content_upload_Slides</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_017_EGC_Unapproved_Prg_Verification</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_018_LiveSurveySummary_Report</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_019_Content_Storage_Report</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_021_VOD_WMA_SL_disabled</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_022_Automated_RSSdisc4k_NonPinProtected_template</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_025_EGC_ODPT_UploadFLV</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_024_EGC_ODPT_UploadMPEG</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_026_EGC_ODPT_UploadWMV</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_027_VODConfiguredURL</name>
+<name>com.qa.columbia.scripts.Patch_Level_testcasesV6_0.SVP_Sm_vpv_028_LiveProgram_Audience</name>
+
+
+
+
+
+
+
+
+
+
+</test>

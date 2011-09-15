@@ -1,0 +1,11 @@
+<CVP_liveProgramWME>
+	!Variable for Live program name
+	<LiveProgramName>Live_auto</LiveProgramName>
+	
+	!Variable for Windows Media Encoder name
+	<EncoderName>WMEold_auto</EncoderName>
+	
+	!Variable for Windowws Media Encoder Profile name
+	<EncoderProfileName>WMEProfile_auto</EncoderProfileName>
+
+</CVP_liveProgramWME>

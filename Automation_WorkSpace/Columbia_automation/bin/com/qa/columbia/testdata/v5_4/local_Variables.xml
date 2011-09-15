@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+ 
+ <local_Variables>
+ 
+ ! Variables of Create_Category function
+ 	<VAR_Cat>Cat</VAR_Cat> 
+ 	
+ ! Variables of Create_Domain function
+ 
+   <VAR_Sto_Quota>2</VAR_Sto_Quota>
+   <VAR_Sto_Threshold_Warn>50</VAR_Sto_Threshold_Warn>
+
+ ! Variables of Create_LiveProgram function 
+   <VAR_DeliveryType_Live>Live Broadcast</VAR_DeliveryType_Live>
+   
+  ! Variables of Login function   
+   <usr_Name>admin@qumu.com</usr_Name>
+   <usr_Pwd>password</usr_Pwd>
+
+   ! TC 3.0 application URL
+   ! Variable "VAR_Columbia_APPURL" is used to set the URL for TC 3.0 URL
+
+   <VAR_Columbia_APPURL>http://192.16.17.186/adminportal/login.do</VAR_Columbia_APPURL>
+   <VAR_MED_WAIT>30000</VAR_MED_WAIT>
+   <VAR_ProxURL>192.16.17.186</VAR_ProxURL>
+   <VAR_BROWSER_PATH>*iexplore</VAR_BROWSER_PATH>
+   <VAR_Columbia_APPURL>http://192.16.17.86/adminportal/login.do</VAR_Columbia_APPURL>
+   <VAR_MED_WAIT>30000</VAR_MED_WAIT>
+   
+! Variables of script 
+   <VAR_Storage>Storage</VAR_Storage>
+   <VAR_HTTP>HTTP</VAR_HTTP>
+   <VAR_WMS>00WMS</VAR_WMS>
+   <Var_WME>WME-N</Var_WME>
+   <Var_WMEProf_Name>WMEProfile</Var_WMEProf_Name>
+   <VAR_DispName_Content>Slide</VAR_DispName_Content>
+   <VAR_Cat>Cat</VAR_Cat>
+   <VAR_Chnl>Channel</VAR_Chnl>
+   <VAR_Live_Program>Live</VAR_Live_Program>
+
+! Variables used in Create_storage function  
+   <LBL_LocalStorage>Local Storage</LBL_LocalStorage>
+   <LBL_HTTPAPStorage>HTTP Access Point</LBL_HTTPAPStorage>
+   
+! Variables used in Create_HTTP function  
+   <VAR_DeliveryType_HTTP>HTTP Server</VAR_DeliveryType_HTTP>
+   <VAR_AP_HTTP>Download001</VAR_AP_HTTP>
+   
+! Variables used in Create_WME function  
+   <Var_Select_WME>Windows Media Encoder</Var_Select_WME>
+   
+! Variables used in Create_WMS function  
+      <VAR_DeliveryType>Windows Media Server</VAR_DeliveryType>
+   <VAR_APType>Live</VAR_APType>
+   <VAR_APName>AP001</VAR_APName>
+   
+
+
+ </local_Variables>

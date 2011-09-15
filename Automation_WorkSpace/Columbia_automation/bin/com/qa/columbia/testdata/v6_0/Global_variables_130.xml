@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+ 
+   <Global_Variables>
+   
+   		! This file is used to set values for the environment/global variables
+   		
+   		
+        ! Machine IP address for proxy
+        <VAR_ProxURL>localhost</VAR_ProxURL>
+        
+        ! Variable "VAR_Columbia_APPURL" is used to set the URL for the VCC application        
+        <VAR_Columbia_APPURL>http://10.1.202.225/adminportal/login.do</VAR_Columbia_APPURL>
+       <Var_Columbia_vpURL>http://10.1.202.225/viewerportal/</Var_Columbia_vpURL>
+     	! Variable "VAR_InstanceIP" is used for application server IP      
+        <VAR_VCCInstanceIP>10.1.202.225</VAR_VCCInstanceIP>
+        
+        ! Variable "VAR_InstanceIP" is used for application server IP      
+        <VAR_InstanceIP>10.1.202.225</VAR_InstanceIP>
+
+        
+        !Variable VAR_USR/VAR_PWD is used to set the User name/Password for the Login       
+        <VAR_USR>admin@qumu.com</VAR_USR>        
+        <VAR_PWD>password</VAR_PWD>
+        
+        !VAR_MIN_WAIT, VAR_MED_WAIT and VAR_MAX_WAIT variables are used to set the Wait Parameters for Browser Synchronization
+        <VAR_MIN_WAIT>40000</VAR_MIN_WAIT>
+        <VAR_MED_WAIT>70000</VAR_MED_WAIT>
+        <VAR_MAX_WAIT>100000</VAR_MAX_WAIT>
+        
+        !Variable VAR_BROWSER_PATH is used to set the Browser exe path in the script       
+        <VAR_BROWSER_PATH>*iexplore</VAR_BROWSER_PATH>
+           
+        !Variable Var_frameWork_Path is defined for the framework path
+        <Var_frameWork_Path>E:\Automation_WorkSpace\Columbia_automation\src\com\qa\columbia</Var_frameWork_Path>
+        
+        !Variable Var_DomainSocial is defined for domain name configured with Social viewer portal
+        <Var_DomainSocial>auto_social</Var_DomainSocial>
+        
+        !Variable Var_DomainClassic is defined for domain name configured with Classic viewer portal
+        <Var_DomainClassic>auto_classic</Var_DomainClassic>
+        
+        !Variable for storage
+        <Var_StorageName>auto_storage</Var_StorageName> 
+        
+        ! Variable "Var_VEasWMS_IP" is used for application server IP      
+        <Var_VEasWMS_IP>10.1.202.225</Var_VEasWMS_IP>
+                
+        ! Variable for hudson URL
+        <VAR_Hudson_URL>http://10.1.199.64:8080/hudson</VAR_Hudson_URL>
+        
+        ! Variable for continuous build download
+        <Var_BuildNumber>154</Var_BuildNumber>
+      
+        <VAR_httpName>auto_http</VAR_httpName>
+        <VAR_HTTP_Host>10.1.202.230</VAR_HTTP_Host>
+        
+        <Var_VEasWMS_DO>VideoEdge_as_WMS_auto</Var_VEasWMS_DO>
+        <Var_VideoNetEdge_ProfileName>VEProfile_auto</Var_VideoNetEdge_ProfileName>
+                
+        <VAR_RSSDeviceName>RSS4kV6</VAR_RSSDeviceName>
+        <VAR_RSSDeviceNamev4kv5>RSS4kV5</VAR_RSSDeviceNamev4kv5>
+        <VAR_RSSDeviceHostIP4kv5>10.1.199.156</VAR_RSSDeviceHostIP4kv5>
+        
+        <VAR_RSSDeviceHostIP>10.1.200.27</VAR_RSSDeviceHostIP>
+        
+        <VAR_RSS2kDeviceName>RSS2kV4</VAR_RSS2kDeviceName>
+        <VAR_RSS2kDeviceHostIP>10.1.199.235</VAR_RSS2kDeviceHostIP>
+        
+        ! Variable for the Automated master program name
+ 		<VAR_masterAuto>MasterAutomated_auto</VAR_masterAuto>
+ 	
+    	 ! Variable for the On-demand master program name
+ 		<VAR_masterVOD>MasterVOD_auto</VAR_masterVOD>
+        
+        !********************************************POQO*****************************************        
+                
+        ! Variable "VAR_POQO_APPURL" is used to set the POQO URL for the VCC application        
+        <VAR_POQO_APPURL>http://192.16.17.98:8080/poqo/index.do</VAR_POQO_APPURL>
+        <Var_POQO_APPIP>192.16.17.98</Var_POQO_APPIP>
+    
+        <VAR_POQOUsername>admin1</VAR_POQOUsername>
+        
+        <VAR_POQOPassword>password</VAR_POQOPassword>
+            
+        <VAR_POQO_WebServicePort>80</VAR_POQO_WebServicePort>
+         
+        <VAR_POQO_MasterProgram>Test_POQO_MasterProgram</VAR_POQO_MasterProgram>
+         
+        <VAR_POQO_Channel>ch_g</VAR_POQO_Channel>
+        
+                
+       ! e HTTP Host Name in the Browser.
+        <VAR_AP_Host>10.1.202.225</VAR_AP_Host>
+                
+        !********************************************Encoder WME**********************************
+        
+        ! Variables used in Create_WME function  
+         <Var_Select_WME>Windows Media Encoder</Var_Select_WME>    
+         
+         !Variables used for Encoder Host IP
+         <VAR_EncoderHostIP>10.1.60.58</VAR_EncoderHostIP>
+                  
+         !Variables used for Encoder Communication port
+         <VAR_EncoderCommPort>5201</VAR_EncoderCommPort>
+         
+         !Variables used for Encoder Document root
+         <VAR_EncoderDocRoot>c:\windows\temp</VAR_EncoderDocRoot>
+         
+         !Variables used for Encoder Port
+         <VAR_EncoderPort>3000</VAR_EncoderPort>
+         
+         !Variables used for Encoder profile File(.wme) 
+         <VAR_EncoderProfile_File>D:\EncoderProfile\test1.wme</VAR_EncoderProfile_File>
+    
+        !Variable Var_WMEProf_Videosize is used to provide the video size 
+        <Var_WMEProf_VideoSize>400x226 (16x9)</Var_WMEProf_VideoSize>
+        
+        !Variable Var_WMEProf_BitRate is used to provide the Bitrate
+        <Var_WMEProf_BitRate>400</Var_WMEProf_BitRate>
+        
+          !Variable VAR_AP_MountPoint is used to provide the mount point (Virtual Directory need to be created on IIS) name in the Browser. 
+        <VAR_AP_MountPoint>auto_storage</VAR_AP_MountPoint>
+        
+         !Variable VAR_AP_Host is used to provide the HTTP Host Name in the Browser.
+        <VAR_AP_Host>10.1.202.225</VAR_AP_Host>
+        
+        
+        
+ 		! Variable for the origin WMS name	
+ 		<VAR_WMSoriginName>WMS_auto</VAR_WMSoriginName>
+ 	
+ 	 	! Variable for the origin WMS name	in social viewer portal
+ 		<VAR_WMSoriginName_new>WMS_auto_new</VAR_WMSoriginName_new>
+ 	
+   		 ! Variable for the origin WMS Host IP
+ 		<VAR_WMSoriginHost>10.1.202.247</VAR_WMSoriginHost>
+ 	
+     	! Variable for the origin WMS HTTP port
+ 		<VAR_WMSoriginHTTPport>81</VAR_WMSoriginHTTPport>
+ 	
+    	 ! Variable for the origin WMS username
+ 		<VAR_WMSoriginUsername>administrator</VAR_WMSoriginUsername>
+ 	
+    	 ! Variable for the origin WMS password
+ 		<VAR_WMSoriginPassword>Bebo123</VAR_WMSoriginPassword>
+ 	
+   	  	! Variable for the edge WMS Host 
+ 		<VAR_WMSedgeName>WMS_auto</VAR_WMSedgeName>
+ 	
+ 	 	! Variable for the edge WMS name in social VP	
+ 		<VAR_WMSedgeName_new>WMS_auto_new</VAR_WMSedgeName_new>
+ 	
+     	! Variable for the edge WMS Host IP
+ 		<VAR_WMSedgeHost>10.1.202.225</VAR_WMSedgeHost>
+ 	
+    	 ! Variable for the edge WMS HTTP port
+ 		<VAR_WMSedgeHTTPport>81</VAR_WMSedgeHTTPport>
+ 	
+    	 ! Variable for the edge WMS username
+ 		<VAR_WMSedgeUsername>administrator</VAR_WMSedgeUsername>
+ 	
+    	 ! Variable for the edge WMS password IP
+ 		<VAR_WMSedgePassword>Bebo123</VAR_WMSedgePassword>
+ 	
+ 		<VAR_httpName>0HTTP_old</VAR_httpName>
+ 		
+ 		 ! Variable for the Pin protected VRR number	
+       <VAR_VRRnumber_PinProtected>36231</VAR_VRRnumber_PinProtected>
+       
+       ! Variable for the Non Pin protected VRR number	
+       <VAR_VRRnumber_NonPinProtected>11634</VAR_VRRnumber_NonPinProtected>
+       
+       ! Variable for the Pin protected VRR name	
+       <VAR_VRRname_PinProtected>36231_Shared_Vrr (36231)</VAR_VRRname_PinProtected>
+       
+       ! Variable for the Non Pin protected VRR name	
+       <VAR_VRRname_NonPinProtected>11634_Shared_Vrr (11634)</VAR_VRRname_NonPinProtected>
+       
+       ! Variable for the Pin of the pin protected VRR
+       <VAR_VRRPin_PinProtected>36231</VAR_VRRPin_PinProtected>
+       
+       ! Variable for the end point IP
+       <VAR_endPointIP>10.1.196.11</VAR_endPointIP>        
+ 		
+ 		 !******************Agility server configuration*******************************!
+        
+         ! Variable for Agility Server Host
+ 	 	 <VAR_AgilityServer_Host>10.1.199.152</VAR_AgilityServer_Host>
+		
+		! Variable for Transcoding node on agility server
+		<VAR_TranscodingNode>Agility 1.5.1</VAR_TranscodingNode>
+		
+		! Variable for Transcoding FLV profile on agility server
+		<VAR_TranscodingFLVProfile>tesQAJobProileFLV</VAR_TranscodingFLVProfile>
+			
+		! Variable for Transcoding WMV profile on agility server
+		<VAR_TranscodingWMVProfile>WMV_QAProfile</VAR_TranscodingWMVProfile>
+	
+		! Variable for default Transcoding WMV profile on agility server
+ 		<VAR_TranscodingProfile>Cable_Broadband</VAR_TranscodingProfile>
+     
+     
+     
+     	
+   ! Variable for the Audience Rule IP
+  	<VAR_audienceIP>10.1.202.*</VAR_audienceIP>
+  	  
+   ! Variable for the Audience Rule Host
+    <VAR_audienceHost>10.1.202.130</VAR_audienceHost>
+      
+   ! Variable for the Audience Rule Port
+   <VAR_audiencePort>80</VAR_audiencePort>
+   
+    <VAR_RSS2kDeviceName>RSS2kV4</VAR_RSS2kDeviceName>
+        <VAR_RSS2kDeviceHostIP>10.1.199.235</VAR_RSS2kDeviceHostIP>
+        <VAR_RSS2kDeviceUsername>administrator</VAR_RSS2kDeviceUsername>
+        <VAR_RSS2kDevicePassword>polycom</VAR_RSS2kDevicePassword>
+        
+   </Global_Variables>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SVP_ProgramTemplate>
+
+<ProgramTemplateType>Automated File Broadcast</ProgramTemplateType>
+
+	!Variable for Program Template
+	<ProgramName>AutoFileBroadcast Template</ProgramName>
+	
+	<DeliveryModedownload>Download</DeliveryModedownload>
+	
+	<DeliveryModeLive>Live</DeliveryModeLive>
+	
+	<MediaFormat>Windows Media</MediaFormat>
+	
+	
+</SVP_ProgramTemplate>

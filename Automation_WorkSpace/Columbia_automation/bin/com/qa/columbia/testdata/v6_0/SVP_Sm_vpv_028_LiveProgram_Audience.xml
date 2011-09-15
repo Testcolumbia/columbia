@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SVP_Sm_vpv_028_LiveProgram_Audience>
+
+<VAR_programName>Auto_Live_Audience_WME_Polls</VAR_programName>
+
+ <VAR_AccespointDownloadName>APdownload</VAR_AccespointDownloadName>
+
+ <VAR_AccespointVODName>APVOD</VAR_AccespointVODName>
+    
+ <VAR_ASXfileName>wmv1.wmv</VAR_ASXfileName> 
+    
+ ! Variables of display name for the Audience
+<VAR_audienceName>Auto_Audience_WME</VAR_audienceName>
+ 	
+     
+</SVP_Sm_vpv_028_LiveProgram_Audience>

@@ -1,0 +1,200 @@
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <title>V6.0_patch 38_MSSQL2008_Patch Level Testcases Execution Report</title>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <head><u><h1 align='center'>Columbia Automation Test Suite Report</h1></u></head>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <tr>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - </tr>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <BR>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <tr>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <td width='25%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Test Script Name</font></b></td>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <td width='35%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Test Case Description</font></b></td>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <td width='10%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Result</font></b></td>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <td width='15%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>Start Time</font></b></td>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - <td width='15%' bgcolor='#CCCCFF' align='center'><b><font color='#000000' face='Garamond'>End Time</font></b></td>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - </tr>
+2011-09-14 19:32:16,956 [INFO ] logger.success  - </table>
+2011-09-14 19:32:17,003 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:32:17,003 [INFO ] logger.success  - <tr>
+2011-09-14 19:32:17,003 [INFO ] logger.success  - <td width='33%'> <font color='#000000' face='Garamond'>Cleanup_Script</font></td>
+2011-09-14 19:32:17,003 [INFO ] logger.success  - </tr>
+2011-09-14 19:32:17,003 [INFO ] logger.success  - </table>
+2011-09-14 19:32:17,018 [INFO ] logger.success  - =========================================================================================================================
+2011-09-14 19:32:17,065 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:32:17,065 [INFO ] logger.success  - <tr>
+2011-09-14 19:32:17,065 [INFO ] logger.success  - <td width='33%'> <font color='#000000' face='Garamond'>CVP_Sm_vpc_002_liveProgramWME</font></td>
+2011-09-14 19:32:17,065 [INFO ] logger.success  - </tr>
+2011-09-14 19:32:17,065 [INFO ] logger.success  - </table>
+2011-09-14 19:42:11,327 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:42:11,327 [INFO ] logger.success  - <tr>
+2011-09-14 19:42:11,327 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_002 </font></td>
+2011-09-14 19:42:11,327 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that Slide is pushed successfully from LBC.</font></td>
+2011-09-14 19:42:11,327 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:42:11,342 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:42:11,342 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:42:11 GMT+05:30 2011</font></td>
+2011-09-14 19:42:11,342 [INFO ] logger.success  - </tr>
+2011-09-14 19:42:11,342 [INFO ] logger.success  - </table>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - <tr>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_002 </font></td>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that Poll Question is pushed successfully from LBC.</font></td>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:44:40 GMT+05:30 2011</font></td>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - </tr>
+2011-09-14 19:44:40,695 [INFO ] logger.success  - </table>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - <tr>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_002 </font></td>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that Poll is submitted successfully from the viewer portal.</font></td>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:44:56 GMT+05:30 2011</font></td>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - </tr>
+2011-09-14 19:44:56,908 [INFO ] logger.success  - </table>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - <tr>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_002 </font></td>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that user is able to push the results to the viewer portal</font></td>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:46:09 GMT+05:30 2011</font></td>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - </tr>
+2011-09-14 19:46:09,521 [INFO ] logger.success  - </table>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <tr>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_002 </font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that asx file is generated successfully.</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:47:14 GMT+05:30 2011</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - </tr>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - </table>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <tr>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_002 </font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that mms protocol is displayed in asx file.</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:47:14 GMT+05:30 2011</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - </tr>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - </table>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <tr>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_002 </font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that multicast stream is displayed in asx file.</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:47:14 GMT+05:30 2011</font></td>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - </tr>
+2011-09-14 19:47:14,575 [INFO ] logger.success  - </table>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - <tr>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_002 </font></td>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that viewer question is displayed successfully on LBC.</font></td>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:47:35 GMT+05:30 2011</font></td>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - </tr>
+2011-09-14 19:47:35,489 [INFO ] logger.success  - </table>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - <tr>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpc_005 </font></td>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'>  Ingest completes for archived content of Live program played with VE as WMS delivery option using WME</font></td>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:32:17 GMT+05:30 2011</font></td>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 19:49:04 GMT+05:30 2011</font></td>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - </tr>
+2011-09-14 19:49:04,815 [INFO ] logger.success  - </table>
+2011-09-14 19:49:45,179 [INFO ] logger.success  - =========================================================================================================================
+2011-09-14 19:49:45,226 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 19:49:45,226 [INFO ] logger.success  - <tr>
+2011-09-14 19:49:45,226 [INFO ] logger.success  - <td width='33%'> <font color='#000000' face='Garamond'>SVP_Sm_vpv_001_liveProgramWME</font></td>
+2011-09-14 19:49:45,226 [INFO ] logger.success  - </tr>
+2011-09-14 19:49:45,226 [INFO ] logger.success  - </table>
+2011-09-14 20:19:52,282 [INFO ] logger.success  - =========================================================================================================================
+2011-09-14 20:19:52,344 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:19:52,344 [INFO ] logger.success  - <tr>
+2011-09-14 20:19:52,344 [INFO ] logger.success  - <td width='33%'> <font color='#000000' face='Garamond'>SVP_Sm_vpv_028_LiveProgram_Audience</font></td>
+2011-09-14 20:19:52,344 [INFO ] logger.success  - </tr>
+2011-09-14 20:19:52,344 [INFO ] logger.success  - </table>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - <tr>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpv_028 </font></td>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that Live Program is created successfully.</font></td>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:19:52 GMT+05:30 2011</font></td>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:25:45 GMT+05:30 2011</font></td>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - </tr>
+2011-09-14 20:25:45,967 [INFO ] logger.success  - </table>
+2011-09-14 20:28:28,385 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:28:28,385 [INFO ] logger.success  - <tr>
+2011-09-14 20:28:28,385 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpv_028 </font></td>
+2011-09-14 20:28:28,385 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that Slide is pushed successfully from LBC.</font></td>
+2011-09-14 20:28:28,385 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 20:28:28,385 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:19:52 GMT+05:30 2011</font></td>
+2011-09-14 20:28:28,385 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:28:28 GMT+05:30 2011</font></td>
+2011-09-14 20:28:28,401 [INFO ] logger.success  - </tr>
+2011-09-14 20:28:28,401 [INFO ] logger.success  - </table>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - <tr>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpv_028 </font></td>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that asx file is generated successfully.</font></td>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:19:52 GMT+05:30 2011</font></td>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:31:09 GMT+05:30 2011</font></td>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - </tr>
+2011-09-14 20:31:09,541 [INFO ] logger.success  - </table>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - <tr>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpv_028 </font></td>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that Poll Question is pushed successfully from LBC.</font></td>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:19:52 GMT+05:30 2011</font></td>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:31:45 GMT+05:30 2011</font></td>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - </tr>
+2011-09-14 20:31:45,558 [INFO ] logger.success  - </table>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - <tr>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpv_028 </font></td>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that poll answer is submitted successfully from the viewer portal.</font></td>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:19:52 GMT+05:30 2011</font></td>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:32:06 GMT+05:30 2011</font></td>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - </tr>
+2011-09-14 20:32:06,534 [INFO ] logger.success  - </table>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - <tr>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpv_028 </font></td>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that user is able to push the results to the viewer portal</font></td>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:19:52 GMT+05:30 2011</font></td>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:33:52 GMT+05:30 2011</font></td>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - </tr>
+2011-09-14 20:33:52,151 [INFO ] logger.success  - </table>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - <tr>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpv_028 </font></td>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that viewer question is displayed successfully on LBC.</font></td>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:19:52 GMT+05:30 2011</font></td>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:34:17 GMT+05:30 2011</font></td>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - </tr>
+2011-09-14 20:34:17,236 [INFO ] logger.success  - </table>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - <table border='0' width='100%' height='47'>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - <tr>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - <td width='25%'> <font color='#000000' face='Garamond'>Sm_vpv_028 </font></td>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - <td width='35%'> <font color='#000000' face='Garamond'> Verify that survey is displayed successfully on viewer portal.</font></td>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - <td width='10%' align='center'><font color='#000000' face='Garamond'> SUCCESSFULL </font></td>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:19:52 GMT+05:30 2011</font></td>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - <td width='15%' align='center'><font color='#000000' face='Garamond'> Wed Sep 14 20:35:03 GMT+05:30 2011</font></td>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - </tr>
+2011-09-14 20:35:03,392 [INFO ] logger.success  - </table>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - =========================================================================================================================
+2011-09-14 20:35:33,897 [INFO ] logger.success  - <font color='#330066' face='Garamond'><BR> Start Time:'Wed Sep 14 19:32:16 GMT+05:30 2011'. </font><BR>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - <font color='#330066' face='Garamond'>Elapsed Time for running the entire test suite = 1 hour(s), 3 minute(s), 16 second(s)</font><BR>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - <font color='#0000FF' face='Garamond'>Total number of tester scripts launched = '4'. </font><BR>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - <font color='#00C000' face='Garamond'>Total number of test cases passed = '17'. </font><BR>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - <font color='#FF0000' face='Garamond'>Total number of test cases failed = '0'. </font><BR>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - <font color='#330066' face='Garamond'> End Time:'Wed Sep 14 20:35:33 GMT+05:30 2011'. </font><BR>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - <font color='#330066' face='Garamond'> Selenium Test Suite Ended. </font><BR>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - <font color='#330066' face='Garamond'><b2>Note:</b2> Please check the fail log file to see in case there are any failures. This is in case there are failures other than the assertions used.(like failures due to application, timeout etc.'. </font><BR>
+2011-09-14 20:35:33,897 [INFO ] logger.success  - ===========================================================================================================

@@ -1,0 +1,117 @@
+package com.qa.columbia.executor;
+
+/**
+ * This class contains the file to be executed
+ * 
+ */	 
+public class TesterSuite {
+
+  protected TesterSuite() {
+  }
+
+  /**
+   * This method contains the name of the scripts to be executed. You need to pass the name of the java file (i.e. script) to be executed as below:
+   * ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "TestFile Name");
+   * @return ranMethods Number of scripts executed
+   */
+   /**  
+   * Before running the test, please ensure that your Selenium Remote Server
+   * is up and running. Server can be started using the java -jar selenium-server.jar
+   */
+
+  public static int runTestSuite() {
+   	
+
+	  String testPackageName = null;
+	  
+	  TesterUtilities utils = new TesterUtilities();
+	  int ranMethods = 0;	   
+	  //	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	  //	Put the name of the scripts to be executed below
+	  //	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	  
+	  //	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	  //	Please enter all the Scripts related to Login Object
+	  //	+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	   
+	  if(TesterGrouping.Patch_Level_testcases) {		
+		  testPackageName = TesterConstants.TEST_SUITE_PACKAGE_NAME;		  
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_LiveProgramArchived_MediaNet_WME");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_LiveProgramArchived_MediaNet_RSS2kv4");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_LiveProgram_MediaNet_RSSv4");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_LiveProgram_MediaNet_WME");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_EGCupload_WMV");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_EGCupload_FLV");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_EGC_PrgThumbnail_Verification");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_EGC_Unapproved_Prg_Verification");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_Automated_RSSdisc2k_NonPinProtected");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_Content_Storage_Report");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_LiveProgramSurveySummary_Report");
+<<<<<<< .mine
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_Content_upload_Slides");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_Content_upload_WMV");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_complexPresentation_upload");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_FLV_SL_Enabled");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_img_upload");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_Mp3_SL_Disabled");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_SWF_SL_disabled");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_WMA_SL_disabled");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_WMV_SL_Enabled");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_thumbnailExtraction");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_mediaEditor");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_liveProgramRSSv5");
+          ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_unapproveProgramAccess");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_uploadEGC");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_vod_msProducer");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_vod_QT");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_vod_SurveySummaryReport");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_EGC_PrgThumbnail_Verification");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_EGC_Unapproved_Prg_Verification");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_EGCupload_FLV");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_EGCupload_WMV");
+		  //ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_liveProgram_MediaNet_RSS2kv4");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_LiveProgramSurveySummary_Report");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_archiveRSSv5");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_archiveRSSv6_medianet");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_archiveWME");
+		  ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_liveProgramAudience");
+	      ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_liveProgramWME");
+	      ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_liveRSSv6_medianet");
+	  }	  	  
+=======
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_Content_upload_Slides");
+	       ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_Content_upload_WMV");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_liveProgram_MediaNet_RSS2kv4");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_FLV_SL_Enabled");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_Mp3_SL_Disabled");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_SWF_SL_disabled");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_WMA_SL_disabled");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "SVP_VOD_WMV_SL_Enabled");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_thumbnailExtraction");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_mediaEditor");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_liveProgramRSSv5");
+           ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_unapproveProgramAccess");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_uploadEGC");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_vod_msProducer");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_vod_QT");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_vod_SurveySummaryReport");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_img_upload");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_complexPresentation_upload");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_Automated_RSSdisc4k_NonPinProtected");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_Automated_RSSdisc4k_PinProtected");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_VOD_RSSdisc4k_PinProtected");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_VOD_RSSdisc4k_NonPinProtected");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_archiveRSSv5");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_archiveRSSv6_medianet");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_archiveWME");
+		   ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_liveProgramAudience");
+	       ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_liveProgramWME");
+	       ranMethods += utils.runTestMethodsOfTestClass(testPackageName + "CVP_liveRSSv6_medianet");
+	  }
+	  	  
+>>>>>>> .r101
+	  //Return the number of scripts executed
+	  return ranMethods;
+
+  }
+}

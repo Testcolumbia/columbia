@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Create_VEasWMS>
+
+	<Var_VideoNetEdge_ProfileName>VEProfile_auto</Var_VideoNetEdge_ProfileName>
+	
+	<Var_vodPP_Name>vodPP_auto</Var_vodPP_Name>
+	
+	<Var_StorageName>Storage_June17_New</Var_StorageName>
+	
+	<Var_LivePP_Name>livePP_auto</Var_LivePP_Name>
+	
+	<Var_VideoNetEdgeDO_Name>VideoEdge_as_WMS_auto</Var_VideoNetEdgeDO_Name>
+
+</Create_VEasWMS>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sm_vpc_019_thumbnailExtraction>
+ 	! Variables of display name for the streaming media file
+ 	<VAR_wmvDisplayName>wmv_auto</VAR_wmvDisplayName> 
+ 	
+ 	! Variables for the file name under content
+	 <VAR_wmvFileName>wmv1.wmv</VAR_wmvFileName> 
+</Sm_vpc_019_thumbnailExtraction>

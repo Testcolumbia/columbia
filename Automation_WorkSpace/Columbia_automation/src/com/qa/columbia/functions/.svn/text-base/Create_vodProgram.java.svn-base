@@ -1,0 +1,98 @@
+/*
+ * This method is used to Create On-demand Program in the Application.
+*/
+
+package com.qa.columbia.functions;
+
+import com.qa.columbia.repository.*;
+import com.thoughtworks.selenium.*;
+import com.qa.columbia.executor.*;
+
+public class Create_vodProgram extends TesterAsserter {
+	
+    public static void test_Create_vodProgram	(Selenium sel, String str_ProgName,String str_StreamingMedia) throws Exception {
+		
+	Utility_Functions utilityFunction = new Utility_Functions();
+	
+	//Fetching values for Global Variables from XMl file
+	String str_path ="Global_variables.xml";
+	//Variable for wait
+	String VAR_MED_WAIT = utilityFunction.GetValue(str_path ,"VAR_MED_WAIT");
+	//Fetching values for local Variables from XML file
+	String local_path ="local_Variables.xml";
+	//Click on Programming menu
+	//sel.click(EnvObjectMap_Rep.LNK_Programming);
+	//Click on Programs link
+	sel.click(EnvObjectMap_Rep.LNK_Programs);
+	//wait for loading the page
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+	//Click on Add button
+	sel.click(EnvObjectMap_Rep.Btn_Add_Program);
+	//Select the On-demand Program
+	sel.addSelection(EnvObjectMap_Rep.SelectType_Program_Live, EnvObjectMap_Rep.lst_ondemand);
+	//Click on On-demnad program
+	sel.click(EnvObjectMap_Rep.LNK_OnDemand);
+	//wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+	//Provide the program name
+	sel.type(EnvObjectMap_Rep.txt_ProgramName, str_ProgName);
+	//Click on Next button
+	sel.click(EnvObjectMap_Rep.btn_Next_programPage);
+	//wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+	//Select the listing as Immediately
+	sel.click(EnvObjectMap_Rep.radio_Immediately);
+	//Click on Next button
+	sel.click(EnvObjectMap_Rep.btn_Next_programPage);
+	//Wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+	//Click on Add Media button
+	sel.click(EnvObjectMap_Rep.btn_selectMedia);
+	//utilityFunction.waitForChangesToReflect();
+	//Navigate to Search tab
+	sel.keyPressNative(java.awt.event.KeyEvent.VK_RIGHT + "");
+	//Set focus on the search textbox
+	sel.keyPressNative(java.awt.event.KeyEvent.VK_TAB + "");
+	/*
+	sel.click("dijit_layout__TabButton_3");
+	sel.click("//div[@id='dijit_layout_ContentPane_7']/div[1]/input[2]");
+	*/
+	//Type the streaming media name
+	sel.type(EnvObjectMap_Rep.txt_SearchMedia, str_StreamingMedia);
+	//Click on Find button
+	sel.click(EnvObjectMap_Rep.btn_mediaSearch);
+	//wait
+
+	utilityFunction.waitForChangesToReflect();
+	//Select the searched media
+	sel.click(EnvObjectMap_Rep.Lnk_selectMedia);
+	//Move the selected file to selected List box
+	sel.click(EnvObjectMap_Rep.lnk_moveToSelected);
+	//Click on Save button
+	sel.click(EnvObjectMap_Rep.btn_saveSelectedMedia);
+	//wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+	//Click on Next button
+	sel.click(EnvObjectMap_Rep.btn_Next_programPage);
+	
+	//wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+    //utilityFunction.waitForChangesToReflect();	//Click on Next button
+	
+	sel.click(EnvObjectMap_Rep.btn_Next_programPage);
+	//wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+	//click on Next button
+	sel.click(EnvObjectMap_Rep.btn_Next_programPage);
+	//wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+	//Click on next button
+   sel.click(EnvObjectMap_Rep.btn_Next_programPage);
+	//wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);
+	//Click on finish button
+	sel.click(EnvObjectMap_Rep.Btn_Finish_Program);
+	//wait for page to load
+	sel.waitForPageToLoad(VAR_MED_WAIT);	
+	}
+}

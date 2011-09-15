@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<report>
+
+! Variables for program name
+<VAR_programName>Auto_VOD_Program</VAR_programName>
+
+! Variables of display name for the streaming media function
+ <VAR_streamingMedia_Name>wmv_auto</VAR_streamingMedia_Name> 
+ 	
+ ! Variables streaming media file to upload
+ <VAR_streamingMediasource_file>wmv1.wmv</VAR_streamingMediasource_file> 
+    
+</report>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVP_vod_SurveySummayReport>
+ ! Variables of display name for the survey
+ 	<SurveyName>Survey1</SurveyName>
+ 	 ! Variables of display name for the question
+ 	<QuestionName>Question1</QuestionName>
+ 	 ! Variables for the question explanation
+ 	<QuestionExp>QuestionExplanation</QuestionExp>
+ 	 ! Variables for the survey Type
+ 	<QuestionType>Checkbox</QuestionType>
+ 	 ! Variables of display name for the streaming media
+ 	<StreamingMedia>wmv1</StreamingMedia>
+ 	 ! Variables for the wmv file name
+ 	<StreamingMediaFileName>wmv1.wmv</StreamingMediaFileName>
+ 	 ! Variables of display name for the program
+ 	<VODName>vodSurvey</VODName>
+
+ 
+</CVP_vod_SurveySummayReport>

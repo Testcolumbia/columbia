@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SVP_LiveProgramSurveySummary_Report>
+! Variable for Edge WMS 
+<VAR_OriginWMS_Name>WMS_auto</VAR_OriginWMS_Name>
+
+! Variable for Edge WMS 
+<VAR_EdgeWMS_Name>WMS_auto_1</VAR_EdgeWMS_Name>
+
+! Variable for Live program with  media net
+<Var_LiveProgramName>LiveBcast_Survey</Var_LiveProgramName>
+
+! Variable for Encoder Name 
+<VAR_Encodername>RSS2000V4</VAR_Encodername>
+
+! Variable for WMS Host 
+<VAR_WMSHostIP>10.1.202.247</VAR_WMSHostIP>
+
+!Variable VAR_WMS is used to provide the name in the Browser.
+<VAR_HTTPPort>81</VAR_HTTPPort>
+
+! Variable for Encoder Name 
+<VAR_Encodername>RSS2000V4</VAR_Encodername>
+
+! Variable for Encoder User Name
+<VAR_EncoderUserName>administrator</VAR_EncoderUserName>
+
+
+! Variable for Encoder Host IP
+<VAR_EncoderHostIP>10.1.199.156</VAR_EncoderHostIP>
+
+! Variable for Edge WMS 
+<VAR_EncoderVersion>Polycom RSS 2000 Version 4</VAR_EncoderVersion>
+
+<Var_ArchiveOfLiveRSSv5>Archived_LiveBcast_Survey</Var_ArchiveOfLiveRSSv5>
+
+<VAR_EncoderPassword>polycom</VAR_EncoderPassword>
+
+<VAR_EncoderProfileName>Rss2kV4Profile</VAR_EncoderProfileName>
+
+<VAR_EncoderBitRate>512</VAR_EncoderBitRate>
+
+! Variable for MediaNet
+<VAR_medianetName>medianet_auto_new</VAR_medianetName>
+
+
+    ! Variable for Live program wit  media net
+    <Var_LiveProgramArchive>Archived_LiveBcast_RSS2K4_MediaNet</Var_LiveProgramArchive>
+
+    ! Variables of display name for the survey
+ 	<SurveyName>Survey1</SurveyName>
+ 	
+ 	! Variable of display name for poll
+ 	<PollName>Poll1</PollName>
+ 	
+ 	 ! Variables of display name for the question
+ 	<QuestionName>Question1</QuestionName>
+ 	
+ 	 ! Variables for the question explanation
+ 	<QuestionExp>QuestionExplanation</QuestionExp>
+ 	
+ 	 ! Variables for the survey Type
+ 	<QuestionType>Checkbox</QuestionType>
+ 	
+ 	 ! Variables for the slide display name
+ 	<VAR_SlideDisplayName>Slide1</VAR_SlideDisplayName>
+ 	
+ 	 ! Variables for the slide file name
+ 	<VAR_SlideFileName>mixed.ppt</VAR_SlideFileName>
+</SVP_LiveProgramSurveySummary_Report>

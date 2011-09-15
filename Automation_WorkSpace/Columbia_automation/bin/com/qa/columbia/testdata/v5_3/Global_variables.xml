@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+ 
+   <Global_Variables>
+
+        ! This file is used to set values for the environment/global variables
+        
+        ! Machine IP address for proxy
+        <VAR_ProxURL>localhost</VAR_ProxURL>
+        
+        ! TC 3.0 application URL
+        ! Variable "VAR_Columbia_APPURL" is used to set the URL for TC 3.0 URL
+        
+        <VAR_Columbia_APPURL>http://192.16.17.33/adminportal/login.do</VAR_Columbia_APPURL>
+        <Var_Columbia_vpURL>http://192.16.17.33/viewerportal/</Var_Columbia_vpURL>
+        
+        !Variable VAR_USR is used to set the User name for the Login
+        !Variable VAR_USR is used to set the User name for the Login
+       
+        <VAR_USR>admin@qumu.com</VAR_USR>
+        <VAR_PWD>password</VAR_PWD>
+        
+        !VAR_MIN_WAIT, VAR_MED_WAIT and VAR_MAX_WAIT variables are used to set the Wait Parameters for Browser Synchronization
+        <VAR_MIN_WAIT>40000</VAR_MIN_WAIT>
+        <VAR_MED_WAIT>70000</VAR_MED_WAIT>
+        <VAR_MAX_WAIT>100000</VAR_MAX_WAIT>
+        
+        !Variable VAR_BROWSER_PATH is used to set the Browser exe path in the script
+       
+        <VAR_BROWSER_PATH>*iexplore</VAR_BROWSER_PATH>
+           
+        !Variable Var_frameWork_Path is defined for the framework path
+        <Var_frameWork_Path>E:\Automation_WorkSpace\Columbia_automation\src\com\qa\columbia</Var_frameWork_Path>
+        
+        !Variable VAR_dom is used to provide the domain name in the Browser.
+        <VAR_DomID>domain</VAR_DomID>
+        
+        !Variable VAR_dom is used to provide the domain name in the Browser
+        <VAR_Dom>domain</VAR_Dom>
+       
+        !Variable VAR_SiteURL is used to provide the site URL in the Browser.
+        <VAR_SiteURL>http://192.16.17.33</VAR_SiteURL>
+        
+        !Variable VAR_Storage is used to provide the storage name (Shared Folder should be created on server) in the Browser. 
+        <VAR_Storage>auto_storage</VAR_Storage>
+        
+        !Variable VAR_AP_Host is used to provide the HTTP Host Name in the Browser.
+        <VAR_AP_Host>192.16.17.33</VAR_AP_Host>
+        
+        !Variable VAR_AP_MountPoint is used to provide the mount point (Virtual Directory need to be created on IIS) name in the Browser. 
+        <VAR_AP_MountPoint>auto_storage</VAR_AP_MountPoint>
+
+           
+        !Variable VAR_WMS is used to provide the HTTP Host in the Browser.   
+        <VAR_HTTP_Host>192.16.17.33</VAR_HTTP_Host>
+        
+        !Variable VAR_WMS is used to select the HTTP Access Point in the Browser. 
+        <VAR_DeliveryType_Download>Download</VAR_DeliveryType_Download>
+        
+           
+        !Variable VAR_Select_Storage is used to select Storage in the Browser. 
+        !<VAR_Select_Storage>auto_storage</VAR_Select_Storage>
+               
+        !//*********************************WME***********************//
+        
+        !Variable VAR_Program is used to select Encoder
+        <VAR_Encodername>WME-N</VAR_Encodername>
+        
+        !Variable VAR_Program is used to select Encoder
+        <VAR_EncoderProfileName>WME-Profile</VAR_EncoderProfileName>
+        
+        !Variable Var_WME_Host is used to provide the host for WME
+        <VAR_EncoderHostIP>10.1.60.121</VAR_EncoderHostIP>
+        
+        !Variable Var_WME_ComPort is used to provide the Communication Port
+        <VAR_EncoderServicePort>5201</VAR_EncoderServicePort>
+        
+        !Variable Var_WME_DocRoot is used to provide the Document Root for encoder files
+        <VAR_EncoderDocRoot>c:\windows\temp</VAR_EncoderDocRoot>
+        
+        !Variable Var_WMEProf_Port is used to Port for WME output
+        <VAR_EncoderPort>3000</VAR_EncoderPort>
+        
+        !Variable Var_WMEProf_Path is used to provide the path for the .wme file
+        <VAR_EncoderProfileFileName>D:\EncoderProfile\test1.wme</VAR_EncoderProfileFileName>
+        
+        !Variable Var_WMEProf_Videosize is used to provide the video size 
+        <Var_WMEProf_VideoSize>400x226 (16x9)</Var_WMEProf_VideoSize>
+        
+        !Variable Var_WMEProf_BitRate is used to provide the Bitrate
+        <Var_WMEProf_BitRate>400</Var_WMEProf_BitRate>
+        
+        !//*************************Live Porgrawm on Viewer POrtal**********//
+        <Var_asxLink>//div[@id='mpi_util_DebugConsole_0']/div[3]</Var_asxLink>
+        
+        !//********************************Classic viewer portal**********************//
+       
+        <VAR_DomClassic>auto_classic</VAR_DomClassic> 
+        
+        !//********************************Social viewer portal**********************//    
+        
+        <VAR_DomSocial>auto_social</VAR_DomSocial>
+       
+       !//********************************Complex Presentation file name in CVP**********************//
+       ! Variable for the Pin protected VRR number	
+       <VAR_VRRnumber_PinProtected>36231</VAR_VRRnumber_PinProtected>
+       
+       ! Variable for the Non Pin protected VRR number	
+       <VAR_VRRnumber_NonPinProtected>11634</VAR_VRRnumber_NonPinProtected>
+       
+       ! Variable for the Pin protected VRR name	
+       <VAR_VRRname_PinProtected>36231_Shared_Vrr (36231)</VAR_VRRname_PinProtected>
+       
+       ! Variable for the Non Pin protected VRR name	
+       <VAR_VRRname_NonPinProtected>11634_Shared_Vrr (11634)</VAR_VRRname_NonPinProtected>
+       
+       ! Variable for the Pin of the pin protected VRR
+       <VAR_VRRPin_PinProtected>36231</VAR_VRRPin_PinProtected>
+       
+       ! Variable for the end point IP
+       <VAR_endPointIP>10.1.196.11</VAR_endPointIP>  
+       
+ 		! Variable for the origin WMS name	
+ 		<VAR_WMSoriginName>WMS_auto_1</VAR_WMSoriginName>
+ 	
+ 	 	! Variable for the origin WMS name	in social viewer portal
+ 		<VAR_WMSoriginName_new>WMS_auto_new</VAR_WMSoriginName_new>
+ 	
+   		 ! Variable for the origin WMS Host IP
+ 		<VAR_WMSoriginHost>192.16.17.33</VAR_WMSoriginHost>
+ 	
+     	! Variable for the origin WMS HTTP port
+ 		<VAR_WMSoriginHTTPport>81</VAR_WMSoriginHTTPport>
+ 	
+    	 ! Variable for the origin WMS username
+ 		<VAR_WMSoriginUsername>applianceadmin</VAR_WMSoriginUsername>
+ 	
+    	 ! Variable for the origin WMS password
+ 		<VAR_WMSoriginPassword>D3F@ultP@55w0rD</VAR_WMSoriginPassword>
+ 	
+   	  	! Variable for the edge WMS Host 
+ 		<VAR_WMSedgeName>WMS_auto_1</VAR_WMSedgeName>
+ 	
+ 	 	! Variable for the edge WMS name in social VP	
+ 		<VAR_WMSedgeName_new>WMS_auto_new_1</VAR_WMSedgeName_new>
+ 	
+     	! Variable for the edge WMS Host IP
+ 		<VAR_WMSedgeHost>192.16.17.111</VAR_WMSedgeHost>
+ 	
+    	 ! Variable for the edge WMS HTTP port
+ 		<VAR_WMSedgeHTTPport>81</VAR_WMSedgeHTTPport>
+ 	
+    	 ! Variable for the edge WMS username
+ 		<VAR_WMSedgeUsername>administrator</VAR_WMSedgeUsername>
+ 	
+    	 ! Variable for the edge WMS password IP
+ 		<VAR_WMSedgePassword>Bebo123</VAR_WMSedgePassword>
+ 		
+ 		!Variable VAR_Audience_Host is used to provide the audience Host IP
+        <VAR_Audience_Host>192.16.17.33</VAR_Audience_Host>
+ 	
+ 		!Variable for HTTP delivery option name
+ 		<VAR_httpName>0HTTP</VAR_httpName>
+ 		
+ 		 ! Variable for Agility Server Host
+ 	 	 <VAR_AgilityServer_Host>192.16.17.103</VAR_AgilityServer_Host>
+		
+		! Variable for Transcoding node on agility server
+		<VAR_TranscodingNode>Agility 1.5.1</VAR_TranscodingNode>
+		
+		! Variable for Transcoding FLV profile on agility server
+		<VAR_TranscodingFLVProfile>tesQAJobProileFLV</VAR_TranscodingFLVProfile>
+			
+		! Variable for Transcoding WMV profile on agility server
+		<VAR_TranscodingWMVProfile>WMV_QAProfile</VAR_TranscodingWMVProfile>
+	
+		! Variable for default Transcoding WMV profile on agility server
+ 		<VAR_TranscodingProfile>Cable_Broadband</VAR_TranscodingProfile>
+
+   </Global_Variables>
